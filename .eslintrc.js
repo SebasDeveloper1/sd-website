@@ -17,16 +17,15 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'no-unused-vars': RULES.OFF,
     'import/prefer-default-export': RULES.OFF,
     'react/prop-types': RULES.OFF,
+    'react/react-in-jsx-scope': RULES.OFF,
+    // 'import/no-unresolved': RULES.OFF,
     camelcase: RULES.OFF,
-    // "no-restricted-globals": RULES.OFF,
-    // "no-param-reassign": RULES.OFF,
   },
-  // settings: {
-  //   'import/resolver': {
-  //     foo: { someConfig: value },
-  //   },
-  // },
+  settings: {
+    'import/resolver': {
+      foo: { someConfig: value },
+    },
+  },
 };

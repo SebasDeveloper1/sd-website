@@ -1,0 +1,111 @@
+@import '@styles/vars';
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  block-size: calc(100vh - 60px);
+  background-color: $color-dark-1;
+}
+
+.hero__background-video {
+  position: relative;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.hero__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 100%;
+  block-size: 100%;
+  background-image: $color-linear-gradient-1;
+}
+
+.hero__info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  inline-size: 90%;
+  max-inline-size: 1280px;
+}
+
+.hero__info-image {
+  inline-size: 200px;
+  block-size: 200px;
+  margin-block-end: 20px;
+  border-radius: $border-radius-circle;
+  border: 4px solid $color-primary;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__title {
+  margin-block-end: 4px;
+  color: $color-text-light-1;
+}
+
+.hero__subtitle {
+  overflow: hidden;
+  inline-size: 17ch;
+  margin-block-end: 32px;
+  border-inline-end: 2px solid $color-text-medium-1;
+  font-weight: $font-weight-text1;
+  color: $color-text-medium-1;
+  white-space: nowrap;
+  animation: typing 2s steps(24), blink 0.5s infinite step-end alternate;
+}
+
+.hero__dowload-btn:hover {
+  animation: cta 0.3s ease-in-out;
+}
+
+@media (min-width: 480px) {
+  .hero__title {
+    font-size: $font-size-xxxl;
+  }
+
+  .hero__subtitle {
+    font-size: $font-size-xxl;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__info-container {
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .hero__info-image {
+    margin-block-end: 0;
+    margin-inline-end: 40px;
+  }
+
+  .hero__text {
+    align-items: start;
+    text-align: start;
+  }
+
+  .hero__title {
+    font-size: $font-size-big;
+  }
+
+  .hero__subtitle {
+    font-size: $font-size-xxl;
+  }
+}

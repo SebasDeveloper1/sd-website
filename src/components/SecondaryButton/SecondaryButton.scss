@@ -1,0 +1,31 @@
+@import '@styles/vars';
+
+.secondary-button {
+  padding: 16px 32px;
+  font-size: $font-size-md2;
+  font-weight: $font-weight-text2;
+  color: $color-text-light-1;
+  border: none;
+  border-radius: $border-radius-size-2;
+  background-color: $color-secondary;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out,
+    left 0.15s ease-in-out;
+}
+
+.secondary-button:hover {
+  background-color: $color-secondary-opacity;
+}
+
+.secondary-button__icon {
+  margin-inline-end: 8px;
+  font-size: inherit;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .secondary-button {
+    font-size: $font-size-lg;
+  }
+}

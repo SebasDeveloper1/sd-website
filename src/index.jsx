@@ -1,8 +1,7 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.scss';
 import App from '@app/App';
+import './index.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);

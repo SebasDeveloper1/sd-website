@@ -1,0 +1,13 @@
+@import '@styles/vars';
+
+.primary-title {
+  font-family: $font-family-titles;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-title1;
+}
+
+@media (min-width: 768px) {
+  .primary-title {
+    font-size: $font-size-xxl;
+  }
+}

@@ -1,0 +1,36 @@
+@import '@styles/vars';
+
+.image-button {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  inline-size: 50px;
+  block-size: 50px;
+  font-size: $icon-size-lg;
+  color: $color-text-light-1;
+  border-radius: $border-radius-circle;
+  background-color: $color-primary;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out,
+    left 0.15s ease-in-out;
+}
+
+.icon__image-button {
+  font-size: inherit;
+  color: inherit;
+}
+
+.img__image-button {
+  inline-size: 80%;
+  block-size: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .image-button:hover {
+    background-color: $color-primary-opacity;
+  }
+}

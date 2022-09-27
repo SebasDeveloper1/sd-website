@@ -1,0 +1,33 @@
+@import '@styles/vars';
+
+.status-404 {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+  inline-size: 100vw;
+  block-size: 100vh;
+  background-image: $color-radial-gradient-1;
+}
+
+.container-404 {
+  inline-size: 90%;
+  text-align: center;
+}
+
+.container-404__image {
+  inline-size: 50%;
+  max-inline-size: 500px;
+}
+
+.status-404__title {
+  margin-block-end: 8px;
+  color: $color-text-light-1;
+}
+
+.status-404__subtitle {
+  color: $color-text-light-3;
+}
+
+.status-404__back-btn {
+  margin-block-start: 16px;
+}

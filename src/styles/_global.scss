@@ -1,0 +1,48 @@
+@import '@styles/vars';
+@import '@styles/animations';
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus-visible {
+  outline: 2px solid $color-secondary-opacity;
+  border-radius: $border-radius-size-1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $font-size-md;
+  font-family: $font-family-text;
+  font-weight: $font-weight-text1;
+  line-height: 1.5;
+  color: $color-text-light-1;
+  background-color: $color-dark-1;
+}
+
+*::-webkit-scrollbar {
+  inline-size: 10px;
+}
+*::-webkit-scrollbar-track {
+  background-color: $color-dark-2;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $color-primary;
+  border-radius: 4px;
+}
+
+h3 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-text1;
+}
+
+h4 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-text2;
+}

@@ -1,7 +1,6 @@
 import React from 'react';
-// eslint-disable-next-line import/no-unresolved
-import Prueba from '@components/prueba/Prueba';
+import { NavigationRoutes } from '@routes/Routes';
 
 export default function App() {
-  return <Prueba />;
+  return <NavigationRoutes />;
 }

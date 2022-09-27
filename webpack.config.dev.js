@@ -21,6 +21,7 @@ module.exports = {
       '@app': path.resolve(__dirname, 'src/App'),
       '@icons': path.resolve(__dirname, 'src/assets/icons'),
       '@images': path.resolve(__dirname, 'src/assets/images'),
+      '@videos': path.resolve(__dirname, 'src/assets/videos'),
       '@components': path.resolve(__dirname, 'src/components'),
       '@containers': path.resolve(__dirname, 'src/containers'),
       '@context': path.resolve(__dirname, 'src/context'),
@@ -59,7 +60,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        test: /\.(png|jpg|jpeg|gif|svg|mp4)$/,
         type: 'asset',
       },
     ],
@@ -78,8 +79,8 @@ module.exports = {
     // new CopyPlugin({
     //   patterns: [
     //     {
-    //       from: path.resolve(__dirname, 'src', 'assets'),
-    //       to: 'assets',
+    //       from: path.resolve(__dirname, 'src', 'assets/videos'),
+    //       to: 'assets/videos',
     //     },
     //   ],
     // }),
