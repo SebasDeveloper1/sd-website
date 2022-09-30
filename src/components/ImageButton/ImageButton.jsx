@@ -23,7 +23,7 @@ export function ImageButton(props) {
       // eslint-disable-next-line react/button-has-type
       type={type}
       className={
-        modifierClass ? `image-button ${modifierClass}` : `image-button`
+        modifierClass ? `image-button ${modifierClass}` : 'image-button'
       }
       title={title}
       style={style}

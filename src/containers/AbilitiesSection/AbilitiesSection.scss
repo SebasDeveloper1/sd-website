@@ -1,0 +1,45 @@
+@import 'styles/vars';
+
+.abilities {
+  inline-size: 100%;
+  block-size: auto;
+  margin-block-end: 200px;
+  padding-block-start: 40px;
+  padding-block-end: 112px;
+  background-color: $color-dark-4;
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.abilities-content {
+  inline-size: 90%;
+  block-size: auto;
+  max-inline-size: 1280px;
+  margin: 0 auto;
+}
+
+.abilities__title-section {
+  padding-block: 12px;
+  margin-block-end: 12px;
+  border-block-start: 1px solid $color-secondary;
+  color: $color-text-light-1;
+}
+
+.abilities__container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
+  justify-content: center;
+  gap: 16px;
+  inline-size: 100%;
+}
+
+@media (min-width: 480px) {
+  .abilities__container-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 45%));
+  }
+}
+
+@media (min-width: 768px) {
+  .abilities__container-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
+  }
+}

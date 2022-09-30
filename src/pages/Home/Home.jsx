@@ -1,6 +1,10 @@
 import React from 'react';
-import { Header } from '@containers/Header/Header';
-import { HeroHome } from '@containers/HeroHome/HeroHome';
+import {
+  Header,
+  HeroHome,
+  AboutSection,
+  AbilitiesSection,
+} from 'containers/indexContainers';
 import './Home.scss';
 
 export function Home() {
@@ -9,6 +13,8 @@ export function Home() {
       <Header idSection="1" />
       <main className="home">
         <HeroHome />
+        <AboutSection />
+        <AbilitiesSection />
       </main>
     </>
   );

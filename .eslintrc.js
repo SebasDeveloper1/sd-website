@@ -8,8 +8,9 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    node: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+  extends: ['plugin:react/recommended', 'airbnb'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -17,15 +18,10 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    'import/no-unresolved': RULES.OFF,
     'import/prefer-default-export': RULES.OFF,
     'react/prop-types': RULES.OFF,
-    'react/react-in-jsx-scope': RULES.OFF,
-    // 'import/no-unresolved': RULES.OFF,
-    camelcase: RULES.OFF,
-  },
-  settings: {
-    'import/resolver': {
-      foo: { someConfig: value },
-    },
+    'linebreak-style': RULES.OFF,
+    'object-curly-newline': RULES.OFF,
   },
 };

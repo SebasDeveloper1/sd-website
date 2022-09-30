@@ -1,11 +1,13 @@
 import React from 'react';
-import status404 from '@images/404_status.svg';
-import { PrimaryTitle } from '@components/PrimaryTitle/PrimaryTitle';
-import { SecondaryTitle } from '@components/SecondaryTitle/SecondaryTitle';
-import { TertiaryButton } from '@components/TertiaryButton/TertiaryButton';
+import status404 from 'images/404_status.svg';
+import {
+  PrimaryParagraph,
+  SecondaryTitle,
+  TertiaryButton,
+} from 'components/indexComponents';
 import './Status404.scss';
 
-const onClick = (e) => {
+const onClick = () => {
   window.history.back();
 };
 
@@ -18,12 +20,12 @@ export function Status404() {
           alt="Status 404"
           className="container-404__image"
         />
-        <PrimaryTitle
+        <SecondaryTitle
           textContent="😥 Hmmm! 😥"
           modifierClass="status-404__title"
         />
 
-        <SecondaryTitle
+        <PrimaryParagraph
           textContent="We did not find what you were looking for."
           modifierClass="status-404__subtitle"
         />

@@ -7,7 +7,7 @@ export function PrimaryTitle(props) {
     <h1
       id={id}
       className={
-        modifierClass ? `primary-title ${modifierClass}` : `primary-title`
+        modifierClass ? `primary-title ${modifierClass}` : 'primary-title'
       }
       style={style}
     >

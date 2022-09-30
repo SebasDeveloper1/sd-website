@@ -1,9 +1,9 @@
-@import '@styles/vars';
+@import 'styles/vars';
 
 .primary-paragraph {
   font-family: $font-family-text;
   font-size: $font-size-md;
-  font-weight: $font-weight-text1;
+  font-weight: $font-weight-text2;
 }
 
 @media (min-width: 768px) {

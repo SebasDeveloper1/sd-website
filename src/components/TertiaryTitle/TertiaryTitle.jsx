@@ -7,7 +7,7 @@ export function TertiaryTitle(props) {
     <h2
       id={id}
       className={
-        modifierClass ? `tertiary-title ${modifierClass}` : `tertiary-title`
+        modifierClass ? `tertiary-title ${modifierClass}` : 'tertiary-title'
       }
       style={style}
     >

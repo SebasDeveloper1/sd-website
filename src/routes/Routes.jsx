@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from '@containers/Layout/Layout';
-import { Home } from '@pages/Home/Home';
-import { Status404 } from '@pages/Status404/Status404';
+import { Layout } from 'containers/indexContainers';
+import { Home, Status404 } from 'pages/indexPages';
 
 export function NavigationRoutes() {
   return (

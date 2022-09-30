@@ -1,10 +1,12 @@
 import React from 'react';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { PrimaryTitle } from '@components/PrimaryTitle/PrimaryTitle';
-import { SecondaryTitle } from '@components/SecondaryTitle/SecondaryTitle';
-import { PrimaryButton } from '@components/PrimaryButton/PrimaryButton';
-import videoHero from '@videos/hero-background.mp4';
-import sebasDeveloper from '@images/sebas-developer.jpg';
+import videoHero from 'videos/hero-background.mp4';
+import sebasDeveloper from 'images/sebas-developer.jpg';
+import {
+  PrimaryTitle,
+  PrimaryButton,
+  SecondaryTitle,
+} from 'components/indexComponents';
 import './HeroHome.scss';
 
 export function HeroHome() {
@@ -16,9 +18,9 @@ export function HeroHome() {
         autoPlay
         loop
         muted
-      ></video>
+      />
 
-      <div className="hero__container">
+      <div className="hero__content">
         <div className="hero__info-container">
           <img
             className="hero__info-image"
@@ -31,8 +33,8 @@ export function HeroHome() {
               textContent="Hi I'm Sebastian Pedroza"
             />
             <SecondaryTitle
-              modifierClass="hero__subtitle"
               textContent="[ Frontend Developer ]"
+              modifierClass="hero__subtitle"
             />
             <PrimaryButton
               type="button"

@@ -4,14 +4,16 @@ import {
   faBars,
   faClose,
 } from '@fortawesome/free-solid-svg-icons';
-import logoBasic from '@images/sebas-developer.logo.png';
-import { ImageButton } from '@components/ImageButton/ImageButton';
-import { SecondaryTitle } from '@components/SecondaryTitle/SecondaryTitle';
-import { PrimaryParagraph } from '@components/PrimaryParagraph/PrimaryParagraph';
-import { PrimaryButton } from '@components/PrimaryButton/PrimaryButton';
-import { NavList } from '@components/NavList/NavList';
-import { navigationItemList } from '@utils/navigationItemList';
-import { useEvents } from '@hooks/useEvents';
+import logoBasic from 'images/sebas-developer.logo.png';
+import {
+  ImageButton,
+  NavList,
+  PrimaryButton,
+  PrimaryParagraph,
+  SecondaryTitle,
+} from 'components/indexComponents';
+import { navigationItemList } from 'utils/navigationItemList';
+import { useEvents } from 'hooks/useEvents';
 import './Header.scss';
 
 export function Header(props) {
@@ -41,10 +43,11 @@ export function Header(props) {
           />
           <div
             /* A ternary operator. If the state.openMenuHeader is true, it will add the class
-            nav__menu-container--open to the class nav__menu-container. If it is false, it will not add
+            nav__menu-container--open to the class nav__menu-container.
+            If it is false, it will not add
             anything. */
             className={`nav__menu-container ${
-              state.openMenuHeader ? `nav__menu-container--open` : ``
+              state.openMenuHeader ? 'nav__menu-container--open' : ''
             }`}
           >
             <section className="nav__info-container nav__info-container--mobile">

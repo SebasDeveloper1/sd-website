@@ -1,0 +1,51 @@
+@import 'styles/vars';
+
+.card-ability {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  inline-size: 100%;
+  block-size: auto;
+  min-block-size: 100px;
+  max-block-size: 150px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgba($color-secondary, 0.2);
+}
+
+.card-ability__img {
+  inline-size: 70px;
+  margin-inline-end: 12px;
+  object-fit: cover;
+}
+
+.card-ability__img:hover {
+  transform: translate(0, -10px) rotate(10deg);
+  animation: all 5s ease-in;
+}
+
+.ability__name {
+  font-size: $font-size-lg;
+}
+
+.ability__desc {
+  font-size: $font-size-md;
+  font-weight: $font-weight-text1;
+  color: $color-text-medium-2;
+}
+
+.card-ability--more {
+  justify-content: center;
+  border: 1px dashed $color-primary;
+}
+
+.ability__name--more {
+  font-size: $font-size-md2;
+  color: $color-text-medium-3;
+}
+
+@media (min-width: 480px) {
+  .ability__name {
+    font-size: $font-size-lg2;
+  }
+}

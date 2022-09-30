@@ -11,6 +11,7 @@ $color-light-3: #fcfcff;
 $color-dark-1: #080f28;
 $color-dark-2: #141a32;
 $color-dark-3: #181f36;
+$color-dark-4: #03091e;
 
 // Text colors
 $color-text-light-1: #ffffff;
@@ -26,6 +27,16 @@ $color-text-accent-1: #edb709;
 
 // Gradient colors
 $color-linear-gradient-1: linear-gradient(180deg, #080f285e 25%, #080f28 100%);
+$color-linear-gradient-2: linear-gradient(
+  rgba(8, 15, 40, 0.5),
+  rgba(8, 15, 40, 0.5)
+);
+$color-linear-gradient-3: linear-gradient(
+  180deg,
+  transparent 50%,
+  #03091e 100%
+);
+
 $color-radial-gradient-1: radial-gradient(
   circle,
   #007aff,

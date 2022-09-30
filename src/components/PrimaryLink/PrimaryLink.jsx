@@ -7,7 +7,7 @@ export function PrimaryLink(props) {
     <a
       href={href}
       className={
-        modifierClass ? `primary-link ${modifierClass}` : `primary-link`
+        modifierClass ? `primary-link ${modifierClass}` : 'primary-link'
       }
       style={style}
     >

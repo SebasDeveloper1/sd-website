@@ -20,7 +20,7 @@ export function StandardInput(props) {
         className={
           modifierClassLabel
             ? `label-standard-input ${modifierClassLabel}`
-            : `label-standard-input`
+            : 'label-standard-input'
         }
       >
         {textLabel}
@@ -33,7 +33,7 @@ export function StandardInput(props) {
         className={
           modifierClassInput
             ? `standard-input ${modifierClassInput}`
-            : `standard-input`
+            : 'standard-input'
         }
         style={style}
       />

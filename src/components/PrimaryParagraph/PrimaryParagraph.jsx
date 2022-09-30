@@ -9,7 +9,7 @@ export function PrimaryParagraph(props) {
       className={
         modifierClass
           ? `primary-paragraph ${modifierClass}`
-          : `primary-paragraph`
+          : 'primary-paragraph'
       }
       style={style}
     >

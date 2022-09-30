@@ -1,13 +1,13 @@
-@import '@styles/vars';
+@import 'styles/vars';
 
 .secondary-title {
   font-family: $font-family-titles;
-  font-size: $font-size-lg2;
+  font-size: $font-size-xl;
   font-weight: $font-weight-title2;
 }
 
 @media (min-width: 768px) {
   .secondary-title {
-    font-size: $font-size-lg3;
+    font-size: $font-size-xxl;
   }
 }

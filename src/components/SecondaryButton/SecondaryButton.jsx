@@ -17,7 +17,7 @@ export function SecondaryButton(props) {
       // eslint-disable-next-line react/button-has-type
       type={type}
       className={
-        modifierClass ? `secondary-button ${modifierClass}` : `secondary-button`
+        modifierClass ? `secondary-button ${modifierClass}` : 'secondary-button'
       }
       style={style}
       onClick={onClick}

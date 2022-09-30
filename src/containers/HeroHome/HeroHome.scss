@@ -1,57 +1,60 @@
-@import '@styles/vars';
+@import 'styles/vars';
 
 .hero {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   inline-size: 100%;
   block-size: calc(100vh - 60px);
   background-color: $color-dark-1;
 }
 
 .hero__background-video {
-  position: relative;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
 }
 
-.hero__container {
+.hero__content {
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  inline-size: 100%;
-  block-size: 100%;
-  background-image: $color-linear-gradient-1;
-}
-
-.hero__info-container {
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: $color-linear-gradient-1;
+}
+
+.hero__info-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  place-items: center;
+  row-gap: 20px;
+  column-gap: 0;
   inline-size: 90%;
   max-inline-size: 1280px;
 }
 
 .hero__info-image {
+  grid-row: 1 / 2;
   inline-size: 200px;
   block-size: 200px;
-  margin-block-end: 20px;
   border-radius: $border-radius-circle;
   border: 4px solid $color-primary;
   object-fit: cover;
-  object-position: center;
 }
 
 .hero__text {
+  grid-row: 2 / 3;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
+  inline-size: 100%;
   text-align: center;
 }
 
@@ -79,33 +82,30 @@
   .hero__title {
     font-size: $font-size-xxxl;
   }
-
-  .hero__subtitle {
-    font-size: $font-size-xxl;
-  }
 }
 
 @media (min-width: 768px) {
   .hero__info-container {
-    flex-direction: row;
-    justify-content: start;
+    grid-template-columns: auto 1fr;
+    row-gap: 0;
+    column-gap: 40px;
   }
 
   .hero__info-image {
-    margin-block-end: 0;
-    margin-inline-end: 40px;
+    grid-row: none;
+    grid-column: 1 / 2;
+    inline-size: 240px;
+    block-size: 240px;
   }
 
   .hero__text {
+    grid-row: none;
+    grid-column: 2 / 3;
     align-items: start;
     text-align: start;
   }
 
   .hero__title {
     font-size: $font-size-big;
-  }
-
-  .hero__subtitle {
-    font-size: $font-size-xxl;
   }
 }

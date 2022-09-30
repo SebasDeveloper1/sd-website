@@ -17,7 +17,7 @@ export function TertiaryButton(props) {
       // eslint-disable-next-line react/button-has-type
       type={type}
       className={
-        modifierClass ? `tertiary-button ${modifierClass}` : `tertiary-button`
+        modifierClass ? `tertiary-button ${modifierClass}` : 'tertiary-button'
       }
       style={style}
       onClick={onClick}

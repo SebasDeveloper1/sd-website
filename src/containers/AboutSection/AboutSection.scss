@@ -1,0 +1,57 @@
+@import 'styles/vars';
+
+.about {
+  inline-size: 100%;
+  block-size: auto;
+  margin-block-start: 40px;
+  background-image: $color-linear-gradient-2, url(images/background-2.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  inline-size: 90%;
+  max-inline-size: 1280px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.about__img {
+  inline-size: 100%;
+  max-inline-size: 500px;
+  object-fit: cover;
+}
+
+.about-text-container {
+  inline-size: 100%;
+  text-align: start;
+}
+
+.about__title {
+  margin-block-end: 12px;
+  color: $color-text-light-1;
+}
+
+.about__descr {
+  color: $color-text-light-2;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    padding: 2%;
+  }
+
+  .about__img {
+    inline-size: 45%;
+  }
+
+  .about-text-container {
+    inline-size: 45%;
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { PrimaryLink } from '@components/PrimaryLink/PrimaryLink';
+import { PrimaryLink } from 'components/PrimaryLink/PrimaryLink';
 import './NavList.scss';
 
 export function NavList(props) {
@@ -13,7 +13,7 @@ export function NavList(props) {
   return (
     <ul
       className={
-        modifierClassList ? `nav__list ${modifierClassList}` : `nav__list`
+        modifierClassList ? `nav__list ${modifierClassList}` : 'nav__list'
       }
     >
       {Object.entries(itemsList).map(([itemId, infoItem]) => (

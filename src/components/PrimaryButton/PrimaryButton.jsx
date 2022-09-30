@@ -17,7 +17,7 @@ export function PrimaryButton(props) {
       // eslint-disable-next-line react/button-has-type
       type={type}
       className={
-        modifierClass ? `primary-button ${modifierClass}` : `primary-button`
+        modifierClass ? `primary-button ${modifierClass}` : 'primary-button'
       }
       style={style}
       onClick={onClick}

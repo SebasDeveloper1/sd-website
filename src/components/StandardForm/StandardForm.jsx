@@ -16,7 +16,7 @@ export function StandardForm({
       onSubmit={onSubmit}
       action="/"
       className={
-        modifierClass ? `standard-form ${modifierClass}` : `standard-form`
+        modifierClass ? `standard-form ${modifierClass}` : 'standard-form'
       }
       style={style}
     >

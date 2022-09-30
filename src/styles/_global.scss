@@ -1,5 +1,5 @@
-@import '@styles/vars';
-@import '@styles/animations';
+@import 'styles/vars';
+@import 'styles/animations';
 
 /* General */
 * {
@@ -35,14 +35,4 @@ body {
 *::-webkit-scrollbar-thumb {
   background-color: $color-primary;
   border-radius: 4px;
-}
-
-h3 {
-  font-size: $font-size-lg;
-  font-weight: $font-weight-text1;
-}
-
-h4 {
-  font-size: $font-size-lg;
-  font-weight: $font-weight-text2;
 }
