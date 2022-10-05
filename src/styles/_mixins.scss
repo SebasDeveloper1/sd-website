@@ -1,0 +1,11 @@
+@mixin timeline-point($top, $left, $background, $color-border) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  inline-size: 20px;
+  block-size: 20px;
+  border: 2px solid $color-border;
+  border-radius: 50%;
+  background-color: $background;
+  content: '';
+}

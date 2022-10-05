@@ -1,0 +1,81 @@
+@import 'styles/vars';
+
+.card-project-container {
+  inline-size: 100%;
+  block-size: 220px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+  overflow: hidden;
+}
+
+.card-project-container:focus {
+  border-radius: $border-radius-size-1;
+  outline: 2px solid $color-secondary-opacity;
+}
+
+.card-project {
+  position: relative;
+  inline-size: 100%;
+  block-size: 100%;
+  border: none;
+  background: transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-project__img {
+  inline-size: 100%;
+  block-size: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project-info-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  block-size: 100%;
+  padding: 12px;
+  background-color: rgba($color-dark-4, 0.9);
+}
+
+.project__name {
+  inline-size: 100%;
+  margin-block-end: 12px;
+  font-size: $font-size-lg2;
+  color: $color-text-light-3;
+}
+
+.project__tools {
+  inline-size: 100%;
+  margin-block-end: 12px;
+  font-size: $font-size-sm;
+  color: $color-text-accent-1;
+}
+
+.project__desc {
+  display: -webkit-box;
+  inline-size: 100%;
+  color: $color-text-medium-1;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+@media (min-width: 768px) {
+  .project-info-container {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .project-info-container:hover {
+    opacity: 1;
+  }
+}

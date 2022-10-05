@@ -1,7 +1,19 @@
 import { Layout } from 'containers/Layout/Layout';
+import { GenericList } from 'containers/GenericList/GenericList';
 import { Header } from 'containers/Header/Header';
 import { HeroHome } from 'containers/HeroHome/HeroHome';
 import { AboutSection } from 'containers/AboutSection/AboutSection';
 import { AbilitiesSection } from 'containers/AbilitiesSection/AbilitiesSection';
+import { ProjectsSection } from 'containers/ProjectsSection/ProjectsSection';
+import { Modal } from 'containers/Modal/Modal';
 
-export { Layout, Header, HeroHome, AboutSection, AbilitiesSection };
+export {
+  Layout,
+  GenericList,
+  Header,
+  HeroHome,
+  AboutSection,
+  AbilitiesSection,
+  ProjectsSection,
+  Modal,
+};

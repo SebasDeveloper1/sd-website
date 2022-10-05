@@ -27,9 +27,9 @@
 }
 
 .nav__list-link--active {
+  border-radius: $border-radius-size-1;
   color: $color-text-light-1;
   background-color: $color-primary-opacity;
-  border-radius: $border-radius-size-1;
 }
 
 @media (min-width: 768px) {
@@ -45,8 +45,8 @@
   }
 
   .nav__list-link--active {
-    background: none;
-    border-radius: 0;
     border-bottom: 2px solid $color-primary;
+    border-radius: 0;
+    background: none;
   }
 }

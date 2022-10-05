@@ -3,14 +3,14 @@
 
 /* General */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 *:focus-visible {
-  outline: 2px solid $color-secondary-opacity;
   border-radius: $border-radius-size-1;
+  outline: 2px solid $color-secondary-opacity;
 }
 
 html {
@@ -18,12 +18,16 @@ html {
 }
 
 body {
-  font-size: $font-size-md;
   font-family: $font-family-text;
+  font-size: $font-size-md;
   font-weight: $font-weight-text1;
-  line-height: 1.5;
   color: $color-text-light-1;
+  line-height: 1.5;
   background-color: $color-dark-1;
+}
+
+button {
+  color: $color-text-light-1;
 }
 
 *::-webkit-scrollbar {
@@ -33,6 +37,6 @@ body {
   background-color: $color-dark-2;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: $color-primary;
   border-radius: 4px;
+  background-color: $color-primary;
 }

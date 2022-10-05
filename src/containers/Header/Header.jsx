@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   faUserCircle,
   faBars,
@@ -13,14 +13,12 @@ import {
   SecondaryTitle,
 } from 'components/indexComponents';
 import { navigationItemList } from 'utils/navigationItemList';
-import { useEvents } from 'hooks/useEvents';
+import { EventContext } from 'context/EventContext';
 import './Header.scss';
 
 export function Header(props) {
   const { idSection } = props;
-
-  /* Destructuring the state and handleHeaderMenu from the useEvents hook. */
-  const { state, handleHeaderMenu } = useEvents();
+  const { state, handleHeaderMenu } = useContext(EventContext);
 
   return (
     <header className="header">
@@ -30,7 +28,7 @@ export function Header(props) {
             <img
               className="nav__logo-img"
               src={logoBasic}
-              alt="Koi Store Logo"
+              alt="@SebasDeveloper Logo"
             />
           </a>
           <ImageButton
@@ -72,7 +70,7 @@ export function Header(props) {
               </div>
               <PrimaryButton
                 type="button"
-                textButton="Log up"
+                textButton="Contact me"
                 modifierClass="nav__data-btn"
               />
             </section>

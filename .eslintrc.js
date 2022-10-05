@@ -23,5 +23,6 @@ module.exports = {
     'react/prop-types': RULES.OFF,
     'linebreak-style': RULES.OFF,
     'object-curly-newline': RULES.OFF,
+    'comma-dangle': RULES.OFF,
   },
 };

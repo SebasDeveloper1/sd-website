@@ -4,7 +4,7 @@ import './TertiaryTitle.scss';
 export function TertiaryTitle(props) {
   const { id, textContent, modifierClass, style } = props;
   return (
-    <h2
+    <h3
       id={id}
       className={
         modifierClass ? `tertiary-title ${modifierClass}` : 'tertiary-title'
@@ -12,6 +12,6 @@ export function TertiaryTitle(props) {
       style={style}
     >
       {textContent}
-    </h2>
+    </h3>
   );
 }

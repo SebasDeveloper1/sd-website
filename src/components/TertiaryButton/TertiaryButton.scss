@@ -2,12 +2,12 @@
 
 .tertiary-button {
   padding: 16px 32px;
+  border: none;
+  border-radius: $border-radius-size-2;
   font-size: $font-size-md2;
   font-weight: $font-weight-text2;
   color: $color-text-medium-3;
   background-color: $color-light-1;
-  border: none;
-  border-radius: $border-radius-size-2;
   outline: none;
   cursor: pointer;
   transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out,

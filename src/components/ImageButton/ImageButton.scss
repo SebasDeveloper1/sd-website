@@ -3,14 +3,14 @@
 .image-button {
   display: grid;
   place-items: center;
-  overflow: hidden;
   inline-size: 50px;
   block-size: 50px;
+  border: none;
+  border-radius: $border-radius-circle;
   font-size: $icon-size-lg;
   color: $color-text-light-1;
-  border-radius: $border-radius-circle;
   background-color: $color-primary;
-  border: none;
+  overflow: hidden;
   outline: none;
   cursor: pointer;
   transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out,

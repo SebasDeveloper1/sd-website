@@ -2,19 +2,19 @@
 
 .label-standard-input {
   display: inline-block;
+  margin-block-end: 4px;
   font-size: $font-size-md;
   font-weight: bold;
-  margin-block-end: 4px;
 }
 
 .standard-input {
   padding: 12.5px 0 12.5px 16px;
-  font-size: $font-size-md;
-  font-weight: $font-weight-text2;
-  color: $color-text-medium-2;
   border: none;
   border: 1px solid $color-secondary-opacity;
   border-radius: $border-radius-size-1;
+  font-size: $font-size-md;
+  font-weight: $font-weight-text2;
+  color: $color-text-medium-2;
   background-color: $color-dark-2;
 }
 

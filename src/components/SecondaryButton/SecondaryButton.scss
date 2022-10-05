@@ -2,11 +2,11 @@
 
 .secondary-button {
   padding: 16px 32px;
+  border: none;
+  border-radius: $border-radius-size-2;
   font-size: $font-size-md2;
   font-weight: $font-weight-text2;
   color: $color-text-light-1;
-  border: none;
-  border-radius: $border-radius-size-2;
   background-color: $color-secondary;
   outline: none;
   cursor: pointer;
@@ -15,7 +15,7 @@
 }
 
 .secondary-button:hover {
-  background-color: $color-secondary-opacity;
+  background-color: $color-primary;
 }
 
 .secondary-button__icon {

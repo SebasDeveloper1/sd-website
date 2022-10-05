@@ -1,19 +1,19 @@
 import React from 'react';
-import imagePrueba from 'images/js-logo-color.svg';
+import imagePrueba from 'images/react-logo.svg';
 import { PrimaryParagraph, TertiaryTitle } from 'components/indexComponents';
 import './CardAbility.scss';
 
 export function CardAbility() {
   return (
-    <article className="card-ability">
+    <li className="card-ability">
       <img className="card-ability__img" src={imagePrueba} alt="Logo JS" />
       <div className="ability-info-container">
-        <TertiaryTitle textContent="Javascript" modifierClass="ability__name" />
+        <TertiaryTitle textContent="React JS" modifierClass="ability__name" />
         <PrimaryParagraph
-          textContent="Programming language for the web"
+          textContent="Distributed version control system"
           modifierClass="ability__desc"
         />
       </div>
-    </article>
+    </li>
   );
 }

@@ -1,24 +1,36 @@
 @import 'styles/vars';
+@import 'styles/mixins';
 
 .about {
   inline-size: 100%;
   block-size: auto;
   margin-block-start: 40px;
-  background-image: $color-linear-gradient-2, url(images/background-2.svg);
+  background-size: cover;
   background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
+  background-image: $color-linear-gradient-2, url(images/background-2.svg);
 }
 
 .about-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   inline-size: 90%;
-  max-inline-size: 1280px;
+  max-inline-size: 1366px;
+  padding: 24px;
   margin: 0 auto;
-  padding: 5%;
+  border-inline-start: 1px solid $color-text-medium-1;
+}
+
+.about-content::after {
+  @include timeline-point(
+    $top: 50%,
+    $left: -12px,
+    $background: #053675,
+    $color-border: $color-text-medium-1
+  );
+  transform: translateY(-10px);
 }
 
 .about__img {
@@ -42,6 +54,10 @@
 }
 
 @media (min-width: 768px) {
+  .about {
+    margin-block-start: 60px;
+  }
+
   .about-content {
     flex-direction: row;
     padding: 2%;

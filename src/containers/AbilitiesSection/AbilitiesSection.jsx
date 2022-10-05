@@ -1,8 +1,9 @@
 import React from 'react';
+import { GenericList } from 'containers/indexContainers';
 import {
-  CardAbility,
-  PrimaryParagraph,
   SecondaryTitle,
+  CardAbility,
+  CardMore,
 } from 'components/indexComponents';
 import './AbilitiesSection.scss';
 
@@ -11,26 +12,21 @@ export function AbilitiesSection() {
     <section className="abilities">
       <div className="abilities-content">
         <SecondaryTitle
-          textContent="My abilities..."
+          textContent="Languages and Tools..."
           modifierClass="abilities__title-section"
         />
-
-        <div className="abilities__container-cards">
+        <GenericList>
           <CardAbility />
           <CardAbility />
           <CardAbility />
           <CardAbility />
           <CardAbility />
           <CardAbility />
-          <CardAbility />
-          <CardAbility />
-          <article className="card-ability card-ability--more">
-            <PrimaryParagraph
-              textContent="🚀 Improving daily 😊"
-              modifierClass="ability__desc ability__name--more"
-            />
-          </article>
-        </div>
+          <CardMore
+            textContent="🚀 Improving daily 😊"
+            modifierClass="abilities__card-more"
+          />
+        </GenericList>
       </div>
     </section>
   );

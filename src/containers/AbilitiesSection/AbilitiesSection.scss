@@ -1,45 +1,41 @@
 @import 'styles/vars';
+@import 'styles/mixins';
 
 .abilities {
   inline-size: 100%;
   block-size: auto;
-  margin-block-end: 200px;
-  padding-block-start: 40px;
-  padding-block-end: 112px;
   background-color: $color-dark-4;
-  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
 }
 
 .abilities-content {
+  position: relative;
   inline-size: 90%;
+  max-inline-size: 1366px;
   block-size: auto;
-  max-inline-size: 1280px;
+  padding-inline-start: 24px;
+  padding-block-start: 48px;
+  padding-block-end: 80px;
   margin: 0 auto;
+  border-inline-start: 1px solid $color-primary-opacity;
+}
+
+.abilities-content::after {
+  @include timeline-point(
+    $top: 86px,
+    $left: -12px,
+    $background: $color-dark-4,
+    $color-border: $color-primary-opacity
+  );
 }
 
 .abilities__title-section {
-  padding-block: 12px;
-  margin-block-end: 12px;
-  border-block-start: 1px solid $color-secondary;
+  padding: 24px 0 60px;
+  border-block-start: 1px solid $color-dark-1;
   color: $color-text-light-1;
 }
 
-.abilities__container-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
-  justify-content: center;
-  gap: 16px;
-  inline-size: 100%;
-}
-
-@media (min-width: 480px) {
-  .abilities__container-cards {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 45%));
-  }
-}
-
-@media (min-width: 768px) {
-  .abilities__container-cards {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
-  }
+.abilities__card-more {
+  min-block-size: 100px;
+  max-block-size: 150px;
 }

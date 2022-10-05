@@ -2,12 +2,12 @@
 
 .tertiary-title {
   font-family: $font-family-titles;
-  font-size: $font-size-lg2;
+  font-size: $font-size-lg3;
   font-weight: $font-weight-title2;
 }
 
 @media (min-width: 768px) {
   .tertiary-title {
-    font-size: $font-size-lg3;
+    font-size: $font-size-xl;
   }
 }
