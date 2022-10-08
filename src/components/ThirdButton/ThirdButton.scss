@@ -1,0 +1,32 @@
+@import 'styles/vars';
+
+.third-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: $border-radius-size-2;
+  font-size: $button1-sm;
+  font-weight: $font-weight-text2;
+  color: $color-text-medium-3;
+  background-color: $color-light-1;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out,
+    left 0.15s ease-in-out;
+}
+
+.third-button:hover {
+  color: $color-text-light-1;
+  background-color: $color-primary-opacity;
+}
+
+.third-button__icon {
+  margin-inline-end: 8px;
+  font-size: inherit;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .third-button {
+    font-size: $button1-lg;
+  }
+}

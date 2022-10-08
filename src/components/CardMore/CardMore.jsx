@@ -1,5 +1,5 @@
 import React from 'react';
-import { PrimaryParagraph } from 'components/indexComponents';
+import { FirstParagraph } from 'components/indexComponents';
 import './CardMore.scss';
 
 export function CardMore(props) {
@@ -8,7 +8,7 @@ export function CardMore(props) {
     <article
       className={modifierClass ? `card-more ${modifierClass}` : 'card-more'}
     >
-      <PrimaryParagraph
+      <FirstParagraph
         textContent={textContent}
         modifierClass="card-more__name"
       />

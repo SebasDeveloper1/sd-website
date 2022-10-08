@@ -1,0 +1,35 @@
+@import 'styles/vars';
+@import 'styles/mixins';
+
+.contact {
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.contact-content {
+  position: relative;
+  inline-size: 90%;
+  max-inline-size: 1366px;
+  block-size: auto;
+  padding-inline-start: 24px;
+  padding-block-start: 48px;
+  padding-block-end: 80px;
+  margin: 0 auto;
+  border-inline-start: 2px solid $color-secondary-opacity;
+}
+
+.contact-content::after {
+  @include timeline-point(
+    $top: 86px,
+    $left: -13px,
+    $background: $color-dark-1,
+    $color-border: $color-secondary-opacity
+  );
+}
+
+.contact__title-section {
+  grid-row: 1 / 2;
+  padding: 24px 0 60px;
+  border-block-start: 1px solid $color-secondary;
+  color: $color-text-light-1;
+}

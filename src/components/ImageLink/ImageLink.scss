@@ -1,0 +1,26 @@
+@import 'styles/vars';
+
+.image-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 90%;
+  block-size: 100px;
+  overflow: hidden;
+}
+
+.image-link:hover {
+  animation: cta 0.3s ease-in-out;
+}
+
+.image-link__link {
+  inline-size: auto;
+  block-size: 100%;
+  text-decoration: none;
+}
+
+.image-link__img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,13 @@
+@import 'styles/vars';
+
+.third-title {
+  font-family: $font-family-titles;
+  font-size: $headline3-sm;
+  font-weight: $font-weight-title2;
+}
+
+@media (min-width: 768px) {
+  .third-title {
+    font-size: $headline3-lg;
+  }
+}

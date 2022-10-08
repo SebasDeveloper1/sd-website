@@ -1,0 +1,13 @@
+@import 'styles/vars';
+
+.second-title {
+  font-family: $font-family-titles;
+  font-size: $headline2-sm;
+  font-weight: $font-weight-title2;
+}
+
+@media (min-width: 768px) {
+  .second-title {
+    font-size: $headline2-lg;
+  }
+}

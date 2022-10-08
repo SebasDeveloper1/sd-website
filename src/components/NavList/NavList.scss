@@ -16,7 +16,7 @@
   display: inline-block;
   inline-size: 100%;
   padding-inline: 8px;
-  font-size: $font-size-md2;
+  font-size: $p1-sm;
   font-weight: $font-weight-text1;
   color: $color-text-medium-1;
   text-decoration: none;
@@ -42,6 +42,10 @@
 
   .nav__list-item {
     margin: 0;
+  }
+
+  .nav__list-link {
+    font-size: $p1-lg;
   }
 
   .nav__list-link--active {

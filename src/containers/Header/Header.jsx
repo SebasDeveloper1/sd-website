@@ -1,16 +1,13 @@
 import React, { useContext } from 'react';
-import {
-  faUserCircle,
-  faBars,
-  faClose,
-} from '@fortawesome/free-solid-svg-icons';
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import logoBasic from 'images/sebas-developer.logo.png';
+import userImg from 'images/sebas-developer.jpg';
 import {
   ImageButton,
   NavList,
-  PrimaryButton,
-  PrimaryParagraph,
-  SecondaryTitle,
+  FirstButton,
+  FirstParagraph,
+  ThirdTitle,
 } from 'components/indexComponents';
 import { navigationItemList } from 'utils/navigationItemList';
 import { EventContext } from 'context/EventContext';
@@ -50,32 +47,26 @@ export function Header(props) {
           >
             <section className="nav__info-container nav__info-container--mobile">
               <div className="nav__info-data-container">
-                <ImageButton
-                  type="button"
-                  modifierClass="nav__info-image"
-                  typeIcon="FontAwesomeIcon"
-                  srcIcon={faUserCircle}
-                  altIcon="User"
+                <img
+                  src={userImg}
+                  alt="Sebas Developer"
+                  className="nav__info-image"
                 />
                 <div className="nav__info-data-text">
-                  <SecondaryTitle
-                    textContent="Jessica Casas"
+                  <FirstParagraph
+                    textContent="@SebasDeveloper"
                     modifierClass="nav__data-title"
-                  />
-                  <PrimaryParagraph
-                    textContent="koistore@example.com"
-                    modifierClass="nav__data-subtitle"
                   />
                 </div>
               </div>
-              <PrimaryButton
+              <FirstButton
                 type="button"
                 textButton="Contact me"
                 modifierClass="nav__data-btn"
               />
             </section>
 
-            <SecondaryTitle
+            <ThirdTitle
               textContent="Categories..."
               modifierClass="nav__categories-title"
             />

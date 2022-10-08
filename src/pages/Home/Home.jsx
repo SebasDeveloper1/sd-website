@@ -5,6 +5,8 @@ import {
   AboutSection,
   AbilitiesSection,
   ProjectsSection,
+  PreparationSection,
+  ContactSection,
   Modal,
 } from 'containers/indexContainers';
 import { EventContext } from 'context/EventContext';
@@ -20,6 +22,8 @@ export function Home() {
         <AboutSection />
         <AbilitiesSection />
         <ProjectsSection />
+        <PreparationSection />
+        <ContactSection />
       </main>
       <Modal
         modifierClass={

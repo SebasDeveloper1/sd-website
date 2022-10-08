@@ -10,14 +10,12 @@
   border-radius: 8px;
   -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
-  font-size: $font-size-lg;
-  color: $color-text-medium-3;
-  background-color: rgba($color-secondary, 0.2);
+  color: $color-text-medium-1;
+  background-color: rgba($color-secondary, 0.02);
 }
 
 .card-more__name {
   inline-size: 100%;
-  font-size: inherit;
   color: inherit;
   text-align: center;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
-import projectImage from 'images/project-pruebas.png';
-import { TertiaryTitle, PrimaryParagraph } from 'components/indexComponents';
+import { ThirdTitle, FirstParagraph } from 'components/indexComponents';
 import './CardProjects.scss';
 
 export function CardProjects(props) {
@@ -15,16 +14,19 @@ export function CardProjects(props) {
         onClick={onClick}
         onKeyDown={onKeyDown}
       >
-        <img className="card-project__img" src={projectImage} alt="" />
+        <img
+          className="card-project__img"
+          src="https://leonidasesteban.com/_next/image?url=https%3A%2F%2Fd1ngjctyujvjjy.cloudfront.net%2Fprojects%2Fcovers%2F2a0065e7-38d4-43d5-88d4-a1ee3b37cdb9%2FThumbnail-vocabulario.dev.png&w=1920&q=75"
+          alt=""
+        />
         <div className="project-info-container">
-          <TertiaryTitle textContent="React JS" modifierClass="project__name" />
-          <PrimaryParagraph
-            textContent="JavaScript, React, Css, Html, Git"
-            modifierClass="project__tools"
+          <ThirdTitle
+            textContent="Aplicacion AppDopta"
+            modifierClass="project__name"
           />
-          <PrimaryParagraph
-            textContent="Lorem ipsum dolor sit, amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit"
-            modifierClass="project__desc"
+          <FirstParagraph
+            textContent="JavaScript, React, Css, Html, Git, Github, Sass"
+            modifierClass="project__tools"
           />
         </div>
       </button>

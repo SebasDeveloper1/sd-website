@@ -1,0 +1,13 @@
+@import 'styles/vars';
+
+.small-paragraph {
+  font-family: $font-family-text;
+  font-size: $p0-sm;
+  font-weight: $font-weight-text2;
+}
+
+@media (min-width: 768px) {
+  .small-paragraph {
+    font-size: $p0-lg;
+  }
+}

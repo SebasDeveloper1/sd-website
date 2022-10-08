@@ -2,16 +2,15 @@
 
 .card-project-container {
   inline-size: 100%;
-  block-size: 220px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+  block-size: 100%;
   overflow: hidden;
+  -webkit-transition: 420ms all;
+  transition: 420ms all;
 }
 
 .card-project-container:focus {
   border-radius: $border-radius-size-1;
-  outline: 2px solid $color-secondary-opacity;
+  outline: 3px solid $color-light-1;
 }
 
 .card-project {
@@ -19,63 +18,56 @@
   inline-size: 100%;
   block-size: 100%;
   border: none;
-  background: transparent;
-  overflow: hidden;
+  background: none;
   cursor: pointer;
 }
 
 .card-project__img {
   inline-size: 100%;
   block-size: 100%;
-  border-radius: 12px;
   object-fit: cover;
 }
 
 .project-info-container {
   position: absolute;
+  top: 0;
   left: 0;
+  right: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  inline-size: 100%;
-  block-size: 100%;
   padding: 12px;
-  background-color: rgba($color-dark-4, 0.9);
+  text-align: center;
+  background: rgba(4, 0, 30, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in 0s;
+  visibility: visible;
+  backdrop-filter: blur(8px);
+}
+
+.project-info-container:hover {
+  opacity: 1;
 }
 
 .project__name {
   inline-size: 100%;
   margin-block-end: 12px;
-  font-size: $font-size-lg2;
-  color: $color-text-light-3;
+  color: $color-text-light-1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .project__tools {
-  inline-size: 100%;
-  margin-block-end: 12px;
-  font-size: $font-size-sm;
-  color: $color-text-accent-1;
-}
-
-.project__desc {
-  display: -webkit-box;
-  inline-size: 100%;
-  color: $color-text-medium-1;
+  inline-size: auto;
+  max-inline-size: 80%;
+  padding: 8px 24px;
+  border-radius: 20px;
+  color: $color-text-light-1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: $color-secondary;
   overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-}
-
-@media (min-width: 768px) {
-  .project-info-container {
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-
-  .project-info-container:hover {
-    opacity: 1;
-  }
 }

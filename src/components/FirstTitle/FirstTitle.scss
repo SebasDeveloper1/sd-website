@@ -1,0 +1,19 @@
+@import 'styles/vars';
+
+.first-title {
+  font-family: $font-family-titles;
+  font-size: $headline1-sm;
+  font-weight: $font-weight-title1;
+}
+
+@media (min-width: 480px) {
+  .first-title {
+    font-size: $headline1-md;
+  }
+}
+
+@media (min-width: 768px) {
+  .first-title {
+    font-size: $headline1-lg;
+  }
+}

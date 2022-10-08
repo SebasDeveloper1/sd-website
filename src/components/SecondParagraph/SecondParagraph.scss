@@ -1,0 +1,13 @@
+@import 'styles/vars';
+
+.second-paragraph {
+  font-family: $font-family-text;
+  font-size: $p2-sm;
+  font-weight: $font-weight-text2;
+}
+
+@media (min-width: 768px) {
+  .second-paragraph {
+    font-size: $p2-lg;
+  }
+}

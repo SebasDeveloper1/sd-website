@@ -3,9 +3,9 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import videoHero from 'videos/hero-background.mp4';
 import sebasDeveloper from 'images/sebas-developer.jpg';
 import {
-  PrimaryTitle,
-  PrimaryButton,
-  SecondaryTitle,
+  FirstTitle,
+  FirstButton,
+  SecondTitle,
 } from 'components/indexComponents';
 import './HeroHome.scss';
 
@@ -28,15 +28,15 @@ export function HeroHome() {
             alt="SebasDeveloper"
           />
           <div className="hero__text">
-            <PrimaryTitle
+            <FirstTitle
               modifierClass="hero__title"
               textContent="Hi I'm Sebastian Pedroza"
             />
-            <SecondaryTitle
+            <SecondTitle
               textContent="[ Frontend Developer ]"
               modifierClass="hero__subtitle"
             />
-            <PrimaryButton
+            <FirstButton
               type="button"
               modifierClass="hero__dowload-btn"
               textButton="Download CV"

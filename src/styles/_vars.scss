@@ -1,62 +1,96 @@
 /* Defining the colors for the different elements. */
 
 // General colors
-$color-primary: #007aff;
+$color-primary: #007bff;
 $color-primary-opacity: #007affd8;
-$color-secondary: #3d4f91;
-$color-secondary-opacity: #3d4f91d8;
+$color-secondary: #692eff;
+$color-secondary-opacity: #6a2effd8;
 $color-light-1: #ffffff;
-$color-light-2: #efefef;
-$color-light-3: #ececec;
-$color-dark-1: #080f28;
-$color-dark-2: #141a32;
-$color-dark-3: #181f36;
-$color-dark-4: #03091e;
+$color-light-2: #dffbff;
+$color-light-3: #e8e7e4;
+$color-dark-1: #04001e;
+$color-dark-2: #1f1f3a80;
+$color-dark-3: #1f1f3a;
+$color-dark-4: #06002d;
+$color-accent-1: #10fefe;
+$color-accent-2: #ef0070;
+$color-accent-3: #fff627;
+$color-accent-4: #20ff2c;
 
 // Text colors
 $color-text-light-1: #ffffff;
-$color-text-light-2: #efefef;
-$color-text-light-3: #ececec;
+$color-text-light-2: #dffbff;
+$color-text-light-3: #e8e7e4;
 $color-text-medium-1: #8da0bc;
 $color-text-medium-2: #4f6b95;
 $color-text-medium-3: #007aff;
-$color-text-dark-1: #080f28;
-$color-text-dark-2: #141a32;
-$color-text-dark-3: #181f36;
-$color-text-accent-1: #edb709;
+$color-text-dark-1: #04001e;
+$color-text-dark-2: #1f1f3a80;
+$color-text-dark-3: #1f1f3a;
+$color-text-accent-1: #10fefe;
+$color-text-accent-2: #f00070;
+$color-text-accent-3: #fff627;
+$color-text-accent-4: #20ff2c;
+
+//Shadow colors
+$color-shadow-1: #67dbf9e6;
 
 // Gradient colors
-$color-linear-gradient-1: linear-gradient(180deg, #080f285e 25%, #080f28 100%);
+$color-linear-gradient-1: linear-gradient(
+  180deg,
+  rgba($color-dark-1, 0.3) 25%,
+  rgba($color-dark-1, 1) 100%
+);
+
 $color-linear-gradient-2: linear-gradient(
-  rgba(8, 15, 40, 0.6),
-  rgba(8, 15, 40, 0.6)
+  225.58deg,
+  rgba(9, 5, 255, 1) -14.51%,
+  rgba(250, 5, 124, 1) 157.11%
+);
+
+$color-linear-gradient-3: linear-gradient(
+  180deg,
+  rgba($color-dark-4, 0.1) 0%,
+  rgba($color-dark-4, 1) 100%
+);
+
+$color-linear-gradient-4: linear-gradient(
+  218.99deg,
+  rgba(63, 105, 255, 0.5) -79.82%,
+  $color-dark-4 60.25%
 );
 
 $color-radial-gradient-1: radial-gradient(
   circle,
-  #007aff,
-  #105dc4,
-  #12418b,
-  #0f2857,
-  #080f28
+  rgba(16, 254, 254, 0.5046393557422969) 0%,
+  rgba(6, 0, 45, 1) 50%
 );
 
 /* Defining the font family for the different elements. */
-$font-family-titles: 'Dosis', sans-serif;
-$font-family-text: 'Red Hat Display', sans-serif;
+$font-family-titles: 'Dosis', system-ui, sans-serif;
+$font-family-text: Rubik, system-ui, sans-serif;
 
 /* Defining the font sizes for the different elements. */
-$font-size-vs: 1.2rem;
-$font-size-sm: 1.4rem;
-$font-size-md: 1.6rem;
-$font-size-md2: 1.7rem;
-$font-size-lg: 2rem;
-$font-size-lg2: 2.4rem;
-$font-size-lg3: 2.8rem;
-$font-size-xl: 3.2rem;
-$font-size-xxl: 4rem;
-$font-size-xxxl: 4.8rem;
-$font-size-big: 6rem;
+$headline1-sm: 4rem;
+$headline1-md: 4.8rem;
+$headline1-lg: 6rem;
+$headline2-sm: 3.2rem;
+$headline2-lg: 4rem;
+$headline3-sm: 2.4rem;
+$headline3-lg: 2.8rem;
+$headline4-sm: 1.7rem;
+$headline4-lg: 2rem;
+$headline5-sm: 1.4rem;
+$headline5-lg: 1.6rem;
+$headline6-sm: 1.2rem;
+$headline6-lg: 1.4rem;
+
+$p0-sm: 1.2rem;
+$p0-lg: 1.4rem;
+$p1-sm: 1.6rem;
+$p1-lg: 1.7rem;
+$p2-sm: 2rem;
+$p2-lg: 2.4rem;
 
 /* Defining the font weight for the different elements. */
 $font-weight-title1: 800;
@@ -75,3 +109,73 @@ $icon-size-sm: 14px;
 $icon-size-md: 20px;
 $icon-size-lg: 24px;
 $icon-size-lg2: 32px;
+
+$button1-sm: 1.6rem;
+$button1-lg: 1.8rem;
+
+//     $headerBlockSize: 72px;
+//     $secondary80: #6876FF;
+//     $textField: #444;
+//     $basePrimary: #ffffff;
+//     $baseSecondary: #212429;
+//     $baseTertiary: #f9f8ff;
+//     $primary: #0803D2;
+//     $primary90: #0704FE;
+//     $primary80: #373DFE;
+//     $primary70: #6876FF;
+//     $primary60: #A9BDFF;
+//     $primaryHover: #0902A6;
+//     $primaryActive: #09017A;
+//     $primaryDisabled: #A9BDFF;
+//     $secondary: #EF0070;
+//     $secondaryDisabled: #E6BEDE;
+//     $secondaryHover: #FA057C;
+//     $secondaryActive: #AA0351;
+//     $secondaryGradient: linear-gradient(218.99deg,#3F69FF -19.82%,#EF0070 100.25%);
+//     $background: #ffffff;
+//     $backgroundOpaque: hsl(0 0% 100% / 0.83);
+//     $secondaryContrast: #706c61;
+//     $primaryLight: #1712e1;
+//     $primaryDark: #be;
+//     $darkLight: #d1015;
+//     $gray: #AEB7C1;
+//     $lightGray: #f9f8ff;
+//     $landingPrimary: linear-gradient(to right,rgba(103,219,249,0.9) 30.72%,rgba(49,56,209,0.9) 100.8%);
+//     $error: #AC0016;
+//     $success: #11d40e;
+//     $lightText: #212429;
+//     $black: #212429;
+//     $black50: #8B8D8D;
+//     $white: white;
+//     $white80: #4B4D50;
+//     $projects-color: #DFFBFF;
+//     $turquoise: #3f69ff;
+//     $invertedTurquoise: #10FEFE;
+//     $baseNeutral: #1F1F3A;
+//     $baseFullContrast: #1F1F3A;
+//     $textOpaque: #3B3F56;
+//     $paragraphColor: #3B3F56;
+//     $secondary70: #6876FF;
+//     $secondary140: #0A004E;
+//     $neutral: #3B3F56;
+//     $neutralText: #1F1F3A;
+//     $neutral10: #DFFBFF;
+//     $neutral20: #C4DCE3;
+//     $neutral30: #A8BCC7;
+//     $neutral40: #8D9DAB;
+//     $neutral50: #E8E7E4;
+//     $neutral60: #D5D4D0;
+//     $neutral70: #727E8F;
+//     $neutral80: #565E72;
+//     $neutral90: #3B3F56;
+//     $neutral100: #1F1F3A;
+//     $neutral110: #04001E;
+//     $sky: #DFFBFF;
+//     $darkBlue: #06002D;
+//     $sky-inverted: #04001E;
+//     $skyGradient: linear-gradient(180deg,#DFFBFF 35.7%,#DFFBFF 57.28%);
+//     $lightBlue: #10FEFE;
+//     $talentlyBlue: #3A00E0;
+//     $talentlyRed: #FF4343;
+//     $talentlyWhite: #f9f9fb;
+//     $talentlyPurple: #2A1E4F;

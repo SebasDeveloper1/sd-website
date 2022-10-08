@@ -1,12 +1,18 @@
-// Single components
-import { PrimaryTitle } from 'components/PrimaryTitle/PrimaryTitle';
-import { SecondaryTitle } from 'components/SecondaryTitle/SecondaryTitle';
-import { TertiaryTitle } from 'components/TertiaryTitle/TertiaryTitle';
-import { PrimaryParagraph } from 'components/PrimaryParagraph/PrimaryParagraph';
-import { PrimaryLink } from 'components/PrimaryLink/PrimaryLink';
-import { PrimaryButton } from 'components/PrimaryButton/PrimaryButton';
-import { SecondaryButton } from 'components/SecondaryButton/SecondaryButton';
-import { TertiaryButton } from 'components/TertiaryButton/TertiaryButton';
+// Single componentssixth
+import { FirstTitle } from 'components/FirstTitle/FirstTitle';
+import { SecondTitle } from 'components/SecondTitle/SecondTitle';
+import { ThirdTitle } from 'components/ThirdTitle/ThirdTitle';
+import { FourthTitle } from 'components/FourthTitle/FourthTitle';
+import { FifthTitle } from 'components/FifthTitle/FifthTitle';
+import { SixthTitle } from 'components/SixthTitle/SixthTitle';
+import { FirstParagraph } from 'components/FirstParagraph/FirstParagraph';
+import { SecondParagraph } from 'components/SecondParagraph/SecondParagraph';
+import { SmallParagraph } from 'components/SmallParagraph/SmallParagraph';
+import { FirstLink } from 'components/FirstLink/FirstLink';
+import { ImageLink } from 'components/ImageLink/ImageLink';
+import { FirstButton } from 'components/FirstButton/FirstButton';
+import { SecondButton } from 'components/SecondButton/SecondButton';
+import { ThirdButton } from 'components/ThirdButton/ThirdButton';
 import { ImageButton } from 'components/ImageButton/ImageButton';
 import { StandardInput } from 'components/StandardInput/StandardInput';
 import { StandardForm } from 'components/StandardForm/StandardForm';
@@ -17,14 +23,20 @@ import { CardProjects } from 'components/CardProjects/CardProjects';
 import { CardMore } from 'components/CardMore/CardMore';
 
 export {
-  PrimaryTitle,
-  SecondaryTitle,
-  TertiaryTitle,
-  PrimaryParagraph,
-  PrimaryLink,
-  PrimaryButton,
-  SecondaryButton,
-  TertiaryButton,
+  FirstTitle,
+  SecondTitle,
+  ThirdTitle,
+  FourthTitle,
+  FifthTitle,
+  SixthTitle,
+  FirstParagraph,
+  SecondParagraph,
+  SmallParagraph,
+  FirstLink,
+  ImageLink,
+  FirstButton,
+  SecondButton,
+  ThirdButton,
   ImageButton,
   StandardInput,
   StandardForm,

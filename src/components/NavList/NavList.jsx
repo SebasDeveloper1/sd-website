@@ -1,5 +1,5 @@
 import React from 'react';
-import { PrimaryLink } from 'components/PrimaryLink/PrimaryLink';
+import { FirstLink } from 'components/FirstLink/FirstLink';
 import './NavList.scss';
 
 export function NavList(props) {
@@ -21,7 +21,7 @@ export function NavList(props) {
           className={`nav__list-item ${modifierClassItemList}`}
           key={`nav-item__${itemId}`}
         >
-          <PrimaryLink
+          <FirstLink
             href={infoItem.itemHref}
             textLink={infoItem.itemName}
             modifierClass={

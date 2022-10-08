@@ -1,5 +1,14 @@
 @import 'styles/vars';
 
+.card-ability-container {
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.card-ability-container:hover :first-child {
+  transform: scale(1.05);
+}
+
 .card-ability {
   position: relative;
   display: grid;
@@ -12,6 +21,7 @@
   border-radius: 8px;
   -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+  text-decoration: none;
   background-color: rgba($color-secondary, 0.2);
   overflow: hidden;
 }
@@ -22,7 +32,7 @@
   bottom: -20px;
   inline-size: 100px;
   block-size: 100px;
-  opacity: 0.07;
+  opacity: 0.1;
   object-fit: cover;
 }
 
@@ -31,18 +41,9 @@
 }
 
 .ability__name {
-  font-size: $font-size-lg;
   color: $color-text-accent-1;
 }
 
 .ability__desc {
-  font-size: $font-size-md;
-  font-weight: $font-weight-text1;
   color: $color-text-medium-1;
-}
-
-@media (min-width: 480px) {
-  .ability__name {
-    font-size: $font-size-lg2;
-  }
 }

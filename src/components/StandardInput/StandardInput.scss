@@ -3,7 +3,7 @@
 .label-standard-input {
   display: inline-block;
   margin-block-end: 4px;
-  font-size: $font-size-md;
+  font-size: $p1-sm;
   font-weight: bold;
 }
 
@@ -12,7 +12,7 @@
   border: none;
   border: 1px solid $color-secondary-opacity;
   border-radius: $border-radius-size-1;
-  font-size: $font-size-md;
+  font-size: $p1-sm;
   font-weight: $font-weight-text2;
   color: $color-text-medium-2;
   background-color: $color-dark-2;
@@ -25,10 +25,10 @@
 
 @media (min-width: 768px) {
   .label-standard-input {
-    font-size: $font-size-lg;
+    font-size: $p1-lg;
   }
 
   .standard-input {
-    font-size: $font-size-lg;
+    font-size: $p1-lg;
   }
 }

@@ -1,0 +1,13 @@
+@import 'styles/vars';
+
+.sixth-title {
+  font-family: $font-family-titles;
+  font-size: $headline6-sm;
+  font-weight: $font-weight-title2;
+}
+
+@media (min-width: 768px) {
+  .sixth-title {
+    font-size: $headline6-lg;
+  }
+}

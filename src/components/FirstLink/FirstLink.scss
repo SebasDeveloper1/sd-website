@@ -1,0 +1,15 @@
+@import 'styles/vars';
+
+.first-link {
+  inline-size: auto;
+  font-size: $p1-sm;
+  font-weight: $font-weight-text2;
+  color: $color-text-medium-3;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .first-link {
+    font-size: $p1-lg;
+  }
+}

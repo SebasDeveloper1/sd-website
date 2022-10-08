@@ -1,17 +1,13 @@
 import React from 'react';
 import { GenericList } from 'containers/indexContainers';
-import {
-  SecondaryTitle,
-  CardAbility,
-  CardMore,
-} from 'components/indexComponents';
+import { SecondTitle, CardAbility, CardMore } from 'components/indexComponents';
 import './AbilitiesSection.scss';
 
 export function AbilitiesSection() {
   return (
     <section className="abilities">
       <div className="abilities-content">
-        <SecondaryTitle
+        <SecondTitle
           textContent="Languages and Tools..."
           modifierClass="abilities__title-section"
         />

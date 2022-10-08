@@ -17,13 +17,13 @@
   padding-block-start: 48px;
   padding-block-end: 80px;
   margin: 0 auto;
-  border-inline-start: 1px solid $color-primary-opacity;
+  border-inline-start: 2px solid $color-primary-opacity;
 }
 
 .abilities-content::after {
   @include timeline-point(
     $top: 86px,
-    $left: -12px,
+    $left: -13px,
     $background: $color-dark-4,
     $color-border: $color-primary-opacity
   );
@@ -31,7 +31,7 @@
 
 .abilities__title-section {
   padding: 24px 0 60px;
-  border-block-start: 1px solid $color-dark-1;
+  border-block-start: 1px solid $color-secondary;
   color: $color-text-light-1;
 }
 
