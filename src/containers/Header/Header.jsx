@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import logoBasic from 'images/sebas-developer.logo.png';
 import userImg from 'images/sebas-developer.jpg';
@@ -9,25 +10,24 @@ import {
   FirstParagraph,
   ThirdTitle,
 } from 'components/indexComponents';
-import { navigationItemList } from 'utils/navigationItemList';
+import { navigationRouteList } from 'utils/navigationRouteList';
 import { EventContext } from 'context/EventContext';
 import './Header.scss';
 
-export function Header(props) {
-  const { idSection } = props;
+export function Header() {
   const { state, handleHeaderMenu } = useContext(EventContext);
 
   return (
     <header className="header">
       <nav className="nav">
         <div className="nav-container">
-          <a className="nav__logo-container" href="/">
+          <Link className="nav__logo-container" to="/">
             <img
               className="nav__logo-img"
               src={logoBasic}
               alt="@SebasDeveloper Logo"
             />
-          </a>
+          </Link>
           <ImageButton
             type="button"
             modifierClass="nav__btn-hamburguer-container"
@@ -73,9 +73,10 @@ export function Header(props) {
 
             <NavList
               /* Passing the result of the function navigationItemList to the itemsList prop. */
-              itemsList={navigationItemList({ idItem: idSection })}
+              routeList={navigationRouteList()}
               modifierClassList=""
-              modifierClassItemList=""
+              modifierClassRouteList=""
+              modifierClassRoute=""
             />
           </div>
         </div>

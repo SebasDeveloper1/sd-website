@@ -18,9 +18,11 @@ import { StandardInput } from 'components/StandardInput/StandardInput';
 import { StandardForm } from 'components/StandardForm/StandardForm';
 // Composite components
 import { NavList } from 'components/NavList/NavList';
-import { CardAbility } from 'components/CardAbility/CardAbility';
-import { CardProjects } from 'components/CardProjects/CardProjects';
+import { AbilityCard } from 'components/AbilityCard/AbilityCard';
+import { ProjectCard } from 'components/ProjectCard/ProjectCard';
+import { ProjectDetailsCard } from 'components/ProjectDetailsCard/ProjectDetailsCard';
 import { CardMore } from 'components/CardMore/CardMore';
+import { ContactCard } from 'components/ContactCard/ContactCard';
 
 export {
   FirstTitle,
@@ -42,6 +44,8 @@ export {
   StandardForm,
   NavList,
   CardMore,
-  CardAbility,
-  CardProjects,
+  AbilityCard,
+  ProjectCard,
+  ProjectDetailsCard,
+  ContactCard,
 };

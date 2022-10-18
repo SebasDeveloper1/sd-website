@@ -1,9 +1,9 @@
 import React from 'react';
 import imagePrueba from 'images/react-logo.svg';
 import { FirstParagraph, ThirdTitle } from 'components/indexComponents';
-import './CardAbility.scss';
+import './AbilityCard.scss';
 
-export function CardAbility(props) {
+export function AbilityCard(props) {
   // const { abilityUrl } = props;
   return (
     <li className="card-ability-container">

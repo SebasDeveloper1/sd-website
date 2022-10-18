@@ -17,9 +17,10 @@
   inline-size: 100%;
   padding-inline: 8px;
   font-size: $p1-sm;
-  font-weight: $font-weight-text1;
+  font-weight: $font-weight-text2;
   color: $color-text-medium-1;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav__list-link:hover {

@@ -7,6 +7,7 @@ import { AbilitiesSection } from 'containers/AbilitiesSection/AbilitiesSection';
 import { ProjectsSection } from 'containers/ProjectsSection/ProjectsSection';
 import { PreparationSection } from 'containers/PreparationSection/PreparationSection';
 import { ContactSection } from 'containers/ContactSection/ContactSection';
+import { Footer } from 'containers/Footer/Footer';
 import { Modal } from 'containers/Modal/Modal';
 
 export {
@@ -19,5 +20,6 @@ export {
   ProjectsSection,
   PreparationSection,
   ContactSection,
+  Footer,
   Modal,
 };

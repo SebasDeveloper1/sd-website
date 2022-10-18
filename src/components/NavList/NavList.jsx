@@ -1,13 +1,16 @@
+/* eslint-disable no-confusing-arrow */
+/* eslint-disable implicit-arrow-linebreak */
+/* eslint-disable react/jsx-curly-newline */
 import React from 'react';
-import { FirstLink } from 'components/FirstLink/FirstLink';
+import { NavLink } from 'react-router-dom';
 import './NavList.scss';
 
 export function NavList(props) {
   const {
-    itemsList,
+    routeList,
     modifierClassList,
-    modifierClassItemList,
-    modifierClassItem,
+    modifierClassRouteList,
+    modifierClassRoute,
   } = props;
 
   return (
@@ -16,20 +19,22 @@ export function NavList(props) {
         modifierClassList ? `nav__list ${modifierClassList}` : 'nav__list'
       }
     >
-      {Object.entries(itemsList).map(([itemId, infoItem]) => (
+      {routeList.map((route) => (
         <li
-          className={`nav__list-item ${modifierClassItemList}`}
-          key={`nav-item__${itemId}`}
+          className={`nav__list-Route ${modifierClassRouteList}`}
+          key={`nav-Route__${route.routeName}`}
         >
-          <FirstLink
-            href={infoItem.itemHref}
-            textLink={infoItem.itemName}
-            modifierClass={
-              infoItem.itemStatus
-                ? `nav__list-link ${modifierClassItem} nav__list-link--active`
-                : `nav__list-link ${modifierClassItem}`
+          <NavLink
+            to={route.routeLink}
+            end
+            className={({ isActive }) =>
+              isActive
+                ? `nav__list-link ${modifierClassRoute} nav__list-link--active`
+                : `nav__list-link ${modifierClassRoute}`
             }
-          />
+          >
+            {route.routeName}
+          </NavLink>
         </li>
       ))}
     </ul>

@@ -9,7 +9,6 @@ export function NavigationRoutes() {
       <Layout>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/home" element={<Home />} />
           <Route path="*" element={<Status404 />} />
         </Routes>
       </Layout>

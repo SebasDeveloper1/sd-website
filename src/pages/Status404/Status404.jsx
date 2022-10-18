@@ -1,9 +1,10 @@
 import React from 'react';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import status404 from 'images/404_status.svg';
 import {
   FirstParagraph,
   SecondTitle,
-  ThirdButton,
+  SecondButton,
 } from 'components/indexComponents';
 import './Status404.scss';
 
@@ -30,10 +31,11 @@ export function Status404() {
           modifierClass="status-404__subtitle"
         />
 
-        <ThirdButton
+        <SecondButton
           type="button"
           textButton="Go back"
           modifierClass="status-404__back-btn"
+          srcIcon={faAngleLeft}
           onClick={onClick}
         />
       </div>

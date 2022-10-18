@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: auto;
   place-items: center;
-  inline-size: 100vw;
+  inline-size: 100%;
   block-size: 100vh;
   background-image: $color-linear-gradient-4;
 }

@@ -37,7 +37,7 @@ export function useEvents() {
     });
   };
 
-  const handleModal = ({ modalInfo }) => {
+  const handleModal = ({ modalInfo = {} }) => {
     dispatch({
       type: actionTypes.click_modal,
       payload: {
@@ -47,7 +47,7 @@ export function useEvents() {
     });
   };
 
-  const handleModalDown = (event, { modalInfo }) => {
+  const handleModalDown = (event, { modalInfo = {} }) => {
     event.preventDefault();
     if (
       // eslint-disable-next-line operator-linebreak

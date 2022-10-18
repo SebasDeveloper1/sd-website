@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import {
-  Header,
   HeroHome,
   AboutSection,
   AbilitiesSection,
@@ -9,6 +8,7 @@ import {
   ContactSection,
   Modal,
 } from 'containers/indexContainers';
+import { ProjectDetailsCard } from 'components/indexComponents';
 import { EventContext } from 'context/EventContext';
 import './Home.scss';
 
@@ -16,7 +16,6 @@ export function Home() {
   const { state } = useContext(EventContext);
   return (
     <>
-      <Header idSection="1" />
       <main className="home">
         <HeroHome />
         <AboutSection />
@@ -29,7 +28,9 @@ export function Home() {
         modifierClass={
           state.openModal.modalState ? 'modal-container--open' : ''
         }
-      />
+      >
+        <ProjectDetailsCard />
+      </Modal>
     </>
   );
 }

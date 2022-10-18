@@ -45,6 +45,7 @@
   block-size: 200px;
   border: 6px solid $color-primary;
   border-radius: $border-radius-circle;
+
   object-fit: cover;
 }
 
@@ -88,6 +89,8 @@
   .hero__info-image {
     grid-column: 1 / 2;
     grid-row: none;
+    inline-size: 240px;
+    block-size: 240px;
   }
 
   .hero__text {

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import {
   SecondTitle,
-  CardProjects,
+  ProjectCard,
   SecondButton,
 } from 'components/indexComponents';
 import { EventContext } from 'context/EventContext';
@@ -18,12 +18,12 @@ export function ProjectsSection() {
           modifierClass="projects__title-section"
         />
         <ul className="projects__container-cards">
-          <CardProjects onClick={handleModal} onKeyDown={handleModalDown} />
-          <CardProjects onClick={handleModal} onKeyDown={handleModalDown} />
-          <CardProjects onClick={handleModal} onKeyDown={handleModalDown} />
-          <CardProjects onClick={handleModal} onKeyDown={handleModalDown} />
-          <CardProjects onClick={handleModal} onKeyDown={handleModalDown} />
-          <CardProjects onClick={handleModal} onKeyDown={handleModalDown} />
+          <ProjectCard onClick={handleModal} onKeyDown={handleModalDown} />
+          <ProjectCard onClick={handleModal} onKeyDown={handleModalDown} />
+          <ProjectCard onClick={handleModal} onKeyDown={handleModalDown} />
+          <ProjectCard onClick={handleModal} onKeyDown={handleModalDown} />
+          <ProjectCard onClick={handleModal} onKeyDown={handleModalDown} />
+          <ProjectCard onClick={handleModal} onKeyDown={handleModalDown} />
         </ul>
         <SecondButton
           type="button"

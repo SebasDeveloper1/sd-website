@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThirdTitle, FirstParagraph } from 'components/indexComponents';
-import './CardProjects.scss';
+import './ProjectCard.scss';
 
-export function CardProjects(props) {
+export function ProjectCard(props) {
   const { style, onClick, onKeyDown } = props;
 
   return (

@@ -8,6 +8,9 @@
 
 .contact-content {
   position: relative;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 48px;
   inline-size: 90%;
   max-inline-size: 1366px;
   block-size: auto;
@@ -29,7 +32,55 @@
 
 .contact__title-section {
   grid-row: 1 / 2;
-  padding: 24px 0 60px;
+  padding-block-start: 24px;
   border-block-start: 1px solid $color-secondary;
   color: $color-text-light-1;
+}
+
+.contact-section__header {
+  grid-row: 2 / 3;
+  place-self: center;
+  text-align: center;
+}
+
+.contact-section__header-title {
+  margin-block-end: 12px;
+  font-size: $headline1-sm;
+  font-weight: $font-weight-title1;
+  color: $color-text-medium-1;
+  background: $color-linear-gradient-7;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-section__header-paragraph {
+  color: $color-text-medium-1;
+}
+
+.contact-container-cards {
+  grid-template-columns: repeat(auto-fit, 110px);
+  gap: 60px;
+  grid-row: 3 / 4;
+}
+
+@media (min-widtd: 480px) {
+  .contact-section__header-title {
+    font-size: $headline1-md;
+  }
+
+  .contact-container-cards {
+    grid-template-columns: repeat(auto-fit, 120px);
+    gap: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-section__header-title {
+    font-size: $headline1-lg;
+  }
+
+  .contact-container-cards {
+    grid-template-columns: repeat(auto-fit, 130px);
+    gap: 60px;
+  }
 }

@@ -1,71 +1,5 @@
 /* Defining the colors for the different elements. */
 
-// General colors
-$color-primary: #007bff;
-$color-primary-opacity: #007affd8;
-$color-secondary: #692eff;
-$color-secondary-opacity: #6a2effd8;
-$color-light-1: #ffffff;
-$color-light-2: #dffbff;
-$color-light-3: #e8e7e4;
-$color-dark-1: #04001e;
-$color-dark-2: #1f1f3a80;
-$color-dark-3: #1f1f3a;
-$color-dark-4: #06002d;
-$color-accent-1: #10fefe;
-$color-accent-2: #ef0070;
-$color-accent-3: #fff627;
-$color-accent-4: #20ff2c;
-
-// Text colors
-$color-text-light-1: #ffffff;
-$color-text-light-2: #dffbff;
-$color-text-light-3: #e8e7e4;
-$color-text-medium-1: #8da0bc;
-$color-text-medium-2: #4f6b95;
-$color-text-medium-3: #007aff;
-$color-text-dark-1: #04001e;
-$color-text-dark-2: #1f1f3a80;
-$color-text-dark-3: #1f1f3a;
-$color-text-accent-1: #10fefe;
-$color-text-accent-2: #f00070;
-$color-text-accent-3: #fff627;
-$color-text-accent-4: #20ff2c;
-
-//Shadow colors
-$color-shadow-1: #67dbf9e6;
-
-// Gradient colors
-$color-linear-gradient-1: linear-gradient(
-  180deg,
-  rgba($color-dark-1, 0.3) 25%,
-  rgba($color-dark-1, 1) 100%
-);
-
-$color-linear-gradient-2: linear-gradient(
-  225.58deg,
-  rgba(9, 5, 255, 1) -14.51%,
-  rgba(250, 5, 124, 1) 157.11%
-);
-
-$color-linear-gradient-3: linear-gradient(
-  180deg,
-  rgba($color-dark-4, 0.1) 0%,
-  rgba($color-dark-4, 1) 100%
-);
-
-$color-linear-gradient-4: linear-gradient(
-  218.99deg,
-  rgba(63, 105, 255, 0.5) -79.82%,
-  $color-dark-4 60.25%
-);
-
-$color-radial-gradient-1: radial-gradient(
-  circle,
-  rgba(16, 254, 254, 0.5046393557422969) 0%,
-  rgba(6, 0, 45, 1) 50%
-);
-
 /* Defining the font family for the different elements. */
 $font-family-titles: 'Dosis', system-ui, sans-serif;
 $font-family-text: Rubik, system-ui, sans-serif;
@@ -74,6 +8,7 @@ $font-family-text: Rubik, system-ui, sans-serif;
 $headline1-sm: 4rem;
 $headline1-md: 4.8rem;
 $headline1-lg: 6rem;
+$headline1-xl: 8rem;
 $headline2-sm: 3.2rem;
 $headline2-lg: 4rem;
 $headline3-sm: 2.4rem;
@@ -110,8 +45,102 @@ $icon-size-md: 20px;
 $icon-size-lg: 24px;
 $icon-size-lg2: 32px;
 
+/* Defining the size of buttons. */
 $button1-sm: 1.6rem;
-$button1-lg: 1.8rem;
+$button1-lg: 1.7rem;
+
+// General colors
+$color-primary: #007bff;
+$color-primary-opacity: #007affd8;
+$color-secondary: #692eff;
+$color-secondary-opacity: #6a2effd8;
+$color-light-1: #ffffff;
+$color-light-2: #dffbff;
+$color-light-3: #e8e7e4;
+$color-dark-1: #04001e;
+$color-dark-2: #1f1f3a80;
+$color-dark-3: #1f1f3a;
+$color-dark-4: #06002d;
+$color-accent-1: #10fefe;
+$color-accent-2: #ef0070;
+$color-accent-3: #fff627;
+$color-accent-4: #20ff2c;
+$color-accent-5: #6876ff;
+
+// Text colors
+$color-text-light-1: #ffffff;
+$color-text-light-2: #dffbff;
+$color-text-light-3: #e8e7e4;
+$color-text-medium-1: #8da0bc;
+$color-text-medium-2: #4f6b95;
+$color-text-medium-3: #007aff;
+$color-text-dark-1: #04001e;
+$color-text-dark-2: #1f1f3a80;
+$color-text-dark-3: #1f1f3a;
+$color-text-accent-1: #10fefe;
+$color-text-accent-2: #f00070;
+$color-text-accent-3: #fff627;
+$color-text-accent-4: #20ff2c;
+$color-text-accent-5: #6876ff;
+//Shadow colors
+$color-shadow-1: #67dbf9e6;
+
+// Gradient colors
+$color-linear-gradient-1: linear-gradient(
+  180deg,
+  rgba($color-dark-1, 0.3) 25%,
+  rgba($color-dark-1, 1) 100%
+);
+
+$color-linear-gradient-2: linear-gradient(
+  225.58deg,
+  rgba(9, 5, 255, 1) -14.51%,
+  rgba(250, 5, 124, 1) 157.11%
+);
+
+$color-linear-gradient-3: linear-gradient(
+  180deg,
+  rgba($color-dark-4, 0.1) 0%,
+  rgba($color-dark-4, 1) 100%
+);
+
+$color-linear-gradient-4: linear-gradient(
+  218.99deg,
+  #3f69ffb3 -79.82%,
+  $color-dark-4 60.25%
+);
+
+$color-linear-gradient-5: linear-gradient(
+  51.32deg,
+  rgba(250, 5, 124, 1) 0%,
+  rgba(7, 4, 254, 1) 100%,
+  rgba(196, 196, 196, 0) 100%
+);
+
+$color-linear-gradient-6: linear-gradient(
+  258.75deg,
+  rgb(67, 177, 200) 31.33%,
+  rgb(153, 137, 235) 48.42%,
+  rgb(217, 127, 209) 59.35%,
+  rgb(245, 130, 178) 65.56%
+);
+$color-linear-gradient-7: linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+$color-linear-gradient-8: linear-gradient(-70deg, #3bf0e4 0%, #bca1f7);
+
+$color-linear-gradient-9: linear-gradient(
+  to right top,
+  #06002d,
+  #101d5b,
+  #21348e,
+  #314ec5,
+  #3f69ff
+);
+
+$color-radial-gradient-1: radial-gradient(
+  circle,
+  rgba(16, 254, 254, 0.5046393557422969) 0%,
+  rgba(6, 0, 45, 1) 50%
+);
 
 //     $headerBlockSize: 72px;
 //     $secondary80: #6876FF;
