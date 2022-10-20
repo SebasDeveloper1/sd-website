@@ -5,6 +5,7 @@ import {
   FirstParagraph,
   FirstButton,
   SecondButton,
+  Slideshow,
 } from 'components/indexComponents';
 import './ProjectDetailsCard.scss';
 
@@ -12,15 +13,13 @@ export function ProjectDetailsCard() {
   return (
     <div className="project-details-container">
       <div className="project-details-content">
-        <img
-          className="project-detais__img"
-          src="https://leonidasesteban.com/_next/image?url=https%3A%2F%2Fd1ngjctyujvjjy.cloudfront.net%2Fprojects%2Fcovers%2F2a0065e7-38d4-43d5-88d4-a1ee3b37cdb9%2FThumbnail-vocabulario.dev.png&w=1920&q=75"
-          alt=""
-        />
+        <div className="project-detais__img">
+          <Slideshow />
+        </div>
         <div className="project-details-info-container">
           <div className="project-details-info-content">
             <SecondTitle
-              textContent="Aplicacion AppDopta"
+              textContent="AppDopta"
               modifierClass="project-details__name"
             />
             <FirstParagraph

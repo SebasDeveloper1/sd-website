@@ -18,7 +18,6 @@
   grid-row: 1 / 2;
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
 }
 
 .project-details-info-container {
@@ -80,7 +79,7 @@
 
 @media (min-width: 768px) {
   .project-details-content {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
     grid-template-rows: 1fr;
   }
 

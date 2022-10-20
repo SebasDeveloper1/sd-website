@@ -10,12 +10,11 @@
 .standard-input {
   padding: 12.5px 0 12.5px 16px;
   border: none;
-  border: 1px solid $color-secondary-opacity;
-  border-radius: $border-radius-size-1;
+  border-radius: $border-radius-size-2;
   font-size: $p1-sm;
   font-weight: $font-weight-text2;
   color: $color-text-medium-2;
-  background-color: $color-dark-2;
+  background-color: $color-light-1;
 }
 
 .standard-input::placeholder {

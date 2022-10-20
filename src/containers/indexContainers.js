@@ -7,6 +7,7 @@ import { AbilitiesSection } from 'containers/AbilitiesSection/AbilitiesSection';
 import { ProjectsSection } from 'containers/ProjectsSection/ProjectsSection';
 import { PreparationSection } from 'containers/PreparationSection/PreparationSection';
 import { ContactSection } from 'containers/ContactSection/ContactSection';
+import { HeroSection } from 'containers/HeroSection/HeroSection';
 import { Footer } from 'containers/Footer/Footer';
 import { Modal } from 'containers/Modal/Modal';
 
@@ -20,6 +21,7 @@ export {
   ProjectsSection,
   PreparationSection,
   ContactSection,
+  HeroSection,
   Footer,
   Modal,
 };

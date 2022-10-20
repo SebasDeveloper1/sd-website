@@ -21,8 +21,8 @@ export function NavList(props) {
     >
       {routeList.map((route) => (
         <li
-          className={`nav__list-Route ${modifierClassRouteList}`}
-          key={`nav-Route__${route.routeName}`}
+          className={`nav__list-item ${modifierClassRouteList}`}
+          key={`nav-item__${route.routeName}`}
         >
           <NavLink
             to={route.routeLink}

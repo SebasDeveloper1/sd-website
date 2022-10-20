@@ -1,0 +1,43 @@
+@import 'styles/vars';
+
+.slideshow {
+  position: relative;
+  inline-size: 100%;
+  block-size: 100%;
+  overflow: hidden;
+}
+
+.slideshow-content {
+  display: flex;
+  inline-size: 300%; // 100% por cada imagen que compone el slider
+  block-size: 100%;
+}
+
+.slideshow-slide {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.slide__img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.slideshow-controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  inline-size: 100%;
+  block-size: 100%;
+  padding: 12px;
+}
+
+.slideshow-controls__btn {
+  inline-size: 35px;
+  block-size: 35px;
+  background-color: rgba($color-dark-4, 0.2);
+}

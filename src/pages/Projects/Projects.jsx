@@ -1,28 +1,15 @@
 import React, { useContext } from 'react';
-import {
-  HeroHome,
-  AboutSection,
-  AbilitiesSection,
-  ProjectsSection,
-  PreparationSection,
-  ContactSection,
-  Modal,
-} from 'containers/indexContainers';
+import { HeroSection, Modal } from 'containers/indexContainers';
 import { ProjectDetailsCard } from 'components/indexComponents';
 import { EventContext } from 'context/EventContext';
-import './Home.scss';
+import './Projects.scss';
 
-export function Home() {
+export function Projects() {
   const { state } = useContext(EventContext);
   return (
     <>
-      <main className="home-page">
-        <HeroHome />
-        <AboutSection />
-        <AbilitiesSection />
-        <ProjectsSection />
-        <PreparationSection />
-        <ContactSection />
+      <main className="projects-page">
+        <HeroSection />
       </main>
       <Modal
         modifierClass={

@@ -15,16 +15,18 @@ export function StandardInput(props) {
   } = props;
   return (
     <>
-      <label
-        htmlFor={htmlFor}
-        className={
-          modifierClassLabel
-            ? `label-standard-input ${modifierClassLabel}`
-            : 'label-standard-input'
-        }
-      >
-        {textLabel}
-      </label>
+      {htmlFor && (
+        <label
+          htmlFor={htmlFor}
+          className={
+            modifierClassLabel
+              ? `label-standard-input ${modifierClassLabel}`
+              : 'label-standard-input'
+          }
+        >
+          {textLabel}
+        </label>
+      )}
       <input
         type={type}
         id={id}

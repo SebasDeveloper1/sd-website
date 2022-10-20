@@ -15,6 +15,7 @@ import { SecondButton } from 'components/SecondButton/SecondButton';
 import { ThirdButton } from 'components/ThirdButton/ThirdButton';
 import { ImageButton } from 'components/ImageButton/ImageButton';
 import { StandardInput } from 'components/StandardInput/StandardInput';
+import { SearchInput } from 'components/SearchInput/SearchInput';
 import { StandardForm } from 'components/StandardForm/StandardForm';
 // Composite components
 import { NavList } from 'components/NavList/NavList';
@@ -23,6 +24,7 @@ import { ProjectCard } from 'components/ProjectCard/ProjectCard';
 import { ProjectDetailsCard } from 'components/ProjectDetailsCard/ProjectDetailsCard';
 import { CardMore } from 'components/CardMore/CardMore';
 import { ContactCard } from 'components/ContactCard/ContactCard';
+import { Slideshow } from 'components/Slideshow/Slideshow';
 
 export {
   FirstTitle,
@@ -41,6 +43,7 @@ export {
   ThirdButton,
   ImageButton,
   StandardInput,
+  SearchInput,
   StandardForm,
   NavList,
   CardMore,
@@ -48,4 +51,5 @@ export {
   ProjectCard,
   ProjectDetailsCard,
   ContactCard,
+  Slideshow,
 };
