@@ -14,17 +14,20 @@ import { FirstButton } from 'components/FirstButton/FirstButton';
 import { SecondButton } from 'components/SecondButton/SecondButton';
 import { ThirdButton } from 'components/ThirdButton/ThirdButton';
 import { ImageButton } from 'components/ImageButton/ImageButton';
+import { GoToUpButton } from 'components/GoToUpButton/GoToUpButton';
 import { StandardInput } from 'components/StandardInput/StandardInput';
 import { SearchInput } from 'components/SearchInput/SearchInput';
 import { StandardForm } from 'components/StandardForm/StandardForm';
 // Composite components
 import { NavList } from 'components/NavList/NavList';
+import { SecondList } from 'components/SecondList/SecondList';
 import { AbilityCard } from 'components/AbilityCard/AbilityCard';
 import { ProjectCard } from 'components/ProjectCard/ProjectCard';
 import { ProjectDetailsCard } from 'components/ProjectDetailsCard/ProjectDetailsCard';
 import { CardMore } from 'components/CardMore/CardMore';
 import { ContactCard } from 'components/ContactCard/ContactCard';
 import { Slideshow } from 'components/Slideshow/Slideshow';
+import { CertificateCard } from 'components/CertificateCard/CertificateCard';
 
 export {
   FirstTitle,
@@ -42,14 +45,17 @@ export {
   SecondButton,
   ThirdButton,
   ImageButton,
+  GoToUpButton,
   StandardInput,
   SearchInput,
   StandardForm,
   NavList,
+  SecondList,
   CardMore,
   AbilityCard,
   ProjectCard,
   ProjectDetailsCard,
   ContactCard,
   Slideshow,
+  CertificateCard,
 };

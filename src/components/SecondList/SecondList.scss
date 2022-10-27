@@ -1,0 +1,47 @@
+@import 'styles/vars';
+
+/*__________________________________________*/
+// Section -> (Header (Nav-Bar Styles)
+/*__________________________________________*/
+.second-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  inline-size: 100%;
+  list-style: none;
+}
+
+.second-list-item {
+  inline-size: auto;
+  padding-inline: 20px;
+  font-size: $p1-sm;
+  font-weight: $font-weight-text2;
+  color: $color-text-medium-1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.second-list-link {
+  display: inline-block;
+  inline-size: auto;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.second-list-item:hover {
+  color: $color-text-light-1;
+}
+
+.second-list-item--active {
+  padding-block-end: 2px;
+  border-block-end: 2px solid $color-primary;
+  color: $color-text-medium-3;
+}
+
+@media (min-width: 768px) {
+  .second-list-link {
+    font-size: $p1-lg;
+  }
+}

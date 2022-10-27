@@ -1,0 +1,33 @@
+@import 'styles/vars';
+
+.gotoup-btn-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: grid;
+  place-items: center;
+  inline-size: 55px;
+  block-size: 55px;
+  border-radius: $border-radius-circle;
+  color: $color-text-light-1;
+  line-height: 0;
+  background-color: $color-secondary;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out, top 0.15s ease-in-out,
+    left 0.15s ease-in-out;
+}
+
+.gotoup-btn__link {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.gotoup-btn__link-icon {
+  font-size: 3.8rem;
+  color: $color-text-light-1;
+}
+
+.gotoup-btn-container:hover {
+  background-color: $color-secondary;
+}

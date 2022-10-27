@@ -1,0 +1,68 @@
+@import 'styles/vars';
+
+.projects-hero {
+  inline-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: $color-linear-gradient-5, url('images/background_hero1.svg');
+  overflow: hidden;
+}
+
+.projects-hero-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  inline-size: 100%;
+  inline-size: 90%;
+  max-inline-size: 1366px;
+  block-size: 100%;
+  margin: 0 auto;
+}
+
+.projects-hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  inline-size: 100%;
+  block-size: 100%;
+  padding-block: 16px;
+}
+
+.projects-hero-info__title {
+  inline-size: 100%;
+  margin-block-end: 8px;
+}
+
+.projects-hero-info__descr {
+  inline-size: 100%;
+  margin-block-end: 24px;
+  color: $color-text-light-2;
+}
+
+.projects-hero-info__input {
+  inline-size: 100%;
+  max-inline-size: 600px;
+}
+
+.projects-hero-content__img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .projects-hero-content {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+
+  .projects-hero-info {
+    grid-column: 1 / 3;
+  }
+
+  .projects-hero-content__img {
+    display: block;
+    grid-column: 3 / 4;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+}

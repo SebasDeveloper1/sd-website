@@ -36,6 +36,7 @@
 @media (min-width: 768px) {
   .nav__list {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     inline-size: 100%;
     padding: 0;

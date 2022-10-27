@@ -1,8 +1,6 @@
 @import 'styles/vars';
 
 .home-page {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   inline-size: 100%;
+  block-size: auto;
 }

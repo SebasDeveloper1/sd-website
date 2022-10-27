@@ -1,0 +1,51 @@
+@import 'styles/vars';
+
+.card-certificate-container {
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.card-certificate {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 16px;
+  place-items: center;
+  inline-size: 100%;
+  block-size: auto;
+  min-block-size: 100px;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: rgba($color-dark-2, 0.3);
+  overflow: hidden;
+}
+
+.card-certificate:hover {
+  border: 1px solid $color-secondary-opacity;
+}
+
+.card-certificate__img {
+  grid-column: 1 / 2;
+  inline-size: 100%;
+  max-block-size: 100%;
+  object-fit: cover;
+}
+
+.certificate-info-container {
+  grid-column: 2 / 3;
+  inline-size: 100%;
+}
+
+.certificate__name {
+  color: $color-text-light-1;
+}
+
+.certificate__institution {
+  color: $color-text-medium-3;
+}
+
+.certificate__time {
+  border-radius: $border-radius-size-2;
+  color: $color-text-medium-2;
+}

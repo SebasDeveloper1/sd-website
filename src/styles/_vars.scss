@@ -13,8 +13,8 @@ $headline2-sm: 3.2rem;
 $headline2-lg: 4rem;
 $headline3-sm: 2.4rem;
 $headline3-lg: 2.8rem;
-$headline4-sm: 1.7rem;
-$headline4-lg: 2rem;
+$headline4-sm: 2rem;
+$headline4-lg: 2.4rem;
 $headline5-sm: 1.4rem;
 $headline5-lg: 1.6rem;
 $headline6-sm: 1.2rem;
@@ -66,6 +66,19 @@ $color-accent-2: #ef0070;
 $color-accent-3: #fff627;
 $color-accent-4: #20ff2c;
 $color-accent-5: #6876ff;
+$neutral: #3b3f56;
+$neutralText: #1f1f3a;
+$neutral10: #dffbff;
+$neutral20: #c4dce3;
+$neutral30: #a8bcc7;
+$neutral40: #8d9dab;
+$neutral50: #e8e7e4;
+$neutral60: #d5d4d0;
+$neutral70: #727e8f;
+$neutral80: #565e72;
+$neutral90: #3b3f56;
+$neutral100: #1f1f3a;
+$neutral110: #04001e;
 
 // Text colors
 $color-text-light-1: #ffffff;
@@ -94,8 +107,8 @@ $color-linear-gradient-1: linear-gradient(
 
 $color-linear-gradient-2: linear-gradient(
   225.58deg,
-  rgba(9, 5, 255, 1) -14.51%,
-  rgba(250, 5, 124, 1) 157.11%
+  #0905ff -14.51%,
+  #fa057c 157.11%
 );
 
 $color-linear-gradient-3: linear-gradient(
@@ -112,8 +125,9 @@ $color-linear-gradient-4: linear-gradient(
 
 $color-linear-gradient-5: linear-gradient(
   51.32deg,
-  rgba(250, 5, 124, 1) 0%,
-  rgba(7, 4, 254, 0.6) 100%
+  rgba(6, 0, 45, 0.9) 0%,
+  rgba(7, 4, 254, 0.1) 100%,
+  rgba(196, 196, 196, 0) 100%
 );
 
 $color-linear-gradient-6: linear-gradient(
@@ -185,19 +199,6 @@ $color-radial-gradient-1: radial-gradient(
 //     $paragraphColor: #3B3F56;
 //     $secondary70: #6876FF;
 //     $secondary140: #0A004E;
-//     $neutral: #3B3F56;
-//     $neutralText: #1F1F3A;
-//     $neutral10: #DFFBFF;
-//     $neutral20: #C4DCE3;
-//     $neutral30: #A8BCC7;
-//     $neutral40: #8D9DAB;
-//     $neutral50: #E8E7E4;
-//     $neutral60: #D5D4D0;
-//     $neutral70: #727E8F;
-//     $neutral80: #565E72;
-//     $neutral90: #3B3F56;
-//     $neutral100: #1F1F3A;
-//     $neutral110: #04001E;
 //     $sky: #DFFBFF;
 //     $darkBlue: #06002D;
 //     $sky-inverted: #04001E;

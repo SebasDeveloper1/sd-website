@@ -1,0 +1,29 @@
+@import 'styles/vars';
+
+.footer {
+  display: grid;
+  place-items: center;
+  inline-size: 100%;
+  block-size: 240px;
+  border-block-start: 1px solid $color-primary-opacity;
+  background-color: $color-dark-4;
+}
+
+.footer-content {
+  inline-size: 90%;
+  max-inline-size: 1366px;
+  text-align: center;
+}
+
+.footer-section__logo {
+  inline-size: 150px;
+}
+
+.footer-section__paragraph {
+  margin-block: 12px;
+  color: $color-text-medium-3;
+}
+
+.footer-section__title {
+  color: $color-text-medium-1;
+}

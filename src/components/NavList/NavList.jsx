@@ -1,8 +1,9 @@
 /* eslint-disable no-confusing-arrow */
 /* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable react/jsx-curly-newline */
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { EventContext } from 'context/EventContext';
 import './NavList.scss';
 
 export function NavList(props) {
@@ -12,6 +13,8 @@ export function NavList(props) {
     modifierClassRouteList,
     modifierClassRoute,
   } = props;
+
+  const { handleHeaderMenu } = useContext(EventContext);
 
   return (
     <ul
@@ -25,6 +28,7 @@ export function NavList(props) {
           key={`nav-item__${route.routeName}`}
         >
           <NavLink
+            onClick={handleHeaderMenu}
             to={route.routeLink}
             end
             className={({ isActive }) =>

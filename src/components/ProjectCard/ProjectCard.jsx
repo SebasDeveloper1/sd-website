@@ -3,10 +3,16 @@ import { ThirdTitle, FirstParagraph } from 'components/indexComponents';
 import './ProjectCard.scss';
 
 export function ProjectCard(props) {
-  const { style, onClick, onKeyDown } = props;
+  const { modifierClass, style, onClick, onKeyDown } = props;
 
   return (
-    <li className="card-project-container">
+    <li
+      className={
+        modifierClass
+          ? `card-project-container ${modifierClass}`
+          : 'card-project-container'
+      }
+    >
       <button
         type="button"
         className="card-project"
