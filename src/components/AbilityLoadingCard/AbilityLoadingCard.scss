@@ -1,0 +1,15 @@
+@import 'styles/vars';
+
+.ability-loading-card {
+  inline-size: 100%;
+  block-size: 100%;
+  min-block-size: 90px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgb(173, 137, 250, 0.1),
+    rgb(173, 137, 250, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}

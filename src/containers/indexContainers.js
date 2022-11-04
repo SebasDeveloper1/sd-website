@@ -20,6 +20,9 @@ import { ProfessionalTitles } from 'containers/PreparationPageContainers/Profess
 import { Certifications } from 'containers/PreparationPageContainers/Certifications/Certifications';
 // ContactSection containers
 import { HeroContact } from 'containers/ContactPageContainers/HeroContact/HeroContact';
+// ProjectDetails containers
+import { ProjectInfo } from 'containers/ProjectDetailsPageContainers/ProjectInfo/ProjectInfo';
+import { ProjectDetailsPageLoading } from 'containers/ProjectDetailsPageContainers/ProjectDetailsPageLoading/ProjectDetailsPageLoading';
 
 export {
   Layout,
@@ -39,4 +42,6 @@ export {
   ProfessionalTitles,
   Certifications,
   HeroContact,
+  ProjectInfo,
+  ProjectDetailsPageLoading,
 };

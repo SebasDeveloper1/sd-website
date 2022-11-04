@@ -71,6 +71,7 @@
   color: $color-text-medium-1;
   white-space: nowrap;
   overflow: hidden;
+  font-family: $font-family-titles-secondary;
   animation: typing 2s steps(24), blink 0.5s infinite step-end alternate;
 }
 

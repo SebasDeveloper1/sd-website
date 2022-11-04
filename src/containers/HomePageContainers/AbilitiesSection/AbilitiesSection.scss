@@ -10,7 +10,7 @@
 
 .abilities-content {
   position: relative;
-  inline-size: 90%;
+  inline-size: 93%;
   max-inline-size: 1366px;
   block-size: auto;
   padding-inline-start: 24px;
@@ -23,19 +23,44 @@
 .abilities-content::after {
   @include timeline-point(
     $top: 86px,
-    $left: -13px,
-    $background: $color-dark-4,
+    $left: -10px,
+    $background: $color-primary,
     $color-border: $color-primary-opacity
   );
 }
 
 .abilities__title-section {
-  padding: 24px 0 60px;
+  padding-block: 24px;
   border-block-start: 1px solid $color-secondary;
   color: $color-text-light-1;
 }
 
+.abilities__paragraph {
+  position: relative;
+  display: inline-block;
+  inline-size: 100%;
+  max-inline-size: 700px;
+  padding: 12px;
+  margin-block-end: 44px;
+  border-radius: 8px;
+  color: $color-text-medium-1;
+  background-color: rgba($neutral, 0.3);
+}
+
+.abilities__paragraph::after {
+  @include timeline-point(
+    $top: -12px,
+    $left: -12px,
+    $background: $color-primary-opacity,
+    $color-border: $color-dark-4
+  );
+  inline-size: 18px;
+  block-size: 18px;
+  border: 4px solid $color-dark-4;
+}
+
 .abilities__card-more {
-  min-block-size: 100px;
-  max-block-size: 150px;
+  min-block-size: 90px;
+  max-block-size: 110px;
+  border-radius: 8px;
 }

@@ -1,0 +1,174 @@
+@import 'styles/vars';
+
+.project-details-container--loading {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 24px;
+  justify-items: center;
+  align-items: start;
+  inline-size: 100%;
+  max-inline-size: 1366px;
+  block-size: auto;
+}
+
+.project-detais__img--loading {
+  grid-row: 1 / 2;
+  inline-size: 95%;
+  block-size: 30vh;
+  background: linear-gradient(
+    90deg,
+    rgb(173, 137, 250, 0.1),
+    rgb(173, 137, 250, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+  filter: drop-shadow(rgba(97, 112, 216, 0.4) 0px 2px 24px);
+}
+
+.project-details-info-container--loading {
+  grid-row: 2 / 3;
+  inline-size: 90%;
+}
+
+.project-details__name--loading {
+  inline-size: 100%;
+  block-size: 60px;
+  margin-block-end: 16px;
+  border-radius: $border-radius-size-2;
+  background: linear-gradient(
+    90deg,
+    rgb(173, 137, 250, 0.1),
+    rgb(173, 137, 250, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+.details__categ-container--loading {
+  inline-size: 100%;
+}
+
+.project-details__categ--loading {
+  display: inline-block;
+  inline-size: 60px;
+  block-size: 28px;
+  margin-right: 8px;
+  border-radius: $border-radius-size-2;
+  background: linear-gradient(
+    90deg,
+    rgb(173, 137, 250, 0.1),
+    rgb(173, 137, 250, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+.project-details__level--loading {
+  display: inline-block;
+  inline-size: 100px;
+  block-size: 28px;
+  margin-right: 8px;
+  border-radius: $border-radius-size-2;
+  background: linear-gradient(
+    90deg,
+    rgb(173, 137, 250, 0.1),
+    rgb(173, 137, 250, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+.project-details__desc--loading {
+  inline-size: 100%;
+  block-size: 120px;
+  margin-block: 16px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgb(173, 137, 250, 0.1),
+    rgb(173, 137, 250, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+.project-details__subtitle--loading {
+  inline-size: 200px;
+  block-size: 40px;
+  margin-block-end: 8px;
+  border-radius: $border-radius-size-2;
+  background: linear-gradient(
+    90deg,
+    rgb(173, 137, 250, 0.1),
+    rgb(173, 137, 250, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+.project-details__tools-list--loading {
+  inline-size: 100%;
+  block-size: 90px;
+  margin-block-end: 40px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgb(173, 137, 250, 0.1),
+    rgb(173, 137, 250, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+.project-details-btn-container--loading {
+  display: flex;
+  flex-wrap: wrap;
+  inline-size: 100%;
+}
+
+.project-details__preview-btn--loading {
+  inline-size: 100%;
+  block-size: 45px;
+  margin-block-end: 16px;
+  border-radius: $border-radius-size-2;
+  background: linear-gradient(
+    90deg,
+    rgb(173, 137, 250, 0.1),
+    rgb(173, 137, 250, 0.3)
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+@media (min-width: 480px) {
+  .project-detais__img--loading {
+    block-size: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-details-container--loading {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    gap: 0;
+    justify-items: end;
+    inline-size: 100%;
+    margin: 44px auto;
+  }
+
+  .project-detais__img--loading {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    block-size: 100%;
+    max-block-size: 550px;
+    overflow: hidden;
+  }
+
+  .project-details-info-container--loading {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    inline-size: 100%;
+    padding-inline-start: 10%;
+  }
+}

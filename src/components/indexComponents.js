@@ -23,11 +23,12 @@ import { NavList } from 'components/NavList/NavList';
 import { SecondList } from 'components/SecondList/SecondList';
 import { AbilityCard } from 'components/AbilityCard/AbilityCard';
 import { ProjectCard } from 'components/ProjectCard/ProjectCard';
-import { ProjectDetailsCard } from 'components/ProjectDetailsCard/ProjectDetailsCard';
 import { CardMore } from 'components/CardMore/CardMore';
 import { ContactCard } from 'components/ContactCard/ContactCard';
 import { Slideshow } from 'components/Slideshow/Slideshow';
 import { CertificateCard } from 'components/CertificateCard/CertificateCard';
+// Loading components
+import { AbilityLoadingCard } from 'components/AbilityLoadingCard/AbilityLoadingCard';
 
 export {
   FirstTitle,
@@ -54,8 +55,8 @@ export {
   CardMore,
   AbilityCard,
   ProjectCard,
-  ProjectDetailsCard,
   ContactCard,
   Slideshow,
   CertificateCard,
+  AbilityLoadingCard,
 };

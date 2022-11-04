@@ -1,17 +1,13 @@
+/* eslint-disable indent */
+/* eslint-disable react/jsx-indent */
 import React, { useRef } from 'react';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import slide1 from 'images/slide1.webp';
-import slide2 from 'images/slide2.webp';
-import slide3 from 'images/slide3.webp';
 import { ImageButton } from 'components/indexComponents';
 import './Slideshow.scss';
 
-export function Slideshow() {
+export function Slideshow({ imagesList }) {
   const slideshowRef = useRef(null);
   let count = 0;
-
-  // const { firstChild, lastChild } = slideshowRef.current;
-  // slideshowRef.current.insertBefore(lastChild, firstChild);
 
   const onNext = () => {
     const widthSlide = slideshowRef.current.children.length * 100 * -1;
@@ -33,15 +29,13 @@ export function Slideshow() {
   return (
     <div className="slideshow">
       <div className="slideshow-content" ref={slideshowRef}>
-        <div className="slideshow-slide">
-          <img className="slide__img" src={slide1} alt="" />
-        </div>
-        <div className="slideshow-slide">
-          <img className="slide__img" src={slide2} alt="" />
-        </div>
-        <div className="slideshow-slide">
-          <img className="slide__img" src={slide3} alt="" />
-        </div>
+        {imagesList
+          ? imagesList.map((image) => (
+              <div key={`project__${image}`} className="slideshow-slide">
+                <img className="slide__img" src={image} alt="project" />
+              </div>
+            ))
+          : null}
       </div>
       <div className="slideshow-controls">
         <ImageButton

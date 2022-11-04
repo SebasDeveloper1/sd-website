@@ -4,6 +4,7 @@ import { Layout } from 'containers/indexContainers';
 import {
   Home,
   Projects,
+  ProjectDetails,
   Preparation,
   Contact,
   Status404,
@@ -25,6 +26,7 @@ export function NavigationRoutes() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/projects" element={<Projects />} />
+            <Route exact path="/project/:slug" element={<ProjectDetails />} />
             <Route exact path="/preparation" element={<Preparation />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route path="*" element={<Status404 />} />

@@ -2,10 +2,11 @@
   position: absolute;
   top: $top;
   left: $left;
-  inline-size: 20px;
-  block-size: 20px;
+  inline-size: 16px;
+  block-size: 16px;
   border: 2px solid $color-border;
   border-radius: 50%;
   background-color: $background;
   content: '';
+  box-shadow: $color-border 0px 0px 12px 3px;
 }

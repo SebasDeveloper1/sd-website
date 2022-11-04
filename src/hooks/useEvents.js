@@ -3,7 +3,7 @@ import React from 'react';
 export function useEvents() {
   const initialState = {
     openMenuHeader: false,
-    openModal: { modalInfo: {}, modalState: false },
+    openModal: { modalChild: null, modalInfo: {}, modalState: false },
   };
 
   const actionTypes = {
@@ -37,24 +37,25 @@ export function useEvents() {
     });
   };
 
-  const handleModal = ({ modalInfo = {} }) => {
+  const handleModal = ({ modalChild, modalInfo = {} }) => {
     dispatch({
       type: actionTypes.click_modal,
       payload: {
+        modalChild,
         modalInfo,
         modalState: !state.openModal.modalState,
       },
     });
   };
 
-  const handleModalDown = (event, { modalInfo = {} }) => {
+  const handleModalDown = (event, { modalChild, modalInfo = {} }) => {
     event.preventDefault();
     if (
       // eslint-disable-next-line operator-linebreak
       (!state.openModal && event.keyCode === 13) ||
       (state.openModal && event.keyCode === 27)
     ) {
-      handleModal({ modalInfo });
+      handleModal({ modalChild, modalInfo });
     }
   };
 

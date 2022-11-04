@@ -3,7 +3,9 @@ import { ThirdTitle, FirstParagraph } from 'components/indexComponents';
 import './ProjectCard.scss';
 
 export function ProjectCard(props) {
-  const { modifierClass, style, onClick, onKeyDown } = props;
+  const { modifierClass, style, onClick, onKeyDown, projectData } = props;
+
+  const tools = projectData.projectTools.join(', ');
 
   return (
     <li
@@ -22,18 +24,15 @@ export function ProjectCard(props) {
       >
         <img
           className="card-project__img"
-          src="https://leonidasesteban.com/_next/image?url=https%3A%2F%2Fd1ngjctyujvjjy.cloudfront.net%2Fprojects%2Fcovers%2F2a0065e7-38d4-43d5-88d4-a1ee3b37cdb9%2FThumbnail-vocabulario.dev.png&w=1920&q=75"
+          src={projectData.projectImages[0]}
           alt=""
         />
         <div className="project-info-container">
           <ThirdTitle
-            textContent="Aplicacion AppDopta"
+            textContent={projectData.projectName}
             modifierClass="project__name"
           />
-          <FirstParagraph
-            textContent="JavaScript, React, Css, Html, Git, Github, Sass"
-            modifierClass="project__tools"
-          />
+          <FirstParagraph textContent={tools} modifierClass="project__tools" />
         </div>
       </button>
     </li>

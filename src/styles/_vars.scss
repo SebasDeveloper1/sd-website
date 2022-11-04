@@ -1,7 +1,8 @@
 /* Defining the colors for the different elements. */
 
 /* Defining the font family for the different elements. */
-$font-family-titles: 'Dosis', system-ui, sans-serif;
+$font-family-titles: 'Montserrat', 'Dosis', system-ui, sans-serif;
+$font-family-titles-secondary: 'Dosis', system-ui, sans-serif;
 $font-family-text: Rubik, system-ui, sans-serif;
 
 /* Defining the font sizes for the different elements. */
@@ -21,9 +22,9 @@ $headline6-sm: 1.2rem;
 $headline6-lg: 1.4rem;
 
 $p0-sm: 1.2rem;
-$p0-lg: 1.4rem;
-$p1-sm: 1.6rem;
-$p1-lg: 1.7rem;
+$p0-lg: 1.5rem;
+$p1-sm: 1.8rem;
+$p1-lg: 1.9rem;
 $p2-sm: 2rem;
 $p2-lg: 2.4rem;
 
@@ -95,6 +96,15 @@ $color-text-accent-2: #f00070;
 $color-text-accent-3: #fff627;
 $color-text-accent-4: #20ff2c;
 $color-text-accent-5: #6876ff;
+$color-text-accent-6: #32651b;
+$color-text-accent-7: #00623f;
+
+//color text background
+$color-text-bg-1: #caee;
+$color-text-bg-2: #989af0;
+$color-text-bg-3: #85fbd1;
+$color-text-bg-4: #caee98;
+
 //Shadow colors
 $color-shadow-1: #67dbf9e6;
 
@@ -133,7 +143,7 @@ $color-linear-gradient-5: linear-gradient(
 $color-linear-gradient-6: linear-gradient(
   258.75deg,
   rgb(67, 177, 200) 31.33%,
-  rgb(153, 137, 235) 48.42%,
+  #9989eb 48.42%,
   rgb(217, 127, 209) 59.35%,
   rgb(245, 130, 178) 65.56%
 );
@@ -141,12 +151,9 @@ $color-linear-gradient-7: linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
 $color-linear-gradient-8: linear-gradient(-70deg, #3bf0e4 0%, #bca1f7);
 
 $color-linear-gradient-9: linear-gradient(
-  to right top,
-  #06002d,
-  #101d5b,
-  #21348e,
-  #314ec5,
-  #3f69ff
+  180deg,
+  rgba($color-dark-1, 0.7) 0%,
+  rgba($color-dark-1, 1) 100%
 );
 
 $color-radial-gradient-1: radial-gradient(

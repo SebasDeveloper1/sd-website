@@ -2,11 +2,9 @@
 
 .card-ability-container {
   inline-size: 100%;
-  block-size: auto;
-}
-
-.card-ability-container:hover :first-child {
-  transform: scale(1.05);
+  block-size: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .card-ability {
@@ -14,36 +12,52 @@
   display: grid;
   place-items: center;
   inline-size: 100%;
-  block-size: auto;
-  min-block-size: 100px;
-  max-block-size: 150px;
-  padding: 12px;
-  border-radius: 8px;
-  -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+  block-size: 100%;
+  min-block-size: 90px;
+  max-block-size: 110px;
   text-decoration: none;
-  background-color: rgba($color-secondary, 0.2);
+  background-color: rgba($neutral70, 0.1);
   overflow: hidden;
 }
 
-.card-ability__img {
-  position: absolute;
-  left: -20px;
-  bottom: -20px;
-  inline-size: 100px;
-  block-size: 100px;
-  opacity: 0.1;
-  object-fit: cover;
-}
-
 .ability-info-container {
-  text-align: center;
+  inline-size: 100%;
+  block-size: 100%;
+  padding: 12px;
+  padding-inline-end: 70px;
 }
 
 .ability__name {
-  color: $color-text-accent-1;
+  display: inline-block;
+  padding-inline: 8px;
+  margin-block-end: 8px;
+  border-radius: $border-radius-size-2;
+  color: $color-text-light-1;
+  background-color: $color-accent-2;
 }
 
 .ability__desc {
-  color: $color-text-medium-1;
+  font-size: 1.5rem;
+  color: $color-text-light-2;
+}
+
+.card-ability__img-container {
+  position: absolute;
+  right: -15px;
+  display: grid;
+  place-items: center;
+  inline-size: 80px;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.card-ability__img {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+@media (min-width: 768px) {
+  .card-ability:hover {
+    background-color: rgba($neutral70, 0.2);
+  }
 }

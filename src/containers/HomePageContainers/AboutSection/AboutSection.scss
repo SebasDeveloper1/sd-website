@@ -4,6 +4,7 @@
 .about {
   inline-size: 100%;
   block-size: auto;
+  padding-block: 32px;
   background-size: cover;
   background-position: center;
   background-image: $color-linear-gradient-2;
@@ -17,19 +18,7 @@
   align-items: center;
   inline-size: 90%;
   max-inline-size: 1366px;
-  padding: 24px;
   margin: 0 auto;
-  border-inline-start: 2px solid $color-text-medium-1;
-}
-
-.about-content::after {
-  @include timeline-point(
-    $top: 50%,
-    $left: -13px,
-    $background: $color-secondary,
-    $color-border: $color-text-medium-1
-  );
-  transform: translateY(-10px);
 }
 
 .about__img {
@@ -37,8 +26,8 @@
   inline-size: 100%;
   max-inline-size: 400px;
   margin-block-end: 12px;
-  object-fit: cover;
   border-radius: 53% 47% 69% 31% / 61% 60% 40% 39%;
+  object-fit: cover;
 }
 
 .about-text-container {
