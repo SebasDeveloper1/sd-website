@@ -1,8 +1,7 @@
 import React from 'react';
 import './SecondParagraph.scss';
 
-export function SecondParagraph(props) {
-  const { id, textContent, modifierClass, style } = props;
+export function SecondParagraph({ id, textContent, modifierClass, style }) {
   return (
     <p
       id={id}

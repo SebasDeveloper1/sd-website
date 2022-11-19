@@ -27,8 +27,10 @@ import { CardMore } from 'components/CardMore/CardMore';
 import { ContactCard } from 'components/ContactCard/ContactCard';
 import { Slideshow } from 'components/Slideshow/Slideshow';
 import { CertificateCard } from 'components/CertificateCard/CertificateCard';
+import { ProfessionalTitlesCard } from 'components/ProfessionalTitlesCard/ProfessionalTitlesCard';
+import { CertificationsSection } from 'components/CertificationsSection/CertificationsSection';
 // Loading components
-import { AbilityLoadingCard } from 'components/AbilityLoadingCard/AbilityLoadingCard';
+import { GenericLoadingCard } from 'components/GenericLoadingCard/GenericLoadingCard';
 
 export {
   FirstTitle,
@@ -58,5 +60,7 @@ export {
   ContactCard,
   Slideshow,
   CertificateCard,
-  AbilityLoadingCard,
+  ProfessionalTitlesCard,
+  CertificationsSection,
+  GenericLoadingCard,
 };

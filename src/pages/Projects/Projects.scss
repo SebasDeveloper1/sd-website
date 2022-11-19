@@ -2,15 +2,13 @@
 
 .projects-page {
   inline-size: 100%;
+  max-inline-size: 1366px;
+  margin: 0 auto;
   margin-block-start: 65px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('images/background_hero2.svg');
 }
 
 .projects-grid-container {
   inline-size: 90%;
-  max-inline-size: 1366px;
   block-size: auto;
   padding-block-start: 40px;
   padding-block-end: 80px;
@@ -18,8 +16,7 @@
 }
 
 .projects-grid__card {
-  max-block-size: 240px;
-  border-radius: 8px;
+  block-size: 240px;
 }
 
 @media (min-width: 768px) {

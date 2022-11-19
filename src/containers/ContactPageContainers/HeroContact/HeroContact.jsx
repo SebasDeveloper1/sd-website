@@ -15,7 +15,7 @@ export function HeroContact() {
           modifierClass="contact-hero__title"
         />
         <SecondParagraph
-          textContent="Do you want to work with me?, send me a ping!"
+          textContent="¿Quieres trabajar conmigo? ¡Hazme un ping!"
           modifierClass="contact-hero__paragraph"
         />
       </div>

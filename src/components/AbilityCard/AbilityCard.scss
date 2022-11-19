@@ -13,8 +13,7 @@
   place-items: center;
   inline-size: 100%;
   block-size: 100%;
-  min-block-size: 90px;
-  max-block-size: 110px;
+  min-block-size: 100px;
   text-decoration: none;
   background-color: rgba($neutral70, 0.1);
   overflow: hidden;
@@ -24,21 +23,22 @@
   inline-size: 100%;
   block-size: 100%;
   padding: 12px;
-  padding-inline-end: 70px;
+  padding-inline-end: 75px;
 }
 
 .ability__name {
   display: inline-block;
-  padding-inline: 8px;
+  padding: 12px 8px;
   margin-block-end: 8px;
   border-radius: $border-radius-size-2;
   color: $color-text-light-1;
+  line-height: 0;
   background-color: $color-accent-2;
 }
 
 .ability__desc {
   font-size: 1.5rem;
-  color: $color-text-light-2;
+  color: $color-text-medium-1;
 }
 
 .card-ability__img-container {

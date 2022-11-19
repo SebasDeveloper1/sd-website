@@ -3,16 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import './SearchInput.scss';
 
-export function SearchInput(props) {
-  const {
-    type,
-    id,
-    name,
-    placeholder,
-    modifierClassContainer,
-    modifierClassInput,
-    style,
-  } = props;
+export function SearchInput({
+  type,
+  id,
+  name,
+  placeholder,
+  modifierClassContainer,
+  modifierClassInput,
+  style,
+  value,
+  onChange,
+}) {
+  const onSearchValueChange = (event) => {
+    onChange(event.target.value);
+  };
   return (
     <div
       className={
@@ -27,6 +31,8 @@ export function SearchInput(props) {
         id={id}
         name={name}
         placeholder={placeholder}
+        value={value}
+        onChange={onSearchValueChange}
         className={
           modifierClassInput
             ? `search__input ${modifierClassInput}`

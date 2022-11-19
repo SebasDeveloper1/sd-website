@@ -5,7 +5,7 @@ import sebasDeveloper from 'images/sebas-developer.jpg';
 import {
   FirstTitle,
   FirstButton,
-  SecondTitle,
+  ThirdTitle,
 } from 'components/indexComponents';
 import './HeroHome.scss';
 
@@ -30,16 +30,26 @@ export function HeroHome() {
           <div className="hero__text">
             <FirstTitle
               modifierClass="hero__title"
-              textContent="Hi I'm Sebastian Pedroza"
+              textContent="Sebastian Pedroza"
             />
-            <SecondTitle
+            <ThirdTitle
               textContent="[ Frontend Developer ]"
               modifierClass="hero__subtitle"
             />
             <FirstButton
               type="button"
               modifierClass="hero__dowload-btn"
-              textButton="Download CV"
+              textButton={
+                // eslint-disable-next-line react/jsx-wrap-multilines
+                <a
+                  className="hero__dowload-btn--link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=b069951c-8605-4f55-9957-534789161277"
+                >
+                  Descargar CV
+                </a>
+              }
               srcIcon={faDownload}
             />
           </div>

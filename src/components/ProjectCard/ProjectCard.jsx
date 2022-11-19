@@ -2,11 +2,13 @@ import React from 'react';
 import { ThirdTitle, FirstParagraph } from 'components/indexComponents';
 import './ProjectCard.scss';
 
-export function ProjectCard(props) {
-  const { modifierClass, style, onClick, onKeyDown, projectData } = props;
-
-  const tools = projectData.projectTools.join(', ');
-
+export function ProjectCard({
+  modifierClass,
+  style,
+  onClick,
+  onKeyDown,
+  projectData,
+}) {
   return (
     <li
       className={
@@ -24,15 +26,18 @@ export function ProjectCard(props) {
       >
         <img
           className="card-project__img"
-          src={projectData.projectImages[0]}
+          src={projectData?.images[0]}
           alt=""
         />
         <div className="project-info-container">
           <ThirdTitle
-            textContent={projectData.projectName}
+            textContent={projectData?.name}
             modifierClass="project__name"
           />
-          <FirstParagraph textContent={tools} modifierClass="project__tools" />
+          <FirstParagraph
+            textContent={projectData?.type}
+            modifierClass="project__tools"
+          />
         </div>
       </button>
     </li>

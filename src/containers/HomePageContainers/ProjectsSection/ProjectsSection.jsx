@@ -1,53 +1,82 @@
-import React from 'react';
+/* eslint-disable no-nested-ternary */
+import React, { useState, useLayoutEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import {
   SecondTitle,
   FirstParagraph,
   ProjectCard,
+  GenericLoadingCard,
   SecondButton,
 } from 'components/indexComponents';
 import { useGetData } from 'hooks/useGetData';
 import './ProjectsSection.scss';
 
 export function ProjectsSection() {
+  const [projectList, setProjectList] = useState([]);
   const { dataList, loading, error } = useGetData({ Ref: 'projects' });
   const navigate = useNavigate();
 
+  useLayoutEffect(() => {
+    const sortList = dataList
+      .sort((a, b) => b.creationTime - a.creationTime)
+      .slice(0, 6);
+    return setProjectList(sortList);
+  }, [loading]);
+
   const onClickHandler = (project) => {
-    navigate(`/project/${project.slug}`);
+    navigate(`/project/${project?.slug}`);
+  };
+
+  const redirectHandler = () => {
+    navigate('/projects');
   };
 
   return (
     <section className="projects">
       <div className="projects-content">
         <SecondTitle
-          textContent="Featured projects..."
+          textContent="Últimos proyectos"
           modifierClass="projects__title-section"
         />
         <FirstParagraph
-          textContent="Me apasiona escribir y crear contenido sobre ReactJS en mi canal de YouTube y en este blog donde escribo de JavaScript y las conferencias que imparto."
+          textContent="Me apasiona poner en práctica cada nuevo concepto que aprendo, por esto que realizo proyectos frecuentemente que ponen a prueba mis habilidades, que me permiten pulir mis técnicas y que me ofrecen la oportunidad de mostrarle al mundo lo que sé."
           modifierClass="projects__paragraph"
         />
         <ul className="projects__container-cards">
-          {dataList.map((project) => (
-            <ProjectCard
-              key={`project-home__${project.id}`}
-              onClick={() => {
-                onClickHandler(project);
-              }}
-              onKeyDown={() => {
-                onClickHandler(project);
-              }}
-              projectData={project}
-            />
-          ))}
+          {loading ? (
+            <>
+              <GenericLoadingCard />
+              <GenericLoadingCard />
+              <GenericLoadingCard />
+              <GenericLoadingCard />
+              <GenericLoadingCard />
+              <GenericLoadingCard />
+            </>
+          ) : error ? (
+            <p>{`Error... ${error}`}</p>
+          ) : (
+            projectList.map((project) => (
+              <ProjectCard
+                key={`project-home__${project?.id}`}
+                onClick={() => {
+                  onClickHandler(project);
+                }}
+                onKeyDown={() => {
+                  onClickHandler(project);
+                }}
+                projectData={project}
+              />
+            ))
+          )}
         </ul>
         <SecondButton
           type="button"
           modifierClass="projects__see-more-btn"
-          textButton="See more projects"
+          textButton="Ver más proyectos "
           srcIcon={faEye}
+          onClick={redirectHandler}
+          onKeyDown={redirectHandler}
         />
       </div>
     </section>

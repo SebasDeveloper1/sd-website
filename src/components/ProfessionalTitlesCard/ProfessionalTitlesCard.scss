@@ -1,0 +1,53 @@
+@import 'styles/vars';
+
+.card-professional-container {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.card-professional {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 8px;
+  place-items: center;
+  inline-size: 100%;
+  block-size: 100%;
+  min-block-size: 100px;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: rgba($color-dark-2, 0.3);
+}
+
+.card-professional:hover {
+  background-color: rgba($color-dark-2, 0.4);
+}
+
+.card-professional__img {
+  grid-row: 1 / 2;
+  inline-size: 80px;
+  object-fit: cover;
+}
+
+.professional-info-container {
+  grid-row: 2 / 3;
+  inline-size: 100%;
+  text-align: center;
+}
+
+.professional__name {
+  inline-size: 100%;
+  color: $color-text-light-1;
+  text-transform: capitalize;
+}
+
+.professional__institution {
+  inline-size: 100%;
+  color: $color-text-medium-3;
+  text-transform: capitalize;
+}
+
+.professional__time {
+  inline-size: 100%;
+  color: $color-text-medium-1;
+}

@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { faLink, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faExternalLink } from '@fortawesome/free-solid-svg-icons';
 import {
   SecondTitle,
   ThirdTitle,
@@ -18,16 +18,11 @@ import './ProjectInfo.scss';
 export function ProjectInfo() {
   const [projectInfo, setProjectInfo] = useState({});
   const { dataList, loading, error } = useGetData({ Ref: 'projects' });
-  const { slug } = useParams();
+  const { projectId } = useParams();
 
-  useEffect(() => {
-    const sortData = async () => {
-      const projectList = await dataList.find(
-        (project) => project.slug === slug
-      );
-      return setProjectInfo(projectList);
-    };
-    sortData();
+  useLayoutEffect(() => {
+    const projectData = dataList.find((project) => project?.slug === projectId);
+    return setProjectInfo(projectData);
   }, [loading]);
 
   return (
@@ -35,40 +30,40 @@ export function ProjectInfo() {
       {loading ? (
         <ProjectDetailsPageLoading />
       ) : error ? (
-        <p>Error...</p>
+        <p>{`Error... ${error}`}</p>
       ) : projectInfo ? (
         <section className="project-details-container">
           <div className="project-detais__img">
-            <Slideshow imagesList={projectInfo?.projectImages} />
+            <Slideshow imagesList={projectInfo?.images} />
           </div>
           <div className="project-details-info-container">
             <SecondTitle
-              textContent={projectInfo?.projectName}
+              textContent={projectInfo?.name}
               modifierClass="project-details__name"
             />
             <div className="details__categ-container">
               <FirstParagraph
-                textContent={projectInfo?.projectCateg}
+                textContent={projectInfo?.category}
                 modifierClass="project-details__categ"
               />
               <FirstParagraph
-                textContent={projectInfo?.projectLevel}
+                textContent={projectInfo?.type}
                 modifierClass="project-details__level"
               />
             </div>
             <FirstParagraph
-              textContent={projectInfo?.projectDesc}
+              textContent={projectInfo?.description}
               modifierClass="project-details__desc"
             />
             <ThirdTitle
-              textContent="Tools..."
+              textContent="Tecnologías"
               modifierClass="project-details__subtitle"
             />
 
             <ul className="project-details__tools-list">
-              {projectInfo?.projectTools.map((tool) => (
+              {projectInfo?.tools.map((tool) => (
                 <li
-                  key={`${projectInfo?.projectName}__tool-${tool}`}
+                  key={`${projectInfo?.name}__tool-${tool}`}
                   className="details-tools-list__item"
                 >
                   <FirstParagraph
@@ -82,26 +77,26 @@ export function ProjectInfo() {
             <div className="project-details-btn-container">
               <a
                 className="project-details-btn"
-                href={projectInfo.projectLinkView}
+                href={projectInfo?.linkView}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <SecondButton
                   type="button"
-                  textButton="Preview"
+                  textButton="Ver en la web"
                   modifierClass="project-details__preview-btn"
-                  srcIcon={faLink}
+                  srcIcon={faExternalLink}
                 />
               </a>
               <a
                 className="project-details-btn"
-                href={projectInfo.projectLinkRepo}
+                href={projectInfo?.linkRepo}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <ThirdButton
                   type="button"
-                  textButton="Code"
+                  textButton="Ver código"
                   modifierClass="project-details__code-btn"
                   srcIcon={faCode}
                 />

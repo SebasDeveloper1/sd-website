@@ -2,14 +2,13 @@
 
 .contact-hero {
   inline-size: 100%;
-  block-size: auto;
-  margin-block-start: 48px;
 }
 
 .contact-hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 16px;
+  place-items: center;
   inline-size: 90%;
   block-size: auto;
   margin: 0 auto;
@@ -17,10 +16,10 @@
 
 .contact-hero__img-container {
   display: grid;
+  grid-row: 1 / 2;
   place-items: center;
   inline-size: 200px;
   block-size: 200px;
-  margin-block-end: 16px;
   border-radius: $border-radius-circle;
   background-image: $color-linear-gradient-2;
 }
@@ -32,9 +31,8 @@
 }
 
 .contact-hero__title {
-  display: inline-block;
-  margin-block-end: 8px;
-  font-size: $headline1-sm;
+  grid-row: 2 / 3;
+  inline-size: 100%;
   font-weight: $font-weight-title1;
   color: $color-text-medium-1;
   text-align: center;
@@ -45,7 +43,8 @@
 }
 
 .contact-hero__paragraph {
-  display: inline-block;
+  grid-row: 3 / 4;
+  inline-size: 100%;
   color: $color-text-medium-1;
   text-align: center;
 }
@@ -59,5 +58,9 @@
 @media (min-width: 768px) {
   .contact-hero__title {
     font-size: $headline1-lg;
+  }
+
+  .contact-hero__paragraph {
+    max-inline-size: 70vw;
   }
 }

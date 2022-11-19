@@ -15,7 +15,6 @@ import { ContactSection } from 'containers/HomePageContainers/ContactSection/Con
 import { HeroProjects } from 'containers/ProjectsPageContainers/HeroProjects/HeroProjects';
 // PreparationSection containers
 import { HeroPreparation } from 'containers/PreparationPageContainers/HeroPreparation/HeroPreparation';
-import { SchoolsSection } from 'containers/PreparationPageContainers/SchoolsSection/SchoolsSection';
 import { ProfessionalTitles } from 'containers/PreparationPageContainers/ProfessionalTitles/ProfessionalTitles';
 import { Certifications } from 'containers/PreparationPageContainers/Certifications/Certifications';
 // ContactSection containers
@@ -38,7 +37,6 @@ export {
   ContactSection,
   HeroProjects,
   HeroPreparation,
-  SchoolsSection,
   ProfessionalTitles,
   Certifications,
   HeroContact,

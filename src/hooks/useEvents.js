@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 
 export function useEvents() {
   const initialState = {
@@ -28,7 +28,7 @@ export function useEvents() {
     }
   };
 
-  const [state, dispatch] = React.useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleHeaderMenu = () => {
     dispatch({

@@ -6,14 +6,12 @@ import { NavLink } from 'react-router-dom';
 import { EventContext } from 'context/EventContext';
 import './NavList.scss';
 
-export function NavList(props) {
-  const {
-    routeList,
-    modifierClassList,
-    modifierClassRouteList,
-    modifierClassRoute,
-  } = props;
-
+export function NavList({
+  routeList,
+  modifierClassList,
+  modifierClassRouteList,
+  modifierClassRoute,
+}) {
   const { handleHeaderMenu } = useContext(EventContext);
 
   return (

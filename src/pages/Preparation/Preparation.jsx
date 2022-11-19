@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   HeroPreparation,
-  SchoolsSection,
   ProfessionalTitles,
   Certifications,
 } from 'containers/indexContainers';
@@ -13,7 +12,6 @@ export function Preparation() {
     <main className="preparation-page">
       <div id="top" />
       <HeroPreparation />
-      <SchoolsSection />
       <ProfessionalTitles />
       <Certifications />
       <GoToUpButton />

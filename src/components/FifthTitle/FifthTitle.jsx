@@ -1,8 +1,7 @@
 import React from 'react';
 import './FifthTitle.scss';
 
-export function FifthTitle(props) {
-  const { id, textContent, modifierClass, style } = props;
+export function FifthTitle({ id, textContent, modifierClass, style }) {
   return (
     <h5
       id={id}

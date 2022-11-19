@@ -1,8 +1,7 @@
 import React from 'react';
 import './SecondTitle.scss';
 
-export function SecondTitle(props) {
-  const { id, textContent, modifierClass, style } = props;
+export function SecondTitle({ id, textContent, modifierClass, style }) {
   return (
     <h2
       id={id}

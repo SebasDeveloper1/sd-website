@@ -63,11 +63,12 @@
 .project__tools {
   inline-size: auto;
   max-inline-size: 80%;
-  padding: 8px 24px;
+  padding: 4px 12px;
   border-radius: 20px;
   color: $color-text-light-1;
   text-overflow: ellipsis;
+  text-transform: capitalize;
   white-space: nowrap;
-  background-color: $color-secondary;
+  background-color: $color-accent-2;
   overflow: hidden;
 }

@@ -2,16 +2,15 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './FirstButton.scss';
 
-export function FirstButton(props) {
-  const {
-    type,
-    textButton,
-    modifierClass,
-    srcIcon,
-    style,
-    onClick,
-    onKeyDown,
-  } = props;
+export function FirstButton({
+  type,
+  textButton,
+  modifierClass,
+  srcIcon,
+  style,
+  onClick,
+  onKeyDown,
+}) {
   return (
     <button
       // eslint-disable-next-line react/button-has-type

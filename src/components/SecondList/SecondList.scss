@@ -14,20 +14,12 @@
 
 .second-list-item {
   inline-size: auto;
-  padding-inline: 20px;
+  padding: 8px;
   font-size: $p1-sm;
   font-weight: $font-weight-text2;
   color: $color-text-medium-1;
   text-decoration: none;
   cursor: pointer;
-}
-
-.second-list-link {
-  display: inline-block;
-  inline-size: auto;
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
 }
 
 .second-list-item:hover {
@@ -41,6 +33,10 @@
 }
 
 @media (min-width: 768px) {
+  .second-list-item {
+    padding-inline: 32px;
+  }
+
   .second-list-link {
     font-size: $p1-lg;
   }
