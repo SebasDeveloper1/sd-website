@@ -1,0 +1,109 @@
+[33mcommit bcf3f59b561ad17b534c9fa0153993ebbb628d92[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Sat Nov 19 15:36:12 2022 -0500
+
+    :rocket: Firebase deploy with Github Actions
+
+[33mcommit 0f80b97f85d5dac4bea9ba9f7070f50b830bbe30[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m
+Merge: 795b0bb f63a2af
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Sat Nov 19 15:12:39 2022 -0500
+
+    Merge branch 'develop' of github.com:SebasDeveloper1/sd-website into develop
+
+[33mcommit 795b0bb64f37cd6cb81f1fe3c29223fd4df9091b[m
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Sat Nov 19 14:37:06 2022 -0500
+
+    :rocket: V 1.0.0
+    
+    initial version of the project
+
+[33mcommit f63a2af8da3fcf0700df71e2d313f2e130e92e64[m
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Sat Nov 19 14:37:06 2022 -0500
+
+    :rocket: V 1.0.0
+    
+    initial version of the project
+
+[33mcommit 674fc0cbe06eb4f1ad2b6789f7804cd50efec5cd[m
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Fri Nov 4 16:51:04 2022 -0500
+
+    :construction: "abilityHomeSection, projectsHomeSection, and projectDetailsPage", finished logic
+
+[33mcommit e0f8a5fc1e7eca51c536b551351e1831aad135b6[m
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Wed Oct 26 21:33:44 2022 -0500
+
+    :construction: "preparation and contact" finished
+
+[33mcommit ad84e2460029253f9576f6b42c269f5525bb132e[m
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Thu Oct 20 14:59:10 2022 -0500
+
+    :construction: "ProjectsHero" finished
+
+[33mcommit 3db75edabfe3ab1acca97a30167b81e4398cdeb1[m
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Tue Oct 18 19:22:28 2022 -0500
+
+    :wrench: webpack to vit migration
+
+[33mcommit 53bd9704066b942a950711bb3102c1090f1bc057[m
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Tue Oct 18 17:53:22 2022 -0500
+
+    :construction: "ProjectsSection, PreparationSection and Footer" finished
+
+[33mcommit e17f4844d421c2fefaa743d44c0882e46ea1e177[m
+Author: Sebastian Pedroza <sebaspedroza.developer@gmail.com>
+Date:   Fri Oct 7 23:08:56 2022 -0500
+
+    :construction: new IU and design v1.0.0
+    
+    first version the new user interface
+
+[33mcommit 13b61efc3e5d549db05fc6c2b790f67bb7d1796d[m
+Author: Sebastian-Pedroza <sebaspedroza.developer@gmial.com>
+Date:   Wed Oct 5 13:02:15 2022 -0500
+
+    :sparkles: "AbilitiesSection" finished
+
+[33mcommit 4aa029f695836548a6f6d7e4674cfa354ca959e7[m
+Author: Sebastian-Pedroza <sebaspedroza.developer@gmial.com>
+Date:   Fri Sep 30 17:47:35 2022 -0500
+
+    :sparkles: AboutSection
+    
+    "About me" section finished
+
+[33mcommit c15b9406f7312220717d4c8db08380a07e3d272e[m
+Author: Sebastian-Pedroza <sebaspedroza.developer@gmial.com>
+Date:   Mon Sep 26 19:49:53 2022 -0500
+
+    :construction: add "HeroHome"
+
+[33mcommit 66c5a65de8c5ce634ed40d82940ea3be569195ed[m
+Author: Sebastian-Pedroza <sebaspedroza.developer@gmial.com>
+Date:   Tue Sep 20 23:47:26 2022 -0500
+
+    Final configuration
+    
+     Date:      Tue Sep 20 23:47:26 2022 -0500
+    
+     On branch main
+     Changes to be committed:
+
+[33mcommit ac1464fcd3a637d5891922de0aae017496e9ca32[m
+Author: Sebastian-Pedroza <sebaspedroza.developer@gmial.com>
+Date:   Tue Sep 20 23:44:43 2022 -0500
+
+    First configuration
+
+[33mcommit faf57122c0dffcfc85e7945f05fd596c8e54f8c0[m
+Author: Sebastian Pedroza <57186496+SebasDeveloper1@users.noreply.github.com>
+Date:   Tue Sep 20 21:10:42 2022 -0500
+
+    Initial commit
