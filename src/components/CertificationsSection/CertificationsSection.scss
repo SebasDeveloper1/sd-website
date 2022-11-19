@@ -1,0 +1,26 @@
+@import 'styles/vars';
+
+.certifications-category-container {
+  inline-size: 100%;
+  block-size: auto;
+  margin-block-end: 60px;
+}
+
+.certifications-category__title {
+  inline-size: 100%;
+  padding-inline-start: 12px;
+  padding-block: 24px;
+  color: $color-text-medium-1;
+}
+
+@media (min-width: 480px) {
+  .certifications-category-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
+  }
+}
+
+@media (min-width: 768px) {
+  .certifications-category-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 45%));
+  }
+}

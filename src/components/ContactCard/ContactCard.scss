@@ -3,42 +3,57 @@
 .card-contact-container {
   inline-size: 100%;
   block-size: auto;
+  padding: 12px;
   border-radius: 8px;
+  background-color: $color-text-light-4;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-contact {
   display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 8px;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
   place-items: center;
-  inline-size: 100%;
+  block-size: 100%;
   block-size: auto;
   text-decoration: none;
 }
 
 .card-contact__img {
-  grid-row: 1 / 2;
-  inline-size: 100px;
-  block-size: 100px;
-  padding: 8px;
-  border: 4px solid rgba($color-secondary, 0.2);
-  border-radius: 50%;
+  grid-column: 1 / 2;
+  inline-size: 60px;
+  block-size: 60px;
   object-fit: cover;
 }
 
-.card-contact__img:hover {
-  border: 4px solid rgba($color-secondary, 1);
-}
-
 .contact-info-container {
-  grid-row: 2 / 3;
+  grid-column: 2 / 3;
   inline-size: 100%;
-  text-align: center;
+  block-size: 100%;
+  overflow: hidden;
 }
 
 .contact__name {
   inline-size: auto;
   max-inline-size: 100%;
-  color: $color-text-light-3;
+  color: $color-primary;
+  text-transform: capitalize;
+}
+
+.contact__nickname {
+  inline-size: auto;
+  max-inline-size: 90%;
+  color: $color-text-medium-2;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .card-contact-container:hover {
+    transform: translateY(-10px);
+    filter: drop-shadow(rgba(97, 112, 216, 0.4) 0px 2px 16px);
+  }
 }

@@ -1,18 +1,17 @@
 import React from 'react';
 import './StandardInput.scss';
 
-export function StandardInput(props) {
-  const {
-    htmlFor,
-    textLabel,
-    type,
-    id,
-    name,
-    placeholder,
-    modifierClassInput,
-    modifierClassLabel,
-    style,
-  } = props;
+export function StandardInput({
+  htmlFor,
+  textLabel,
+  type,
+  id,
+  name,
+  placeholder,
+  modifierClassInput,
+  modifierClassLabel,
+  style,
+}) {
   return (
     <>
       {htmlFor && (

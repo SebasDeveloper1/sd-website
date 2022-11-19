@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import logoBasic from 'images/sebas-developer.logo.png';
 import userImg from 'images/sebas-developer.jpg';
-import {
-  ImageButton,
-  NavList,
-  FirstParagraph,
-  ThirdTitle,
-} from 'components/indexComponents';
+import { ImageButton, NavList, SecondTitle } from 'components/indexComponents';
 import { navigationRouteList } from 'utils/navigationRouteList';
 import { EventContext } from 'context/EventContext';
 import './Header.scss';
@@ -45,37 +40,29 @@ export function Header() {
             }`}
           >
             <section className="nav__info-container nav__info-container--mobile">
-              <div className="nav__info-data-container">
-                <img
-                  src={userImg}
-                  alt="Sebas Developer"
-                  className="nav__info-image"
+              <img
+                src={userImg}
+                alt="Sebas Developer"
+                className="nav__info-image"
+              />
+              <div className="nav__info-data-text">
+                <SecondTitle
+                  textContent="@SebasDeveloper"
+                  modifierClass="nav__data-title"
                 />
-                <div className="nav__info-data-text">
-                  <FirstParagraph
-                    textContent="@SebasDeveloper"
-                    modifierClass="nav__data-title"
-                  />
-                </div>
+                <Link
+                  to="/contact"
+                  className="nav__data-btn"
+                  onClick={handleHeaderMenu}
+                >
+                  Contáctame
+                </Link>
               </div>
-              <Link
-                to="/contact"
-                className="nav__data-btn"
-                onClick={handleHeaderMenu}
-              >
-                Contact me
-              </Link>
             </section>
-
-            <ThirdTitle
-              textContent="Categories..."
-              modifierClass="nav__categories-title"
-            />
-
             <NavList
               /* Passing the result of the function navigationItemList to the itemsList prop. */
               routeList={navigationRouteList()}
-              modifierClassList=""
+              modifierClassList="nav__nav-bar--list"
               modifierClassRouteList="nav__nav-bar--last-child"
               modifierClassRoute=""
             />

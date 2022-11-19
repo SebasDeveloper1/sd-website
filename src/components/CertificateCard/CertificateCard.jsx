@@ -1,37 +1,29 @@
 import React from 'react';
-import {
-  FourthTitle,
-  SmallParagraph,
-  FirstParagraph,
-} from 'components/indexComponents';
-import imagePrueba from 'images/certificates.webp';
+import { SmallParagraph, FirstParagraph } from 'components/indexComponents';
 import './CertificateCard.scss';
 
-export function CertificateCard() {
+export function CertificateCard({ image, link, name, school, time }) {
+  const date = new Date(time).getFullYear();
   return (
     <li className="card-certificate-container">
       <a
-        href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+        href={link}
         className="card-certificate"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          className="card-certificate__img"
-          src={imagePrueba}
-          alt="Logo JS"
-        />
+        <img className="card-certificate__img" src={image} alt={name} />
         <div className="certificate-info-container">
-          <FourthTitle
-            textContent="Ingeniero de Sistemas"
+          <FirstParagraph
+            textContent={name}
             modifierClass="certificate__name"
           />
-          <FirstParagraph
-            textContent="Universidad de Cundinamarca"
+          <SmallParagraph
+            textContent={school}
             modifierClass="certificate__institution"
           />
           <SmallParagraph
-            textContent="2017 - 2022"
+            textContent={date}
             modifierClass="certificate__time"
           />
         </div>

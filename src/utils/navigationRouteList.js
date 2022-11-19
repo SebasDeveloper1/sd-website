@@ -1,9 +1,9 @@
 export function navigationRouteList() {
   const routeList = [
-    { routeName: 'Home', routeLink: '/' },
-    { routeName: 'Projects', routeLink: '/projects' },
-    { routeName: 'Preparation', routeLink: '/Preparation' },
-    { routeName: 'Contact me', routeLink: '/contact' },
+    { routeName: 'Inicio', routeLink: '/' },
+    { routeName: 'Proyectos', routeLink: '/projects' },
+    { routeName: 'Educación', routeLink: '/Preparation' },
+    { routeName: 'Contáctame', routeLink: '/contact' },
   ];
 
   return routeList;

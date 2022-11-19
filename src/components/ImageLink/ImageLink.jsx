@@ -1,17 +1,16 @@
 import React from 'react';
-import platziLogo from 'images/platzi-logo.svg';
 import './ImageLink.scss';
 
-export function ImageLink() {
+export function ImageLink({ imageLink, imageUrl, imageAlt }) {
   return (
     <li className="image-link">
       <a
-        href="https://platzi.com/p/SebasDeveloper/"
+        href={imageUrl}
         className="image-link__link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={platziLogo} alt="Platzi" className="image-link__img" />
+        <img src={imageLink} alt={imageAlt} className="image-link__img" />
       </a>
     </li>
   );

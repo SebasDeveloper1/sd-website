@@ -1,63 +1,55 @@
 @import 'styles/vars';
 
 .preparation-hero {
-  inline-size: 100%;
-  margin-block-end: 80px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: $color-linear-gradient-2;
-  overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-}
-
-.preparation-hero-content {
   display: grid;
-  grid-template-columns: 1fr;
   place-items: center;
   inline-size: 100%;
-  inline-size: 90%;
-  max-inline-size: 1366px;
-  block-size: 100%;
-  margin: 0 auto;
+  min-block-size: 40vh;
+  padding-block: 32px;
+  background-size: cover;
+  background-image: $color-linear-gradient-3, url('images/footer-galaxy.webp');
+  overflow: hidden;
 }
 
 .preparation-hero-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  inline-size: 100%;
-  block-size: 100%;
-  padding-block: 16px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 16px;
+  align-items: center;
+  place-items: center;
+  inline-size: 90%;
+  text-align: center;
 }
 
 .preparation-hero-info__title {
+  grid-row: 1 / 2;
   inline-size: 100%;
-  margin-block-end: 8px;
 }
 
 .preparation-hero-info__descr {
+  grid-row: 2 / 3;
   inline-size: 100%;
+  max-inline-size: 800px;
   color: $color-text-light-2;
 }
 
-.preparation-hero-content__img {
-  display: none;
+.schools-cards-container {
+  grid-template-columns: repeat(auto-fit, minmax(20px, 45%));
+  grid-row: 3 / 4;
+  list-style: none;
 }
 
 @media (min-width: 480px) {
-  .preparation-hero-content {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+  .schools-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2%));
   }
+}
 
-  .preparation-hero-info {
-    grid-column: 1 / 3;
+@media (min-width: 768px) {
+  .preparation-hero {
+    padding-block: 44px;
   }
-
-  .preparation-hero-content__img {
-    display: block;
-    inline-size: 100%;
-    block-size: 100%;
-    object-fit: cover;
+  .schools-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1%));
   }
 }

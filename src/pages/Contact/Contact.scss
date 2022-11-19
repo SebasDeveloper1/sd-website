@@ -2,31 +2,18 @@
 
 .contact-page {
   inline-size: 100%;
+  max-inline-size: 1366px;
   block-size: auto;
   min-block-size: 100vh;
-  margin-block-start: 48px;
+  padding-block-start: 112px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/background_hero2.svg');
 }
 
 .contact-page__container-cards {
   inline-size: 90%;
-  max-inline-size: 1366px;
   margin: 0 auto;
-  margin-block: 48px;
-}
-
-.contact-page__cards-list {
-  grid-template-columns: repeat(auto-fit, 110px);
-  gap: 60px;
-}
-
-@media (min-width: 480px) {
-  .contact-page__cards-list {
-    grid-template-columns: repeat(auto-fit, 120px);
-  }
-}
-
-@media (min-width: 768px) {
-  .contact-page__cards-list {
-    grid-template-columns: repeat(auto-fit, 130px);
-  }
+  margin-block: 62px;
 }

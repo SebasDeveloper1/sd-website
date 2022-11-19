@@ -2,20 +2,19 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './ImageButton.scss';
 
-export function ImageButton(props) {
-  const {
-    type,
-    tabIndex,
-    id,
-    modifierClass,
-    title,
-    style,
-    typeIcon,
-    srcIcon,
-    altIcon,
-    onClick,
-    onKeyDown,
-  } = props;
+export function ImageButton({
+  type,
+  tabIndex,
+  id,
+  modifierClass,
+  title,
+  style,
+  typeIcon,
+  srcIcon,
+  altIcon,
+  onClick,
+  onKeyDown,
+}) {
   return (
     <button
       id={id}

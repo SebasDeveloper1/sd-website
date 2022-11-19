@@ -12,8 +12,8 @@
 .hero__background-video {
   inline-size: 100%;
   block-size: 100vh;
+  min-block-size: 600px;
   object-fit: cover;
-  filter: blur(4px);
 }
 
 .hero__content {
@@ -25,6 +25,7 @@
   display: grid;
   place-items: center;
   background-image: $color-linear-gradient-1;
+  backdrop-filter: blur(4px);
 }
 
 .hero__info-container {
@@ -34,7 +35,6 @@
   row-gap: 16px;
   place-items: center;
   inline-size: 90%;
-  max-inline-size: 1366px;
   block-size: auto;
   max-block-size: 90%;
 }
@@ -43,8 +43,9 @@
   grid-row: 1 / 2;
   inline-size: 200px;
   block-size: 200px;
-  border: 6px solid $color-primary;
   border-radius: $border-radius-circle;
+  -webkit-box-shadow: 0 4px 12px 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 50%);
   object-fit: cover;
 }
 
@@ -64,19 +65,24 @@
 }
 
 .hero__subtitle {
-  inline-size: 16ch;
-  margin-block-end: 24px;
+  inline-size: 18ch;
+  margin-block-end: 20px;
   border-inline-end: 2px solid $color-text-medium-1;
   font-weight: $font-weight-text1;
   color: $color-text-medium-1;
   white-space: nowrap;
   overflow: hidden;
-  font-family: $font-family-titles-secondary;
-  animation: typing 2s steps(24), blink 0.5s infinite step-end alternate;
+  animation: typing 2s steps(20), blink 0.5s infinite step-end alternate;
 }
 
 .hero__dowload-btn:hover {
   animation: cta 0.3s ease-in-out;
+}
+
+.hero__dowload-btn--link {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -89,8 +95,8 @@
   .hero__info-image {
     grid-column: 1 / 2;
     grid-row: none;
-    inline-size: 240px;
-    block-size: 240px;
+    inline-size: 250px;
+    block-size: 250px;
   }
 
   .hero__text {
@@ -98,5 +104,9 @@
     grid-row: none;
     align-items: start;
     text-align: start;
+  }
+
+  .hero__subtitle {
+    inline-size: 21ch;
   }
 }

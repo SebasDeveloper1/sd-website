@@ -3,7 +3,7 @@
 .prof-titles {
   inline-size: 100%;
   block-size: auto;
-  padding-block-end: 80px;
+  padding-block: 62px;
 }
 
 .prof-titles-content {
@@ -12,20 +12,8 @@
 }
 
 .prof-titles__title {
-  padding-block-start: 24px;
-  margin-block-end: 24px;
-  border-block-start: 1px solid $color-primary-opacity;
+  inline-size: 100%;
+  padding-block: 24px;
   color: $color-text-light-1;
-}
-
-@media (min-width: 480px) {
-  .prof-titles-cards-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
-  }
-}
-
-@media (min-width: 768px) {
-  .prof-titles-cards-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
-  }
+  text-align: center;
 }

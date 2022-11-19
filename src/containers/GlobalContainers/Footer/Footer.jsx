@@ -17,7 +17,7 @@ export function Footer() {
           modifierClass="footer-section__paragraph"
         />
         <FirstParagraph
-          textContent={'"Made with the 💙 by Sebastian Pedroza"'}
+          textContent="Hecho con el 💙 por Sebastian Pedroza"
           modifierClass="footer-section__title"
         />
       </div>

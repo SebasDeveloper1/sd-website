@@ -1,68 +1,48 @@
 @import 'styles/vars';
 
 .projects-hero {
+  display: grid;
+  place-items: center;
   inline-size: 100%;
+  block-size: auto;
+  padding-block: 32px;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-image: $color-linear-gradient-5, url('images/background_hero1.svg');
+  background-image: $color-linear-gradient-3,
+    url('images/backgorund-projects.webp');
   overflow: hidden;
 }
 
-.projects-hero-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  place-items: center;
-  inline-size: 100%;
-  inline-size: 90%;
-  max-inline-size: 1366px;
-  block-size: 100%;
-  margin: 0 auto;
-}
-
 .projects-hero-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  inline-size: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 16px;
+  place-items: center;
+  inline-size: 90%;
   block-size: 100%;
-  padding-block: 16px;
+  text-align: center;
 }
 
 .projects-hero-info__title {
+  grid-row: 1 / 2;
   inline-size: 100%;
-  margin-block-end: 8px;
 }
 
 .projects-hero-info__descr {
+  grid-row: 2 / 3;
   inline-size: 100%;
-  margin-block-end: 24px;
+  max-inline-size: 800px;
   color: $color-text-light-2;
 }
 
 .projects-hero-info__input {
+  grid-row: 3 / 4;
   inline-size: 100%;
   max-inline-size: 600px;
-}
-
-.projects-hero-content__img {
-  display: none;
+  margin-block-start: 32px;
 }
 
 @media (min-width: 768px) {
-  .projects-hero-content {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-  }
-
-  .projects-hero-info {
-    grid-column: 1 / 3;
-  }
-
-  .projects-hero-content__img {
-    display: block;
-    grid-column: 3 / 4;
-    inline-size: 100%;
-    block-size: 100%;
-    object-fit: cover;
+  .projects-hero {
+    padding-block: 44px;
   }
 }

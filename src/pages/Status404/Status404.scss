@@ -5,13 +5,17 @@
   grid-template-columns: auto;
   place-items: center;
   inline-size: 100%;
+  max-inline-size: 1366px;
   block-size: 100vh;
-  background-image: $color-linear-gradient-4;
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/background_hero2.svg');
 }
 
 .container-404 {
   inline-size: 90%;
   text-align: center;
+  padding-block-start: 65px;
 }
 
 .container-404__image {

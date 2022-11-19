@@ -1,27 +1,25 @@
+/* eslint-disable no-nested-ternary */
 import React from 'react';
 import {
   SecondTitle,
-  SecondParagraph,
   SecondList,
-  CertificateCard,
+  CertificationsSection,
 } from 'components/indexComponents';
-import { GenericList } from 'containers/indexContainers';
+import { useGetData } from 'hooks/useGetData';
+import { certificationTypeList } from 'utils/certificationTypeList';
 import './Certifications.scss';
 
 export function Certifications() {
-  const cerfificationTypes = [
-    { routeName: 'Desarollo Web', routeLink: 'desarrolloWeb' },
-    { routeName: 'Inglés', routeLink: 'ingles' },
-    {
-      routeName: 'Hab. Blandas',
-      routeLink: 'habilidadesBlandas',
-    },
-  ];
+  const { dataList, loading, error } = useGetData({
+    Ref: 'certifications',
+  });
+  const { cerfificationTypes } = certificationTypeList({ dataList });
+
   return (
     <section className="certifications">
       <div className="certifications-content">
         <SecondTitle
-          textContent="Certificaciones..."
+          textContent="Certificaciones"
           modifierClass="certifications__title"
         />
         <SecondList
@@ -30,48 +28,16 @@ export function Certifications() {
           modifierClassRouteList=""
           modifierClassRoute=""
         />
-        <div id="desarrolloWeb" className="certifications-category-container">
-          <SecondParagraph
-            textContent="Desarrollo Web..."
-            modifierClass="certifications-category__title"
+        {cerfificationTypes.map((section) => (
+          <CertificationsSection
+            key={`certificationSection__${section?.routeName}`}
+            sectionId={section?.routeLink}
+            sectionName={section?.routeName}
+            dataList={section?.routeData}
+            loading={loading}
+            error={error}
           />
-          <GenericList modifierClass="certifications-category-cards-container">
-            <CertificateCard />
-            <CertificateCard />
-            <CertificateCard />
-            <CertificateCard />
-            <CertificateCard />
-          </GenericList>
-        </div>
-        <div id="ingles" className="certifications-category-container">
-          <SecondParagraph
-            textContent="Inglés..."
-            modifierClass="certifications-category__title"
-          />
-          <GenericList modifierClass="certifications-category-cards-container">
-            <CertificateCard />
-            <CertificateCard />
-            <CertificateCard />
-            <CertificateCard />
-            <CertificateCard />
-          </GenericList>
-        </div>
-        <div
-          id="habilidadesBlandas"
-          className="certifications-category-container"
-        >
-          <SecondParagraph
-            textContent="Habilidades Blandas..."
-            modifierClass="certifications-category__title"
-          />
-          <GenericList modifierClass="certifications-category-cards-container">
-            <CertificateCard />
-            <CertificateCard />
-            <CertificateCard />
-            <CertificateCard />
-            <CertificateCard />
-          </GenericList>
-        </div>
+        ))}
       </div>
     </section>
   );

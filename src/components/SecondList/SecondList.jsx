@@ -5,14 +5,12 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import './SecondList.scss';
 
-export function SecondList(props) {
-  const {
-    routeList,
-    modifierClassList,
-    modifierClassRouteList,
-    modifierClassRoute,
-  } = props;
-
+export function SecondList({
+  routeList,
+  modifierClassList,
+  modifierClassRouteList,
+  modifierClassRoute,
+}) {
   return (
     <ul
       className={
@@ -33,7 +31,7 @@ export function SecondList(props) {
             to={route.routeLink}
             spy
             smooth
-            offset={-130}
+            offset={-140}
             duration={500}
           >
             {route.routeName}

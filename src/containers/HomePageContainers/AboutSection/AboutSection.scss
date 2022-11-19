@@ -4,7 +4,7 @@
 .about {
   inline-size: 100%;
   block-size: auto;
-  padding-block: 32px;
+  padding-block: 40px;
   background-size: cover;
   background-position: center;
   background-image: $color-linear-gradient-2;
@@ -12,25 +12,25 @@
 
 .about-content {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 32px;
+  place-items: center;
   inline-size: 90%;
-  max-inline-size: 1366px;
   margin: 0 auto;
 }
 
 .about__img {
   position: relative;
-  inline-size: 100%;
+  grid-row: 1 / 2;
+  inline-size: 90%;
   max-inline-size: 400px;
-  margin-block-end: 12px;
-  border-radius: 53% 47% 69% 31% / 61% 60% 40% 39%;
+  border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%;
   object-fit: cover;
 }
 
 .about-text-container {
+  grid-row: 2 / 3;
   inline-size: 100%;
   text-align: start;
 }
@@ -46,16 +46,19 @@
 
 @media (min-width: 768px) {
   .about-content {
-    flex-direction: row;
-    padding: 2%;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
   }
 
   .about__img {
-    inline-size: 45%;
-    margin-block-end: none;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    inline-size: 100%;
   }
 
   .about-text-container {
-    inline-size: 45%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    inline-size: 100%;
   }
 }

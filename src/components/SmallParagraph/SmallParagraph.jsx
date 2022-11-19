@@ -1,8 +1,7 @@
 import React from 'react';
 import './SmallParagraph.scss';
 
-export function SmallParagraph(props) {
-  const { id, textContent, modifierClass, style } = props;
+export function SmallParagraph({ id, textContent, modifierClass, style }) {
   return (
     <p
       id={id}

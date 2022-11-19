@@ -1,10 +1,14 @@
 import React from 'react';
-import { FourthTitle, FirstParagraph } from 'components/indexComponents';
+import { FirstParagraph } from 'components/indexComponents';
 import './AbilityCard.scss';
 
-export function AbilityCard(props) {
-  const { abilityID, abilityName, abilityDesc, abilityImg, abilityLink } =
-    props;
+export function AbilityCard({
+  abilityID,
+  abilityName,
+  abilityDesc,
+  abilityImg,
+  abilityLink,
+}) {
   return (
     <li className="card-ability-container">
       <a

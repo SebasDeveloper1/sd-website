@@ -2,19 +2,19 @@
 
 .card-certificate-container {
   inline-size: 100%;
-  block-size: auto;
+  block-size: 100%;
 }
 
 .card-certificate {
+  display: inline-block;
   display: grid;
-  grid-template-columns: 60px 1fr;
+  grid-template-columns: 50px 1fr;
   gap: 16px;
   place-items: center;
   inline-size: 100%;
-  block-size: auto;
+  block-size: 100%;
   min-block-size: 100px;
   padding: 12px;
-  border: 1px solid transparent;
   border-radius: 8px;
   text-decoration: none;
   background-color: rgba($color-dark-2, 0.3);
@@ -22,7 +22,7 @@
 }
 
 .card-certificate:hover {
-  border: 1px solid $color-secondary-opacity;
+  background-color: rgba($color-dark-2, 0.4);
 }
 
 .card-certificate__img {
@@ -38,14 +38,18 @@
 }
 
 .certificate__name {
+  inline-size: 100%;
   color: $color-text-light-1;
+  text-transform: capitalize;
 }
 
 .certificate__institution {
+  inline-size: 100%;
   color: $color-text-medium-3;
+  text-transform: capitalize;
 }
 
 .certificate__time {
-  border-radius: $border-radius-size-2;
-  color: $color-text-medium-2;
+  inline-size: 100%;
+  color: $color-text-medium-1;
 }

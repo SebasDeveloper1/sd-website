@@ -1,13 +1,21 @@
 /* eslint-disable indent */
 /* eslint-disable react/jsx-indent */
-import React, { useRef } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { ImageButton } from 'components/indexComponents';
 import './Slideshow.scss';
 
 export function Slideshow({ imagesList }) {
   const slideshowRef = useRef(null);
+  const controlsRef = useRef(null);
   let count = 0;
+
+  useLayoutEffect(() => {
+    if (imagesList.length <= 1) {
+      controlsRef.current.style.display = 'none';
+    }
+    slideshowRef.current.style.width = `${imagesList.length * 100}%`;
+  }, [imagesList]);
 
   const onNext = () => {
     const widthSlide = slideshowRef.current.children.length * 100 * -1;
@@ -37,7 +45,7 @@ export function Slideshow({ imagesList }) {
             ))
           : null}
       </div>
-      <div className="slideshow-controls">
+      <div ref={controlsRef} className="slideshow-controls">
         <ImageButton
           type="button"
           modifierClass="slideshow-controls__btn"

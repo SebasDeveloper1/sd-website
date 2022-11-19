@@ -9,6 +9,7 @@
   inline-size: 100%;
   max-inline-size: 1366px;
   block-size: auto;
+  padding-block: 65px;
 }
 
 .project-detais__img--loading {
@@ -162,6 +163,8 @@
     grid-row: 1 / 2;
     block-size: 100%;
     max-block-size: 550px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
     overflow: hidden;
   }
 
