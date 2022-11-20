@@ -30,7 +30,7 @@ export function HeroHome() {
           <div className="hero__text">
             <FirstTitle
               modifierClass="hero__title"
-              textContent="Sebastian Pedroza"
+              textContent="Sebastian Pedroza."
             />
             <ThirdTitle
               textContent="[ Frontend Developer ]"
