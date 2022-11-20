@@ -11,7 +11,7 @@ export function HeroProjects({ searchInputValue, setSearchInputValue }) {
     <section className="projects-hero">
       <div className="projects-hero-info">
         <SecondTitle
-          textContent="💻 Mis proyectos"
+          textContent="Mis proyectos"
           modifierClass="projects-hero-info__title"
         />
         <SecondParagraph

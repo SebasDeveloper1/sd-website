@@ -6,8 +6,7 @@
   inline-size: 100%;
   min-block-size: 40vh;
   padding-block: 32px;
-  background-size: cover;
-  background-image: $color-linear-gradient-3, url('images/footer-galaxy.webp');
+  background-image: $color-linear-gradient-4;
   overflow: hidden;
 }
 
@@ -15,7 +14,6 @@
   display: grid;
   grid-template-rows: repeat(3, auto);
   gap: 16px;
-  align-items: center;
   place-items: center;
   inline-size: 90%;
   text-align: center;
@@ -30,7 +28,6 @@
   grid-row: 2 / 3;
   inline-size: 100%;
   max-inline-size: 800px;
-  color: $color-text-light-2;
 }
 
 .schools-cards-container {

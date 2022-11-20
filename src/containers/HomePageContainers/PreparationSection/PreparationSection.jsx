@@ -32,13 +32,13 @@ export function PreparationSection() {
         />
         <FirstParagraph
           textContent={
-            <p>
+            <span>
               Soy Ingeniero de Sistemas, egresado de la
               <b> Universidad de Cundinamarca </b>y estudiante permanente de
               <b> Platzi </b>
               en temas relacionados con Desarrollo, Ingeniería, Habilidades
               blandas, Inglés y mucho más.
-            </p>
+            </span>
           }
           modifierClass="preparation__paragraph"
         />

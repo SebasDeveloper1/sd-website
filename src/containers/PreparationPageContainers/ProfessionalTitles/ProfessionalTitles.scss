@@ -12,8 +12,19 @@
 }
 
 .prof-titles__title {
+  position: relative;
   inline-size: 100%;
   padding-block: 24px;
   color: $color-text-light-1;
   text-align: center;
+}
+
+.prof-titles__title::before {
+  position: absolute;
+  top: -16px;
+  left: calc(50% - 40px);
+  inline-size: 80px;
+  block-size: 2px;
+  background-color: $color-primary;
+  content: '';
 }

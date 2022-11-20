@@ -123,43 +123,20 @@ $color-linear-gradient-2: linear-gradient(
 
 $color-linear-gradient-3: linear-gradient(
   180deg,
-  rgba($color-dark-4, 0.5) 0%,
+  rgba($color-dark-4, 0.2) 0%,
   rgba($color-dark-4, 1) 100%
 );
 
 $color-linear-gradient-4: linear-gradient(
-  218.99deg,
-  #3f69ffb3 -79.82%,
-  $color-dark-4 60.25%
+  225.58deg,
+  rgb(7, 4, 254) -14.51%,
+  rgb(250, 5, 124)
 );
 
-$color-linear-gradient-5: linear-gradient(
-  51.32deg,
-  rgba(6, 0, 45, 0.9) 0%,
-  rgba(7, 4, 254, 0.1) 100%,
-  rgba(196, 196, 196, 0) 100%
-);
-
-$color-linear-gradient-6: linear-gradient(
-  258.75deg,
-  rgb(67, 177, 200) 31.33%,
-  #9989eb 48.42%,
-  rgb(217, 127, 209) 59.35%,
-  rgb(245, 130, 178) 65.56%
-);
-$color-linear-gradient-7: linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
-$color-linear-gradient-8: linear-gradient(-70deg, #3bf0e4 0%, #bca1f7);
-
-$color-linear-gradient-9: linear-gradient(
-  180deg,
-  rgba($color-dark-1, 0.7) 0%,
-  rgba($color-dark-1, 1) 100%
-);
-
-$color-radial-gradient-1: radial-gradient(
-  circle,
-  rgba(16, 254, 254, 0.5046393557422969) 0%,
-  rgba(6, 0, 45, 1) 50%
+$color-linear-gradient-text-1: linear-gradient(
+  -70deg,
+  #db469f 0%,
+  #2188ff 100%
 );
 
 //     $headerBlockSize: 72px;

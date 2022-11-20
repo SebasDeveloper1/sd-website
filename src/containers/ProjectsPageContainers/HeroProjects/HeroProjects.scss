@@ -5,9 +5,8 @@
   place-items: center;
   inline-size: 100%;
   block-size: auto;
-  padding-block: 32px;
   background-size: cover;
-  background-image: $color-linear-gradient-3,
+  background-image: $color-linear-gradient-1,
     url('images/backgorund-projects.webp');
   overflow: hidden;
 }
@@ -17,32 +16,33 @@
   grid-template-rows: repeat(3, auto);
   gap: 16px;
   place-items: center;
-  inline-size: 90%;
+  inline-size: 100%;
   block-size: 100%;
+  padding-block: 32px;
   text-align: center;
+  backdrop-filter: blur(12px);
 }
 
 .projects-hero-info__title {
   grid-row: 1 / 2;
-  inline-size: 100%;
+  inline-size: 90%;
 }
 
 .projects-hero-info__descr {
   grid-row: 2 / 3;
-  inline-size: 100%;
+  inline-size: 90%;
   max-inline-size: 800px;
-  color: $color-text-light-2;
 }
 
 .projects-hero-info__input {
   grid-row: 3 / 4;
-  inline-size: 100%;
+  inline-size: 90%;
   max-inline-size: 600px;
   margin-block-start: 32px;
 }
 
 @media (min-width: 768px) {
-  .projects-hero {
+  .projects-hero-info {
     padding-block: 44px;
   }
 }

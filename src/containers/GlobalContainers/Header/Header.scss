@@ -104,7 +104,7 @@
 .nav__data-title {
   margin-block-end: 12px;
   color: $color-text-medium-1;
-  background: $color-linear-gradient-7;
+  background: $color-linear-gradient-text-1;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -171,8 +171,8 @@
 
   .nav__nav-bar--last-child:last-child {
     display: inline-block;
-    padding: 8px 12px;
-    margin-inline-start: 8px;
+    padding: 8px;
+    margin-inline-start: 12px;
     border-radius: $border-radius-size-2;
     background-color: $color-primary;
   }

@@ -17,7 +17,7 @@ export function HeroPreparation() {
     <section className="preparation-hero">
       <div className="preparation-hero-info">
         <SecondTitle
-          textContent="🎓 Mi preparación"
+          textContent="Mi preparación"
           modifierClass="preparation-hero-info__title"
         />
         <SecondParagraph
