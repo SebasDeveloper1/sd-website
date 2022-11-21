@@ -2,6 +2,7 @@
 import React, { useState, useLayoutEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { useInView } from 'react-intersection-observer';
 import {
   SecondTitle,
   FirstParagraph,
@@ -16,6 +17,10 @@ export function ProjectsSection() {
   const [projectList, setProjectList] = useState([]);
   const { dataList, loading, error } = useGetData({ Ref: 'projects' });
   const navigate = useNavigate();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
 
   useLayoutEffect(() => {
     const sortList = dataList
@@ -34,7 +39,14 @@ export function ProjectsSection() {
 
   return (
     <section className="projects">
-      <div className="projects-content">
+      <div
+        ref={ref}
+        className={
+          inView
+            ? 'projects-content entrance-animation entrance-animation-right'
+            : 'projects-content entrance-animation'
+        }
+      >
         <SecondTitle
           textContent="Últimos proyectos"
           modifierClass="projects__title-section"

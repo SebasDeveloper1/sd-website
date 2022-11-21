@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable no-nested-ternary */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';

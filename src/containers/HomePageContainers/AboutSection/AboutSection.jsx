@@ -7,7 +7,11 @@ export function AboutSection() {
   return (
     <section className="about">
       <div className="about-content">
-        <img src={aboutImage} alt="" className="about__img" />
+        <img
+          src={aboutImage}
+          alt="Sebas Pedroza en la Platzi Conf 2022"
+          className="about__img"
+        />
         <div className="about-text-container">
           <SecondTitle textContent="¿Quién soy?" modifierClass="about__title" />
           <FirstParagraph

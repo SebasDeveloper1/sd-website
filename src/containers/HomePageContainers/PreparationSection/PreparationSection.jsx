@@ -4,6 +4,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { useInView } from 'react-intersection-observer';
 import { GenericList } from 'containers/indexContainers';
 import {
   SecondTitle,
@@ -18,6 +19,10 @@ import './PreparationSection.scss';
 export function PreparationSection() {
   const { dataList, loading, error } = useGetData({ Ref: 'schools' });
   const navigate = useNavigate();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
 
   const redirectHandler = () => {
     navigate('/Preparation');
@@ -25,7 +30,14 @@ export function PreparationSection() {
 
   return (
     <section className="preparation">
-      <div className="preparation-content">
+      <div
+        ref={ref}
+        className={
+          inView
+            ? 'preparation-content entrance-animation entrance-animation-left'
+            : 'preparation-content entrance-animation'
+        }
+      >
         <SecondTitle
           textContent="Educación"
           modifierClass="preparation__title-section"

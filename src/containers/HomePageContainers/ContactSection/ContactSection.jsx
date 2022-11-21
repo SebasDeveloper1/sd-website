@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import { GenericList } from 'containers/indexContainers';
 import {
   SecondTitle,
@@ -13,10 +14,21 @@ import './ContactSection.scss';
 
 export function ContactSection() {
   const { dataList, loading, error } = useGetData({ Ref: 'contact' });
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
 
   return (
     <section className="contact">
-      <div className="contact-content">
+      <div
+        ref={ref}
+        className={
+          inView
+            ? 'contact-content entrance-animation entrance-animation-right'
+            : 'contact-content entrance-animation'
+        }
+      >
         <SecondTitle
           textContent="Contacta conmigo"
           modifierClass="contact__title-section"

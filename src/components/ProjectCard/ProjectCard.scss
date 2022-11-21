@@ -4,6 +4,7 @@
   inline-size: 100%;
   block-size: 100%;
   overflow: hidden;
+  animation: opacityEntranceAnimation 1s;
   -webkit-transition: 420ms all;
   transition: 420ms all;
 }

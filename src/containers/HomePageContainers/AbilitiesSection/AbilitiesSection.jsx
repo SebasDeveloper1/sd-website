@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React, { useLayoutEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import { GenericList } from 'containers/indexContainers';
 import {
   SecondTitle,
@@ -14,6 +15,10 @@ import './AbilitiesSection.scss';
 export function AbilitiesSection() {
   const [toolList, setToolList] = useState([]);
   const { dataList, loading, error } = useGetData({ Ref: 'tools' });
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
 
   useLayoutEffect(() => {
     const sortList = dataList.sort((a, b) => a.toolTimestamp - b.toolTimestamp);
@@ -22,7 +27,14 @@ export function AbilitiesSection() {
 
   return (
     <section className="abilities">
-      <div className="abilities-content">
+      <div
+        ref={ref}
+        className={
+          inView
+            ? 'abilities-content entrance-animation entrance-animation-left'
+            : 'abilities-content entrance-animation'
+        }
+      >
         <SecondTitle
           textContent="Habilidades y Herramientas"
           modifierClass="abilities__title-section"

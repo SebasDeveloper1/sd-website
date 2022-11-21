@@ -45,9 +45,9 @@
   inline-size: auto;
   max-inline-size: 90%;
   color: $color-text-medium-2;
+  text-overflow: ellipsis;
   text-transform: capitalize;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 
