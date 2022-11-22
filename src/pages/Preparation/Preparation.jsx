@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import {
   HeroPreparation,
   ProfessionalTitles,
@@ -9,12 +10,17 @@ import './Preparation.scss';
 
 export function Preparation() {
   return (
-    <main className="preparation-page">
-      <div id="top" />
-      <HeroPreparation />
-      <ProfessionalTitles />
-      <Certifications />
-      <GoToUpButton />
-    </main>
+    <>
+      <Helmet>
+        <title>SebasDeveloper | Educación</title>
+      </Helmet>
+      <main className="preparation-page">
+        <div id="top" />
+        <HeroPreparation />
+        <ProfessionalTitles />
+        <Certifications />
+        <GoToUpButton />
+      </main>
+    </>
   );
 }
