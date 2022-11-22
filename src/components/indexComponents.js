@@ -31,6 +31,8 @@ import { ProfessionalTitlesCard } from 'components/ProfessionalTitlesCard/Profes
 import { CertificationsSection } from 'components/CertificationsSection/CertificationsSection';
 // Loading components
 import { GenericLoadingCard } from 'components/GenericLoadingCard/GenericLoadingCard';
+// Meta components
+import { MetaHead } from 'components/MetaHead/MetaHead';
 
 export {
   FirstTitle,
@@ -63,4 +65,5 @@ export {
   ProfessionalTitlesCard,
   CertificationsSection,
   GenericLoadingCard,
+  MetaHead,
 };
