@@ -2,6 +2,7 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { HeroProjects, GenericList } from 'containers/indexContainers';
 import {
   ProjectCard,
@@ -24,43 +25,48 @@ export function Projects() {
   };
 
   return (
-    <main className="projects-page">
-      <div id="top" />
-      <HeroProjects
-        searchInputValue={searchValue}
-        setSearchInputValue={setSearchValue}
-      />
-      <div className="projects-grid-container">
-        <GenericList>
-          {loading ? (
-            <>
-              <GenericLoadingCard />
-              <GenericLoadingCard />
-              <GenericLoadingCard />
-              <GenericLoadingCard />
-              <GenericLoadingCard />
-              <GenericLoadingCard />
-            </>
-          ) : error ? (
-            <p>{`Error... ${error}`}</p>
-          ) : (
-            searchedProjects.map((project) => (
-              <ProjectCard
-                key={`project-home__${project?.id}`}
-                modifierClass="projects-grid__card"
-                onClick={() => {
-                  onClickHandler(project);
-                }}
-                onKeyDown={() => {
-                  onClickHandler(project);
-                }}
-                projectData={project}
-              />
-            ))
-          )}
-        </GenericList>
-      </div>
-      <GoToUpButton />
-    </main>
+    <>
+      <Helmet>
+        <title>SebasDeveloper | Proyectos</title>
+      </Helmet>
+      <main className="projects-page">
+        <div id="top" />
+        <HeroProjects
+          searchInputValue={searchValue}
+          setSearchInputValue={setSearchValue}
+        />
+        <div className="projects-grid-container">
+          <GenericList>
+            {loading ? (
+              <>
+                <GenericLoadingCard />
+                <GenericLoadingCard />
+                <GenericLoadingCard />
+                <GenericLoadingCard />
+                <GenericLoadingCard />
+                <GenericLoadingCard />
+              </>
+            ) : error ? (
+              <p>{`Error... ${error}`}</p>
+            ) : (
+              searchedProjects.map((project) => (
+                <ProjectCard
+                  key={`project-home__${project?.id}`}
+                  modifierClass="projects-grid__card"
+                  onClick={() => {
+                    onClickHandler(project);
+                  }}
+                  onKeyDown={() => {
+                    onClickHandler(project);
+                  }}
+                  projectData={project}
+                />
+              ))
+            )}
+          </GenericList>
+        </div>
+        <GoToUpButton />
+      </main>
+    </>
   );
 }
