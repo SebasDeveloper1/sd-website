@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import {
   HeroHome,
   AboutSection,
@@ -12,15 +13,20 @@ import './Home.scss';
 
 export function Home() {
   return (
-    <main className="home-page">
-      <div id="top" />
-      <HeroHome />
-      <AboutSection />
-      <AbilitiesSection />
-      <ProjectsSection />
-      <PreparationSection />
-      <ContactSection />
-      <GoToUpButton />
-    </main>
+    <>
+      <Helmet>
+        <title>SebasDeveloper | Inicio</title>
+      </Helmet>
+      <main className="home-page">
+        <div id="top" />
+        <HeroHome />
+        <AboutSection />
+        <AbilitiesSection />
+        <ProjectsSection />
+        <PreparationSection />
+        <ContactSection />
+        <GoToUpButton />
+      </main>
+    </>
   );
 }
