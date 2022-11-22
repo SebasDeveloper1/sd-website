@@ -1,11 +1,11 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import status404 from 'images/404_status.svg';
 import {
   FirstParagraph,
   SecondTitle,
   SecondButton,
+  MetaHead,
 } from 'components/indexComponents';
 import './Status404.scss';
 
@@ -16,9 +16,12 @@ const onClick = () => {
 export function Status404() {
   return (
     <>
-      <Helmet>
-        <title>SebasDeveloper | 404</title>
-      </Helmet>
+      <MetaHead
+        title="SebasDeveloper | 404"
+        description="(Status 404) No encontramos lo que estabas buscando."
+        image="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/sebasDeveloper%2Fabout-img.jpg?alt=media&token=eb68dc54-90d6-4d99-8052-19d7f6b7476c"
+        url={document.location.href}
+      />
       <main className="status-404">
         <div className="container-404">
           <img

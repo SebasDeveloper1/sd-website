@@ -2,12 +2,12 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import { HeroProjects, GenericList } from 'containers/indexContainers';
 import {
   ProjectCard,
   GoToUpButton,
   GenericLoadingCard,
+  MetaHead,
 } from 'components/indexComponents';
 import { useSearchProjects } from 'hooks/useSearchProjects';
 import './Projects.scss';
@@ -26,9 +26,12 @@ export function Projects() {
 
   return (
     <>
-      <Helmet>
-        <title>SebasDeveloper | Proyectos</title>
-      </Helmet>
+      <MetaHead
+        title="SebasDeveloper | Proyectos"
+        description="Conoce más de los proyectos construidos por @SebasDeveloper y de las habilidades usadas durante su construcción."
+        image="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/sebasDeveloper%2Fabout-img.jpg?alt=media&token=eb68dc54-90d6-4d99-8052-19d7f6b7476c"
+        url={document.location.href}
+      />
       <main className="projects-page">
         <div id="top" />
         <HeroProjects
