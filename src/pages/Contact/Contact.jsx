@@ -1,8 +1,11 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { HeroContact, GenericList } from 'containers/indexContainers';
-import { GenericLoadingCard, ContactCard } from 'components/indexComponents';
+import {
+  GenericLoadingCard,
+  ContactCard,
+  MetaHead,
+} from 'components/indexComponents';
 import { useGetData } from 'hooks/useGetData';
 import './Contact.scss';
 
@@ -11,9 +14,12 @@ export function Contact() {
 
   return (
     <>
-      <Helmet>
-        <title>SebasDeveloper | Contáctame</title>
-      </Helmet>
+      <MetaHead
+        title="SebasDeveloper | Contáctame"
+        description="¿Quieres trabajar conmigo? ¡Hazme un ping"
+        image="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/sebasDeveloper%2Fabout-img.jpg?alt=media&token=eb68dc54-90d6-4d99-8052-19d7f6b7476c"
+        url={document.location.href}
+      />
       <main className="contact-page">
         <HeroContact />
         <section className="contact-page__container-cards">
