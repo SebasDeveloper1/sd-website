@@ -16,7 +16,7 @@
   display: grid;
   place-items: center;
   inline-size: 100%;
-  block-size: 65px;
+  block-size: 70px;
   padding: 0 4%;
   -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
@@ -38,7 +38,7 @@
 }
 
 .nav__logo-img {
-  inline-size: 160px;
+  block-size: 40px;
   object-fit: cover;
   object-position: center;
 }
@@ -52,7 +52,7 @@
 /*__________________________________________*/
 .nav__menu-container {
   position: absolute;
-  top: 65px;
+  top: 70px;
   left: 0;
   z-index: 2;
   display: flex;

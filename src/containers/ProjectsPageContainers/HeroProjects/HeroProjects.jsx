@@ -15,7 +15,7 @@ export function HeroProjects({ searchInputValue, setSearchInputValue }) {
           modifierClass="projects-hero-info__title"
         />
         <SecondParagraph
-          textContent="Descubre mi trabajo y todos los proyectos que he construido para mostrar mis conocimientos y poner a prueba mis habilidades."
+          textContent="Descubre mi trabajo y los proyectos que he construido para mostrar mis conocimientos y poner a prueba mis habilidades."
           modifierClass="projects-hero-info__descr"
         />
         <SearchInput
