@@ -1,7 +1,7 @@
 import React from 'react';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import videoHero from 'videos/hero-background.mp4';
-import sebasDeveloper from 'images/sebas-developer.jpg';
+import sebasDeveloper from 'images/sebas-developer.webp';
 import {
   FirstTitle,
   FirstButton,
@@ -18,6 +18,7 @@ export function HeroHome() {
         autoPlay
         loop
         muted
+        type="video/mp4"
       />
 
       <div className="hero__content">

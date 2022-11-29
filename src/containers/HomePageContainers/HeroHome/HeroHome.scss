@@ -6,7 +6,6 @@
   place-items: center;
   inline-size: 100%;
   block-size: auto;
-  background-color: $color-dark-1;
 }
 
 .hero__background-video {
@@ -30,9 +29,9 @@
 
 .hero__info-container {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: repeat(2, auto);
   column-gap: 0;
-  row-gap: 16px;
+  row-gap: 32px;
   place-items: center;
   inline-size: 90%;
   block-size: auto;
@@ -61,19 +60,20 @@
 }
 
 .hero__title {
-  margin-block-end: 4px;
+  margin: 0;
+  margin-block-end: 8px;
   color: $color-text-light-1;
 }
 
 .hero__subtitle {
-  inline-size: 18ch;
-  margin-block-end: 20px;
+  inline-size: 22ch;
+  margin-block-end: 32px;
   border-inline-end: 2px solid $color-text-medium-1;
   font-weight: $font-weight-text1;
   color: $color-text-medium-1;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(20), blink 0.5s infinite step-end alternate;
+  animation: typing 2s steps(22), blink 0.5s infinite step-end alternate;
 }
 
 .hero__dowload-btn:hover {
@@ -84,30 +84,4 @@
   font-size: inherit;
   color: inherit;
   text-decoration: none;
-}
-
-@media (min-width: 768px) {
-  .hero__info-container {
-    grid-template-columns: auto 1fr;
-    column-gap: 40px;
-    row-gap: 0;
-  }
-
-  .hero__info-image {
-    grid-column: 1 / 2;
-    grid-row: none;
-    inline-size: 250px;
-    block-size: 250px;
-  }
-
-  .hero__text {
-    grid-column: 2 / 3;
-    grid-row: none;
-    align-items: start;
-    text-align: start;
-  }
-
-  .hero__subtitle {
-    inline-size: 21ch;
-  }
 }
