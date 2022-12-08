@@ -10,7 +10,7 @@
 
 .hero__background-video {
   inline-size: 100%;
-  block-size: 100vh;
+  block-size: calc(100vh - 65px);
   min-block-size: 600px;
   object-fit: cover;
 }
@@ -24,14 +24,14 @@
   display: grid;
   place-items: center;
   background-image: $color-linear-gradient-1;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
 }
 
 .hero__info-container {
   display: grid;
   grid-template-rows: repeat(2, auto);
   column-gap: 0;
-  row-gap: 32px;
+  row-gap: 20px;
   place-items: center;
   inline-size: 90%;
   block-size: auto;
@@ -40,11 +40,9 @@
 
 .hero__info-image {
   grid-row: 1 / 2;
-  inline-size: 200px;
-  block-size: 200px;
+  inline-size: 180px;
+  block-size: 180px;
   border-radius: $border-radius-circle;
-  -webkit-box-shadow: 0 4px 12px 0 rgb(0 0 0 / 50%);
-  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 50%);
   background-color: transparent;
   object-fit: cover;
 }
@@ -59,10 +57,14 @@
   text-align: center;
 }
 
+.hero__title-txt {
+  color: $color-text-medium-2;
+}
+
 .hero__title {
   margin: 0;
-  margin-block-end: 8px;
-  color: $color-text-light-1;
+  margin-block-end: 16px;
+  line-height: 1.2;
 }
 
 .hero__subtitle {
@@ -73,7 +75,7 @@
   color: $color-text-medium-1;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(22), blink 0.5s infinite step-end alternate;
+  animation: typing 1s steps(22), blink 0.5s infinite step-end alternate;
 }
 
 .hero__dowload-btn:hover {

@@ -52,7 +52,7 @@ export function ProjectsSection() {
           modifierClass="projects__title-section"
         />
         <FirstParagraph
-          textContent="Me apasiona poner en práctica cada nuevo concepto que aprendo, por esto que realizo proyectos frecuentemente que ponen a prueba mis habilidades, que me permiten pulir mis técnicas y que me ofrecen la oportunidad de mostrarle al mundo lo que sé."
+          textContent="Me apasiona realizar proyectos que pongan a prueba mis habilidades, que me permitan pulir mis técnicas y que me ofrezcan la oportunidad de mostrarle al mundo mi potencial como profesional."
           modifierClass="projects__paragraph"
         />
         <ul className="projects__container-cards">

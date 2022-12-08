@@ -16,7 +16,7 @@
   display: grid;
   place-items: center;
   inline-size: 100%;
-  block-size: 70px;
+  block-size: 65px;
   padding: 0 4%;
   -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
@@ -52,7 +52,7 @@
 /*__________________________________________*/
 .nav__menu-container {
   position: absolute;
-  top: 70px;
+  top: 65px;
   left: 0;
   z-index: 2;
   display: flex;
@@ -83,13 +83,12 @@
   padding: 20px 8px;
   margin-block-end: 24px;
   border-radius: 8px;
-  background-color: $color-dark-2;
 }
 
 .nav__info-image {
   grid-row: 1 / 2;
-  inline-size: 150px;
-  block-size: 150px;
+  inline-size: 100px;
+  block-size: 100px;
   border: 3px solid $color-primary;
   border-radius: 50%;
   object-fit: cover;
@@ -123,7 +122,7 @@
 
 .nav__nav-bar--list {
   padding-block-start: 32px;
-  border-block-start: 1px solid $neutral;
+  border-block-start: 1px solid $color-text-medium-2;
 }
 
 .nav__nav-bar--last-child:last-child {

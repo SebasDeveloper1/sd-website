@@ -5,6 +5,7 @@ import sebasDeveloper from 'images/sebas-developer.webp';
 import {
   FirstTitle,
   FirstButton,
+  SecondTitle,
   ThirdTitle,
 } from 'components/indexComponents';
 import './HeroHome.scss';
@@ -29,6 +30,10 @@ export function HeroHome() {
             alt="SebasDeveloper"
           />
           <div className="hero__text">
+            <SecondTitle
+              textContent="Hola, yo soy"
+              modifierClass="hero__title-txt"
+            />
             <FirstTitle
               modifierClass="hero__title"
               textContent="Sebastian Pedroza"
