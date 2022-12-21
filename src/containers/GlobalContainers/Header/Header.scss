@@ -101,7 +101,7 @@
 }
 
 .nav__data-title {
-  margin-block-end: 12px;
+  margin-block-end: 32px;
   color: $color-text-medium-1;
   background: $color-linear-gradient-text-1;
   background-clip: text;
@@ -109,15 +109,22 @@
   -webkit-text-fill-color: transparent;
 }
 
+.nav-data-buttons-container {
+  display: grid;
+  gap: 20px;
+  place-items: center;
+  inline-size: 100%;
+}
 .nav__data-btn {
-  display: inline-block;
-  padding: 8px 24px;
-  border-radius: $border-radius-size-2;
-  font-size: $button1-sm;
-  font-weight: $font-weight-text2;
-  color: $color-text-light-1;
+  inline-size: 100%;
+  max-inline-size: 500px;
+}
+
+.nav__data-btn--link {
+  inline-size: 100%;
+  font-size: inherit;
+  color: inherit;
   text-decoration: none;
-  background-color: $color-primary;
 }
 
 .nav__nav-bar--list {

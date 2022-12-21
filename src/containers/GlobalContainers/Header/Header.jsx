@@ -1,9 +1,20 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars,
+  faClose,
+  faDownload,
+  faMessage,
+} from '@fortawesome/free-solid-svg-icons';
 import logoBasic from 'images/sebas-developer.logo.png';
 import userImg from 'images/sebas-developer.jpg';
-import { ImageButton, NavList, SecondTitle } from 'components/indexComponents';
+import {
+  FirstButton,
+  ThirdButton,
+  ImageButton,
+  NavList,
+  SecondTitle,
+} from 'components/indexComponents';
 import { navigationRouteList } from 'utils/navigationRouteList';
 import { EventContext } from 'context/EventContext';
 import './Header.scss';
@@ -50,13 +61,39 @@ export function Header() {
                   textContent="@SebasDeveloper"
                   modifierClass="nav__data-title"
                 />
-                <Link
-                  to="/contact"
-                  className="nav__data-btn"
-                  onClick={handleHeaderMenu}
-                >
-                  Contáctame
-                </Link>
+                <div className="nav-data-buttons-container">
+                  <FirstButton
+                    type="button"
+                    modifierClass="nav__data-btn"
+                    textButton={
+                      // eslint-disable-next-line react/jsx-wrap-multilines
+                      <Link
+                        to="/contact"
+                        className="nav__data-btn--link"
+                        onClick={handleHeaderMenu}
+                      >
+                        Contáctame
+                      </Link>
+                    }
+                    srcIcon={faMessage}
+                  />
+                  <ThirdButton
+                    type="button"
+                    modifierClass="nav__data-btn"
+                    textButton={
+                      // eslint-disable-next-line react/jsx-wrap-multilines
+                      <a
+                        className="nav__data-btn--link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=9afd1fef-69c2-40a5-9607-12354e891a8f"
+                      >
+                        Descargar CV
+                      </a>
+                    }
+                    srcIcon={faDownload}
+                  />
+                </div>
               </div>
             </section>
             <NavList
