@@ -51,7 +51,7 @@ export function HeroHome() {
                   className="hero__dowload-btn--link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=9afd1fef-69c2-40a5-9607-12354e891a8f"
+                  href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=1079ce97-8f8b-4427-adb3-41d3e080737d"
                 >
                   Descargar CV
                 </a>

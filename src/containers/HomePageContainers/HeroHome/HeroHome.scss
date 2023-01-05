@@ -24,7 +24,7 @@
   display: grid;
   place-items: center;
   background-image: $color-linear-gradient-1;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
 }
 
 .hero__info-container {

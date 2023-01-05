@@ -21,7 +21,7 @@ export function HeroPreparation() {
           modifierClass="preparation-hero-info__title"
         />
         <SecondParagraph
-          textContent="Conoce las instituciones que han apoyado mi crecimiento y las habilidades que he obtenido en mi paso de ellas."
+          textContent="Conoce las instituciones que han apoyado mi crecimiento y las habilidades que he obtenido en mi paso por ellas."
           modifierClass="preparation-hero-info__descr"
         />
         <GenericList modifierClass="schools-cards-container">

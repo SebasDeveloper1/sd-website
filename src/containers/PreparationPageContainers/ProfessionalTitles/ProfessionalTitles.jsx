@@ -17,7 +17,7 @@ export function ProfessionalTitles() {
     <section className="prof-titles">
       <div className="prof-titles-content">
         <SecondTitle
-          textContent="Titulos Profecionales"
+          textContent="Títulos Profesionales"
           modifierClass="prof-titles__title"
         />
         <GenericList modifierClass="prof-titles-cards-container">
