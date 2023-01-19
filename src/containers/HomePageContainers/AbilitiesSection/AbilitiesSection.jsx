@@ -1,6 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useLayoutEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { GenericList } from 'containers/indexContainers';
 import {
   SecondTitle,
@@ -8,12 +9,14 @@ import {
   AbilityCard,
   CardMore,
   GenericLoadingCard,
+  SecondButton,
 } from 'components/indexComponents';
 import { useGetData } from 'hooks/useGetData';
 import './AbilitiesSection.scss';
 
 export function AbilitiesSection() {
   const [toolList, setToolList] = useState([]);
+  const [amountOfSkills, setAmountOfSkills] = useState(9);
   const { dataList, loading, error } = useGetData({ Ref: 'tools' });
   const { ref, inView } = useInView({
     threshold: 0.2,
@@ -23,7 +26,14 @@ export function AbilitiesSection() {
   useLayoutEffect(() => {
     /* Sorting the dataList by the toolTimestamp property. */
     setToolList(dataList.sort((a, b) => a.toolTimestamp - b.toolTimestamp));
+    return () => {
+      setToolList([]);
+    };
   }, [loading]);
+
+  const seeAllSkills = () => {
+    setAmountOfSkills(toolList.length);
+  };
 
   return (
     <section className="abilities">
@@ -55,30 +65,37 @@ export function AbilitiesSection() {
               <GenericLoadingCard />
               <GenericLoadingCard />
               <GenericLoadingCard />
-              <GenericLoadingCard />
-              <GenericLoadingCard />
-              <GenericLoadingCard />
-              <GenericLoadingCard />
             </>
           ) : error ? (
             <p>{`Error... ${error}`}</p>
           ) : (
-            toolList.map((tool) => (
-              <AbilityCard
-                key={`tools__${tool?.id}`}
-                abilityID={tool?.id}
-                abilityName={tool?.toolName}
-                abilityDesc={tool?.toolDesc}
-                abilityImg={tool?.toolImg}
-                abilityLink={tool?.toolLink}
-              />
-            ))
+            toolList
+              .slice(0, amountOfSkills)
+              .map((tool) => (
+                <AbilityCard
+                  key={`tools__${tool?.id}`}
+                  abilityID={tool?.id}
+                  abilityName={tool?.toolName}
+                  abilityDesc={tool?.toolDesc}
+                  abilityImg={tool?.toolImg}
+                  abilityLink={tool?.toolLink}
+                />
+              ))
           )}
           <CardMore
             textContent="🚀 Mejorando a diario 😊"
             modifierClass="abilities__card-more"
           />
         </GenericList>
+        {amountOfSkills !== toolList.length ? (
+          <SecondButton
+            type="button"
+            modifierClass="preparation__see-more-btn"
+            textButton="Ver más habilidades"
+            srcIcon={faEye}
+            onClick={seeAllSkills}
+          />
+        ) : null}
       </div>
     </section>
   );
