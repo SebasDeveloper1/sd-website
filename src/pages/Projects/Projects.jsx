@@ -20,6 +20,9 @@ export function Projects() {
   /* Sorting the projects by creation time. */
   searchedProjects.sort((a, b) => b.creationTime - a.creationTime);
 
+  /**
+   * When the user clicks on a project, navigate to the project's page.
+   */
   const onClickHandler = (project) => {
     navigate(`/project/${project?.slug}`);
   };

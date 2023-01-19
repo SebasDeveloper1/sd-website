@@ -1,6 +1,10 @@
-import React, { useLayoutEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+/**
+ * When the pathname changes, scroll to the top of the page.
+ * @returns The children prop.
+ */
 export function ScrollWrapper({ children }) {
   const location = useLocation();
   useLayoutEffect(() => {

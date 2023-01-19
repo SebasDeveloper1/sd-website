@@ -31,7 +31,7 @@
 
 .abilities__paragraph {
   grid-row: 2 / 3;
-  inline-size: 100%;
+  max-inline-size: 75ch;
   margin-block-end: 80px;
   color: $color-text-medium-1;
   text-align: center;
@@ -45,10 +45,4 @@
   min-block-size: 90px;
   max-block-size: 110px;
   border-radius: 8px;
-}
-
-@media (min-width: 768px) {
-  .abilities__paragraph {
-    max-inline-size: 60vw;
-  }
 }

@@ -1,3 +1,7 @@
+/**
+ * It filters the dataList by category and sorts it by creationTime.
+ * @returns An object with a property called cerfificationTypes.
+ */
 export function certificationTypeList({ dataList }) {
   const getFilteredList = (list, category) =>
     // eslint-disable-next-line implicit-arrow-linebreak
@@ -5,6 +9,7 @@ export function certificationTypeList({ dataList }) {
       .filter((item) => item.category === category)
       .sort((a, b) => b.creationTime - a.creationTime);
 
+  /* Filtering the dataList by category and sorting it by creationTime. */
   const webDevelopmentList = getFilteredList(dataList, 'webDevelopment');
   const mobileDevelopmentList = getFilteredList(dataList, 'mobileDevelopment');
   const englishList = getFilteredList(dataList, 'english');

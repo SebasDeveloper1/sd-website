@@ -29,7 +29,7 @@
 
 .preparation__paragraph {
   grid-row: 2 / 3;
-  inline-size: 100%;
+  max-inline-size: 75ch;
   margin-block-end: 80px;
   color: $color-text-medium-1;
   text-align: center;
@@ -54,10 +54,6 @@
 }
 
 @media (min-width: 768px) {
-  .preparation__paragraph {
-    max-inline-size: 60vw;
-  }
-
   .preparation__container-cards {
     grid-template-columns: repeat(auto-fit, minmax(200px, 45%));
   }

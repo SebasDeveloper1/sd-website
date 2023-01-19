@@ -20,6 +20,7 @@ import { EventContext } from 'context/EventContext';
 import './Header.scss';
 
 export function Header() {
+  /* Destructuring the state and the handleHeaderMenu function from the EventContext. */
   const { state, handleHeaderMenu } = useContext(EventContext);
 
   return (

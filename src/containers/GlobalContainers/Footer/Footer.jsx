@@ -13,7 +13,7 @@ export function Footer() {
           className="footer-section__logo"
         />
         <FirstParagraph
-          textContent="Sebastian Pedroza ◉ @SebasDeveloper ◉ 2022"
+          textContent="Sebastian Pedroza ◉ @SebasDeveloper ◉ 2023"
           modifierClass="footer-section__paragraph"
         />
         <FirstParagraph

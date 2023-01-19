@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { getDataCollection } from 'fbase/firestoreFuntions';
 
 export function useGetData({ Ref }) {

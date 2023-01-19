@@ -8,7 +8,11 @@ export function HeroContact() {
     <section className="contact-hero">
       <div className="contact-hero-content">
         <figure className="contact-hero__img-container">
-          <img className="contact-hero__img" src={sebasDeveloper} alt="" />
+          <img
+            className="contact-hero__img"
+            src={sebasDeveloper}
+            alt="SebasDeveloper"
+          />
         </figure>
         <SecondTitle
           textContent="@SebasDeveloper"

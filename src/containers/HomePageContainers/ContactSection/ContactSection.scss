@@ -48,7 +48,7 @@
 }
 
 .contact-section__header-paragraph {
-  inline-size: 100%;
+  max-inline-size: 75ch;
   color: $color-text-medium-1;
   background-clip: text;
 }

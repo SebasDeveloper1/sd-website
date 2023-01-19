@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useGetData } from 'hooks/useGetData';
 
 export function useSearchProjects() {
@@ -7,7 +7,8 @@ export function useSearchProjects() {
 
   let searchedProjects = [];
 
-  if (!searchValue >= 1) {
+  /* Filtering the dataList array based on the searchValue. */
+  if (!searchValue.length >= 1) {
     searchedProjects = dataList;
   } else {
     searchedProjects = dataList.filter((project) => {

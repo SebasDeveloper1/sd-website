@@ -21,8 +21,8 @@ export function AbilitiesSection() {
   });
 
   useLayoutEffect(() => {
-    const sortList = dataList.sort((a, b) => a.toolTimestamp - b.toolTimestamp);
-    return setToolList(sortList);
+    /* Sorting the dataList by the toolTimestamp property. */
+    setToolList(dataList.sort((a, b) => a.toolTimestamp - b.toolTimestamp));
   }, [loading]);
 
   return (

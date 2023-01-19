@@ -22,8 +22,8 @@ export function ProjectInfo() {
   const { projectId } = useParams();
 
   useLayoutEffect(() => {
-    const projectData = dataList.find((project) => project?.slug === projectId);
-    return setProjectInfo(projectData);
+    /* Setting the state of projectInfo to the project that matches the projectId. */
+    setProjectInfo(dataList.find((project) => project?.slug === projectId));
   }, [loading]);
 
   return (
