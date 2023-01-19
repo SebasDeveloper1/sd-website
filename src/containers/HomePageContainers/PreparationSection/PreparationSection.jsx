@@ -25,7 +25,7 @@ export function PreparationSection() {
   });
 
   const redirectHandler = () => {
-    navigate('/Preparation');
+    navigate('/preparation');
   };
 
   return (
@@ -79,7 +79,6 @@ export function PreparationSection() {
           textButton="Ver más detalles"
           srcIcon={faEye}
           onClick={redirectHandler}
-          onKeyDown={redirectHandler}
         />
       </div>
     </section>

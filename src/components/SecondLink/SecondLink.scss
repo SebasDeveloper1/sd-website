@@ -1,0 +1,30 @@
+@import 'styles/vars';
+
+.second-link {
+  padding: 11px 32px;
+  border-radius: $border-radius-size-2;
+  font-size: $button1-sm;
+  font-weight: $font-weight-text1;
+  color: $color-text-medium-3;
+  text-decoration: none;
+  background-color: $color-light-1;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out,
+    left 0.15s ease-in-out;
+}
+
+.second-link:hover {
+  background-color: $color-light-3;
+}
+
+.second-link__icon {
+  margin-inline-end: 8px;
+  font-size: inherit;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .second-link {
+    font-size: $button1-lg;
+  }
+}

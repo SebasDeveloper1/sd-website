@@ -9,7 +9,6 @@ export function SecondButton({
   srcIcon,
   style,
   onClick,
-  onKeyDown,
 }) {
   return (
     <button
@@ -20,7 +19,6 @@ export function SecondButton({
       }
       style={style}
       onClick={onClick}
-      onKeyDown={onKeyDown}
     >
       {srcIcon && (
         <FontAwesomeIcon icon={srcIcon} className="second-button__icon" />

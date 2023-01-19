@@ -78,12 +78,13 @@
   animation: typing 1s steps(22), blink 0.5s infinite step-end alternate;
 }
 
-.hero__dowload-btn:hover {
-  animation: cta 0.3s ease-in-out;
+.hero__dowload-btn {
+  font-weight: $font-weight-text2;
+  color: $color-text-light-1;
+  background-color: $color-primary;
 }
 
-.hero__dowload-btn--link {
-  font-size: inherit;
-  color: inherit;
-  text-decoration: none;
+.hero__dowload-btn:hover {
+  background-color: $color-primary-opacity;
+  animation: cta 0.3s ease-in-out;
 }

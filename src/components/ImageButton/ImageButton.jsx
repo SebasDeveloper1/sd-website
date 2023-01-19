@@ -13,7 +13,6 @@ export function ImageButton({
   srcIcon,
   altIcon,
   onClick,
-  onKeyDown,
 }) {
   return (
     <button
@@ -27,7 +26,6 @@ export function ImageButton({
       title={title}
       style={style}
       onClick={onClick}
-      onKeyDown={onKeyDown}
     >
       {typeIcon === 'FontAwesomeIcon' ? (
         <FontAwesomeIcon

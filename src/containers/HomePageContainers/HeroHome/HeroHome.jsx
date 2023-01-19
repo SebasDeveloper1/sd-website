@@ -4,7 +4,7 @@ import videoHero from 'videos/hero-background.mp4';
 import sebasDeveloper from 'images/sebas-developer.webp';
 import {
   FirstTitle,
-  FirstButton,
+  SecondLink,
   SecondTitle,
   ThirdTitle,
 } from 'components/indexComponents';
@@ -42,20 +42,10 @@ export function HeroHome() {
               textContent="[ Frontend Developer ]"
               modifierClass="hero__subtitle"
             />
-            <FirstButton
-              type="button"
+            <SecondLink
+              href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=1079ce97-8f8b-4427-adb3-41d3e080737d"
+              textContent="Descargar CV"
               modifierClass="hero__dowload-btn"
-              textButton={
-                // eslint-disable-next-line react/jsx-wrap-multilines
-                <a
-                  className="hero__dowload-btn--link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=1079ce97-8f8b-4427-adb3-41d3e080737d"
-                >
-                  Descargar CV
-                </a>
-              }
               srcIcon={faDownload}
             />
           </div>

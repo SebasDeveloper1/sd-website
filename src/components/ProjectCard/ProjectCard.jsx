@@ -2,13 +2,7 @@ import React from 'react';
 import { ThirdTitle, FirstParagraph } from 'components/indexComponents';
 import './ProjectCard.scss';
 
-export function ProjectCard({
-  modifierClass,
-  style,
-  onClick,
-  onKeyDown,
-  projectData,
-}) {
+export function ProjectCard({ modifierClass, style, onClick, projectData }) {
   return (
     <li
       className={
@@ -22,7 +16,6 @@ export function ProjectCard({
         className="card-project"
         style={style}
         onClick={onClick}
-        onKeyDown={onKeyDown}
       >
         <img
           className="card-project__img"

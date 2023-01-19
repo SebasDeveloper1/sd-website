@@ -62,9 +62,6 @@ export function Projects() {
                   onClick={() => {
                     onClickHandler(project);
                   }}
-                  onKeyDown={() => {
-                    onClickHandler(project);
-                  }}
                   projectData={project}
                 />
               ))

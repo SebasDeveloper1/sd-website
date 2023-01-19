@@ -9,7 +9,6 @@ export function ThirdButton({
   srcIcon,
   style,
   onClick,
-  onKeyDown,
 }) {
   return (
     <button
@@ -20,7 +19,6 @@ export function ThirdButton({
       }
       style={style}
       onClick={onClick}
-      onKeyDown={onKeyDown}
     >
       {srcIcon && (
         <FontAwesomeIcon icon={srcIcon} className="third-button__icon" />

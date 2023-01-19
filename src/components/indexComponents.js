@@ -9,6 +9,7 @@ import { FirstParagraph } from 'components/FirstParagraph/FirstParagraph';
 import { SecondParagraph } from 'components/SecondParagraph/SecondParagraph';
 import { SmallParagraph } from 'components/SmallParagraph/SmallParagraph';
 import { FirstLink } from 'components/FirstLink/FirstLink';
+import { SecondLink } from 'components/SecondLink/SecondLink';
 import { ImageLink } from 'components/ImageLink/ImageLink';
 import { FirstButton } from 'components/FirstButton/FirstButton';
 import { SecondButton } from 'components/SecondButton/SecondButton';
@@ -45,6 +46,7 @@ export {
   SecondParagraph,
   SmallParagraph,
   FirstLink,
+  SecondLink,
   ImageLink,
   FirstButton,
   SecondButton,

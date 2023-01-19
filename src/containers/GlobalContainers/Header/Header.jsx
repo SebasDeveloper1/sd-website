@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   faBars,
   faClose,
@@ -10,8 +10,8 @@ import logoBasic from 'images/sebas-developer.logo.png';
 import userImg from 'images/sebas-developer.jpg';
 import {
   FirstButton,
-  ThirdButton,
   ImageButton,
+  SecondLink,
   NavList,
   SecondTitle,
 } from 'components/indexComponents';
@@ -22,6 +22,12 @@ import './Header.scss';
 export function Header() {
   /* Destructuring the state and the handleHeaderMenu function from the EventContext. */
   const { state, handleHeaderMenu } = useContext(EventContext);
+  const navigate = useNavigate();
+
+  const redirectHandler = () => {
+    navigate('/contact');
+    handleHeaderMenu();
+  };
 
   return (
     <header className="header">
@@ -66,32 +72,14 @@ export function Header() {
                   <FirstButton
                     type="button"
                     modifierClass="nav__data-btn"
-                    textButton={
-                      // eslint-disable-next-line react/jsx-wrap-multilines
-                      <Link
-                        to="/contact"
-                        className="nav__data-btn--link"
-                        onClick={handleHeaderMenu}
-                      >
-                        Contáctame
-                      </Link>
-                    }
+                    textButton="Contáctame"
+                    onClick={redirectHandler}
                     srcIcon={faMessage}
                   />
-                  <ThirdButton
-                    type="button"
-                    modifierClass="nav__data-btn"
-                    textButton={
-                      // eslint-disable-next-line react/jsx-wrap-multilines
-                      <a
-                        className="nav__data-btn--link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=1079ce97-8f8b-4427-adb3-41d3e080737d"
-                      >
-                        Descargar CV
-                      </a>
-                    }
+                  <SecondLink
+                    href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=1079ce97-8f8b-4427-adb3-41d3e080737d"
+                    textContent="Descargar CV"
+                    modifierClass="nav__data-btn "
                     srcIcon={faDownload}
                   />
                 </div>

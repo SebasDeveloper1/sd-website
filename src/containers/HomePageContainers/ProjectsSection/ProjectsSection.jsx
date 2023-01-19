@@ -74,9 +74,6 @@ export function ProjectsSection() {
                 onClick={() => {
                   onClickHandler(project);
                 }}
-                onKeyDown={() => {
-                  onClickHandler(project);
-                }}
                 projectData={project}
               />
             ))
@@ -88,7 +85,6 @@ export function ProjectsSection() {
           textButton="Ver más proyectos "
           srcIcon={faEye}
           onClick={redirectHandler}
-          onKeyDown={redirectHandler}
         />
       </div>
     </section>
