@@ -25,6 +25,7 @@ I consider myself a creative, innovative, curious person and above all passionat
 ---
 
 ### 🚀 Languages and Tools:
+
 </br>
 <div >
 <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"> <img src="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/tools%2Fhtml_icon_.svg?alt=media&token=178c4304-5b0e-4c2c-b489-3ab7f92ede68" align="left" alt="html" title="html" height='56px'/></a>
