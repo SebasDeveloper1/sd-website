@@ -12,7 +12,7 @@ import {
   MetaHead,
 } from 'components/indexComponents';
 import { ProjectDetailsPageLoading } from 'containers/indexContainers';
-import { Status404 } from 'pages/indexPages';
+import Status404 from 'pages/Status404/Status404';
 import { useGetData } from 'hooks/useGetData';
 import './ProjectInfo.scss';
 

@@ -13,7 +13,7 @@ const onClick = () => {
   window.history.back();
 };
 
-export function Status404() {
+export default function Status404() {
   return (
     <>
       <MetaHead

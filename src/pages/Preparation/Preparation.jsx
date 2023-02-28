@@ -7,7 +7,7 @@ import {
 import { GoToUpButton, MetaHead } from 'components/indexComponents';
 import './Preparation.scss';
 
-export function Preparation() {
+export default function Preparation() {
   return (
     <>
       <MetaHead

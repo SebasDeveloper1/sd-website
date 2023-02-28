@@ -12,7 +12,7 @@ import {
 import { useSearchProjects } from 'hooks/useSearchProjects';
 import './Projects.scss';
 
-export function Projects() {
+export default function Projects() {
   const navigate = useNavigate();
   const { loading, error, searchValue, setSearchValue, searchedProjects } =
     useSearchProjects();

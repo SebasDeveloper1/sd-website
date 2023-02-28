@@ -9,7 +9,7 @@ import {
 import { useGetData } from 'hooks/useGetData';
 import './Contact.scss';
 
-export function Contact() {
+export default function Contact() {
   /* A custom hook that is fetching data from firebase. */
   const { dataList, loading, error } = useGetData({ Ref: 'contact' });
 

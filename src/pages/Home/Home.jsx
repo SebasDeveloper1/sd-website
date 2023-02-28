@@ -10,7 +10,7 @@ import {
 import { GoToUpButton, MetaHead } from 'components/indexComponents';
 import './Home.scss';
 
-export function Home() {
+export default function Home() {
   return (
     <>
       <MetaHead

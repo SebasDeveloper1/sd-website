@@ -1,5 +1,4 @@
 // Gobal containers
-import { Layout } from 'containers//GlobalContainers/Layout/Layout';
 import { GenericList } from 'containers//GlobalContainers/GenericList/GenericList';
 import { Header } from 'containers//GlobalContainers/Header/Header';
 import { Footer } from 'containers//GlobalContainers/Footer/Footer';
@@ -24,7 +23,6 @@ import { ProjectInfo } from 'containers/ProjectDetailsPageContainers/ProjectInfo
 import { ProjectDetailsPageLoading } from 'containers/ProjectDetailsPageContainers/ProjectDetailsPageLoading/ProjectDetailsPageLoading';
 
 export {
-  Layout,
   GenericList,
   Header,
   Footer,
