@@ -77,7 +77,7 @@ export function Header() {
                     srcIcon={faMessage}
                   />
                   <SecondLink
-                    href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=1079ce97-8f8b-4427-adb3-41d3e080737d"
+                    href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=e8891996-36a6-4eac-896c-394a8455ce02"
                     textContent="Descargar CV"
                     modifierClass="nav__data-btn "
                     srcIcon={faDownload}
