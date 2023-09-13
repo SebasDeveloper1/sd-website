@@ -43,7 +43,7 @@ export function HeroHome() {
               modifierClass="hero__subtitle"
             />
             <SecondLink
-              href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=e8891996-36a6-4eac-896c-394a8455ce02"
+              href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=49ad83b1-0beb-4ed1-ab36-884c3a137e92"
               textContent="Descargar CV"
               modifierClass="hero__dowload-btn"
               srcIcon={faDownload}
