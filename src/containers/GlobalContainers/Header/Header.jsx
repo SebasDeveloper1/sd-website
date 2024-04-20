@@ -77,7 +77,7 @@ export function Header() {
                     srcIcon={faMessage}
                   />
                   <SecondLink
-                    href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FSebasDeveloperCV.pdf?alt=media&token=e8891996-36a6-4eac-896c-394a8455ce02"
+                    href="https://firebasestorage.googleapis.com/v0/b/sd-website-f934d.appspot.com/o/CV%2FJohan%20Sebastian%20Pedroza%20BonillaCV.pdf?alt=media&token=d447b778-89be-4967-ab27-80aee319745a"
                     textContent="Descargar CV"
                     modifierClass="nav__data-btn "
                     srcIcon={faDownload}
